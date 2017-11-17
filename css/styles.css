@@ -1,0 +1,560 @@
+/*
+Theme Name: 	Mesirov Lab
+Author:         Forrest Kim
+*/
+
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+body {
+    background-color: #DCDCDC;
+}
+/* Navbar*/
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+    margin-bottom: 0;
+    background-color: white; 
+    border-bottom: 3px solid black;
+}
+.navbar-nav {
+    margin-left: 25%;
+    padding: 1.5%;
+
+}
+.navbar-nav li a {
+    letter-spacing: 2px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+.navbar-nav li a:hover {
+    background: transparent;
+    color: grey;
+}
+.navbar-brand {
+    display: none;
+}
+#media-space{
+    display: none;
+}
+
+#mobile-navigation-title a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    color: black;
+    letter-spacing: 5px;
+    margin-left: -100%;
+}
+#mobile-navigation-title a:hover {
+    background: transparent;
+    color:gray;
+}
+
+.dropdown-menu {
+    background-color: #78BDD2;
+}
+.dropdown-menu li a:hover{
+    background-color: black;
+}
+
+
+/* Remove the jumbotron's default bottom margin */ 
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.carousel {
+    background-color: white;
+}
+.carousel-caption h3 {
+    color: white;
+    outline-color: black;
+    display: none;
+}
+
+/*Front Page*/
+#main div , #about-the-lab div, #jill div{
+    padding: 30px;
+    
+}
+#main h2, #about-the-lab h2 , #jill h2{
+    font-size: 2vw;
+    color: rgba(34, 35, 34, 0.5);
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#main p, #jill p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+#main hr, #jill hr{
+    border-color: rgba(34, 35, 34, 0.5);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 2%;
+
+}
+#about-the-lab p {
+    font-size: 1vw;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+#jill {
+    background-color: white ;
+}
+#jill img{
+    float: right;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: -20px;
+}
+#jill p{
+    font-size: 16px;
+    margin-right: 30%;
+}
+
+#news-front p{
+    font-size: 16px;
+    margin-left: 20%;
+}
+#news-front h3{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+#news-front hr, #icons hr {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#icons {
+    background-color: white;
+    text-align: center;
+}
+#icons img{
+    padding: 10px;
+    height: 100px;
+    width: auto;
+}
+#about-the-lab, #news-front {
+    background-color: #DCDCDC;
+}
+
+/* /projects /pubs */
+
+#project-carousel .carousel-inner > .item > img {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#project-main div, #pubs-main div, #teaching-main div, #about-main div {
+    padding: 30px;
+    background-color: white;
+}
+#project-main a, #pubs-main a, #software-main a {
+    font-weight: 400;
+}
+.btn {
+    margin-left: 10%;
+    font-weight: 400;
+    color: rgb(14, 56, 110);
+    border-color: rgba(14, 56, 110,0.6);
+    border-width: 0.5px;
+    margin-bottom: 10px;
+}
+#project-container, #pubs-container, #about-container, #software-container, #teaching-container, #about-container {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#title {
+    text-align: center;
+}
+#title h1{
+    color: rgba(0,0,0, 0.7);
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+
+#project-main h2 {
+    font-size: 18px;
+    color: rgb(0,0,0);
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin-left: 8%;
+    margin-top: -40px;
+}
+#project-main p , #pubs-main li {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 14px;
+    font-weight: 320;
+    text-align: justify;
+}
+#project-main h4, #pubs-main h4 {
+    margin-left: 10%;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(14, 56, 110);
+    margin-top: 20px;
+}
+#project-pub1 p, #project-pub2 p, #project-pub3 p, #project-pub4 p, #project-pub5 p {
+    font-size: 13px;
+    color: rgba(0,0,0,0.6);
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: justify;
+}
+#pubs-main h2 {
+    font-size: 25px;
+    color: rgb(0,0,0);
+    text-align: left;
+    font-weight: 450;
+    letter-spacing: 0px;
+    margin-left: 8%;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+
+/* /members */
+/*#members-main {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}*/
+#members-main img {
+    width: 230px;
+}
+
+#members-main h2 {
+    font-size: 20px;
+    color: rgba(34, 35, 34, 0.5);
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#members-main h1, #main h1, #alumni-main h1, #jill h1 {
+    font-size: 30px;
+    color: rgba(34, 35, 34, 0.5);
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#members-main h3 {
+    font-size: 25px;
+    color: rgb(0,0,0);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#members-main p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+#alumni-main hr, #members-main hr {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+#members-main  h4{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: gray;
+    text-align: left;
+    
+}
+.grid-item {
+    margin-bottom: 10px;
+}
+.grid {
+    text-align: center;
+    margin: 0 auto;
+}
+.grid-item img {
+    opacity: 1;
+    transition: .1s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.grid-item:hover img {
+    opacity: 0.3;
+}
+
+.grid-item:hover .middle {
+    opacity: 1;
+}
+
+
+/* /software */
+
+/*.list-group {
+    margin-top: -30px;
+}
+.list-group-item {
+    padding: 20px;
+}
+.list-group-item:hover {
+    background-color: rgba(0,0,0,0.05);
+}*/
+#padding-space {
+    padding: 30px;
+}
+.panel-body {
+    margin-left: 1vw;
+}
+.panel-heading {
+    margin: 0 auto;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;   
+}
+
+.panel-body h2 {
+    font-size: 16.5px;
+    color: rgb(14, 56, 110);
+    text-align: left;
+    font-weight: 450;
+    letter-spacing: 0.5px;
+}
+.panel-heading h2 a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.panel-heading h2 a:hover {
+    color: red;
+    text-decoration: none;
+}
+.panel-heading img{
+    padding: 10px;
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: -40px;
+    margin-left: -30px;
+    margin-right: 10px;
+}
+
+.panel-body p{
+    font-size: 14px;
+    font-weight: 320;
+    text-align: justify;
+    color: black;
+}
+.panel-body p2 {
+    color: rgba(0,0,0,0.6);
+    text-align: justify;
+}
+.collapsing {
+    position:relative;
+    height:0px;
+    overflow:hidden;
+    -webkit-transition-timing-function:ease;
+    -o-transition-timing-function:ease;
+    transition-timing-function:ease;
+    -webkit-transition-duration:.3s;
+    -o-transition-duration:.3s;
+    transition-duration:.3s;
+    -webkit-transition-property:height,visibility;
+    -o-transition-property:height,visibility;
+    transition-property:height,visibility;
+    }
+
+.collapsing .panel-heading {
+    margin-left: -100px;
+}
+.panel-default > .panel-heading {
+    background-color: rgba(0,0,0,0.04);
+}
+
+
+/* /about */
+.nav-tabs li {
+    margin-top: 0px;
+}
+.nav-tabs li a {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: black;
+}
+#tab-content div {
+    padding: 10px;
+}
+#contact-btn input {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+#positions a {
+    text-decoration: none;
+    font-size: 20px;
+}
+#positions h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#photo-archive {
+    text-align: center;
+}
+#photo-archive img {
+    height: 200px;
+}
+#hist-carousel .carousel-inner > .item > img {
+    margin: 0 auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 50%;
+    height: auto;
+}
+
+
+/* /teaching */
+#teaching-main h2 {
+    font-weight: 400;
+    margin-left: 2%;
+    font-size: 20px;
+}
+#teaching-main p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 2%;
+}
+#teaching-main b {
+    font-size: 14px;
+}
+#teaching-main a {
+    font-weight: 400;
+    text-decoration: none;
+}
+#teaching-main li {
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media screen and (max-width: 1310px) {
+    #media-space { 
+        display: inline-block
+    }  
+    .navbar-nav {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    #mobile-navigation-title a {
+        margin-left: 0%;
+        position: static;
+    }
+    #members-main img {
+        width: 180px;
+    }
+    #members-main h3 {
+        font-size: 20px;
+        color: rgb(0,0,0);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    #members-main p {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    #gsea-header {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-toggle {
+        border-color: black;
+        &:hover, &:focus {
+            background-color: black;
+        }
+    
+    }
+    .icon-bar {
+        background-color: black;
+    }
+    .navbar-header {
+        margin-bottom: -120px;
+    }
+    .navbar-brand {
+        display:none;
+        letter-spacing: 2px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #main h2, #about-the-lab h2 {
+        font-size: 20px;
+    }
+    #about-the-lab p {
+        font-size: 15px;
+    }
+    #main p {
+        text-align: left
+    }
+    #members-main h3 {
+        font-size: 16px;
+        color: rgb(0,0,0);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    #members-main p {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+    #software-main p{
+        text-align: left;
+    }
+    .list-group-item {
+        padding: 5px;
+    }
+    #gsea p {
+        margin-left: 0px;
+    }
+    
+    
+}
+
+
