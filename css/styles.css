@@ -8,30 +8,34 @@ html, body {
     overflow-x: hidden !important;
 }
 body {
-    background-color: #DCDCDC;
+    background-color: #F7F7FF;
+    font-family: "Arial", Helvetica, sans-serif;
+    color: #495867;
+    margin-top: -2px;
 }
+
 /* Navbar*/
 
 /* Remove the navbar's default rounded borders and increase the bottom margin */ 
 .navbar {
     margin-bottom: 0;
-    background-color: white; 
-    border-bottom: 3px solid black;
+    background-color: #DEE7EF; 
+    border-radius: 0px;
 }
 .navbar-nav {
-    margin-left: 25%;
-    padding: 1.5%;
-
+    padding: 0px;
+    margin-left: -20px;
 }
 .navbar-nav li a {
-    letter-spacing: 2px;
-    color: black;
+    letter-spacing: 1px;
+    color: #495867;
     font-size: 12px;
     font-weight: 500;
+    margin-right: 0px;
 }
 .navbar-nav li a:hover {
     background: transparent;
-    color: grey;
+    color: #FE5F55;
 }
 .navbar-brand {
     display: none;
@@ -40,25 +44,11 @@ body {
     display: none;
 }
 
-#mobile-navigation-title a {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 25px;
-    position: relative;
-    color: black;
-    letter-spacing: 5px;
-    margin-left: -100%;
-}
-#mobile-navigation-title a:hover {
-    background: transparent;
-    color:gray;
-}
-
 .dropdown-menu {
     background-color: #78BDD2;
 }
 .dropdown-menu li a:hover{
-    background-color: black;
+    background-color: #1B1B1E;
 }
 
 
@@ -67,36 +57,59 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    height: auto;
 }
 .carousel {
-    background-color: white;
+    background-color: #F7F7FF;
 }
 .carousel-caption h3 {
-    color: white;
-    outline-color: black;
+    color: #F7F7FF;
+    outline-color: #1B1B1E;
     display: none;
 }
 
 /*Front Page*/
+a:hover {
+    color: #FE5F55;
+    text-decoration: none;
+}
 #main div , #about-the-lab div, #jill div{
     padding: 30px;
     
 }
 #main h2, #about-the-lab h2 , #jill h2{
     font-size: 2vw;
-    color: rgba(34, 35, 34, 0.5);
+    color: #495867;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     padding: 10px;
     margin-bottom: 10px;
+    font-weight: 550;
+}
+#about-the-lab h2, #news-front h2{
+    font-size: 2vw;
+    color: #495867;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 550;
 }
 #main p, #jill p {
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
 }
-#main hr, #jill hr{
-    border-color: rgba(34, 35, 34, 0.5);
+#main hr, #jill hr {
+    border-color: #1B1B1E;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 2%;
+
+}
+#about-the-lab hr{
+    border-color: #495867;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
@@ -104,14 +117,15 @@ body {
 
 }
 #about-the-lab p {
-    font-size: 1vw;
+    color: #495867;
+    font-size: 1.1vw;
     margin-bottom: auto;
     margin-left: 10%;
     margin-right: 10%;
-    text-align: justify;
+    text-align: left;
 }
 #jill {
-    background-color: white ;
+    background-color: #DEE7EF;
 }
 #jill img{
     float: right;
@@ -120,27 +134,31 @@ body {
     margin-top: -20px;
 }
 #jill p{
-    font-size: 16px;
+    font-size: 15px;
     margin-right: 30%;
+}
+#jill a:hover {
+    color: #FE5F55;
 }
 
 #news-front p{
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 20%;
+    color: #495867;
 }
 #news-front h3{
+    color: #495867;
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 #news-front hr, #icons hr {
     margin-left: 15%;
     margin-right: 15%;
 }
 #icons {
-    background-color: white;
+    background-color: #F7F7FF;
     text-align: center;
 }
 #icons img{
@@ -149,7 +167,7 @@ body {
     width: auto;
 }
 #about-the-lab, #news-front {
-    background-color: #DCDCDC;
+    background-color: #F7F7FF;
 }
 
 /* /projects /pubs */
@@ -168,11 +186,17 @@ body {
 }
 .btn {
     margin-left: 10%;
-    font-weight: 400;
-    color: rgb(14, 56, 110);
-    border-color: rgba(14, 56, 110,0.6);
-    border-width: 0.5px;
+    font-weight: 500;
+    color: #495867;
+    border-color: #495867;
+    border-width: 1px;
     margin-bottom: 10px;
+    background-color: transparent;
+}
+.btn:hover{
+    color: #FE5F55;
+    border-color: #FE5F55;
+    background-color: transparent;
 }
 #project-container, #pubs-container, #about-container, #software-container, #teaching-container, #about-container {
     margin-top: 5%;
@@ -182,14 +206,14 @@ body {
     text-align: center;
 }
 #title h1{
-    color: rgba(0,0,0, 0.7);
+    color: #495867;
     letter-spacing: 10px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #project-main h2 {
     font-size: 18px;
-    color: rgb(0,0,0);
+    color: #495867;
     text-align: left;
     font-weight: 500;
     letter-spacing: 0px;
@@ -249,22 +273,24 @@ body {
 }
 #members-main h1, #main h1, #alumni-main h1, #jill h1 {
     font-size: 30px;
-    color: rgba(34, 35, 34, 0.5);
+    color: #495867;
     text-align: center;
     letter-spacing: 1.5px;
     padding: 10px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
-#members-main h3 {
-    font-size: 25px;
-    color: rgb(0,0,0);
+.middle h3 {
+    font-size: 22px;
+    color: #495867;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
-#members-main p {
-    font-size: 18px;
-    font-weight: 400;
+.middle p {
+    font-size: 16px;
+    font-weight: 300;
     text-align: center;
+    color: #586F8E;
 }
 #alumni-main hr, #members-main hr {
     margin-left: 0%;
@@ -280,6 +306,7 @@ body {
 }
 .grid-item {
     margin-bottom: 10px;
+    box-shadow: 0 0 5px grey;
 }
 .grid {
     text-align: center;
@@ -302,7 +329,7 @@ body {
 }
 
 .grid-item:hover img {
-    opacity: 0.3;
+    opacity: 0.25;
 }
 
 .grid-item:hover .middle {
@@ -321,11 +348,20 @@ body {
 .list-group-item:hover {
     background-color: rgba(0,0,0,0.05);
 }*/
+
+#software-container {
+    background-color: white;
+}
 #padding-space {
     padding: 30px;
+    
+}
+.panel {
+    background-color: white;
 }
 .panel-body {
-    margin-left: 1vw;
+    background-color: white;
+    
 }
 .panel-heading {
     margin: 0 auto;
@@ -333,24 +369,27 @@ body {
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     border: none;   
 }
-
 .panel-body h2 {
-    font-size: 16.5px;
-    color: rgb(14, 56, 110);
+    margin-top: 0px;
+}
+.panel-body h2 a {
+    font-size: 20px;
     text-align: left;
     font-weight: 450;
-    letter-spacing: 0.5px;
 }
-.panel-heading h2 a {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    color: black;
+.panel-title h2 {
+    font-size: 30px;
+}
+.panel-heading h2 {
+    font-size: 18px;
     text-align: left;
     text-decoration: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    color: #495867;
 }
-.panel-heading h2 a:hover {
-    color: red;
+.panel-body h2 a:hover {
+    color: #FE5F55;
     text-decoration: none;
 }
 .panel-heading img{
@@ -365,28 +404,10 @@ body {
 
 .panel-body p{
     font-size: 14px;
-    font-weight: 320;
+    font-weight: 400;
     text-align: justify;
-    color: black;
+    color: #495867;
 }
-.panel-body p2 {
-    color: rgba(0,0,0,0.6);
-    text-align: justify;
-}
-.collapsing {
-    position:relative;
-    height:0px;
-    overflow:hidden;
-    -webkit-transition-timing-function:ease;
-    -o-transition-timing-function:ease;
-    transition-timing-function:ease;
-    -webkit-transition-duration:.3s;
-    -o-transition-duration:.3s;
-    transition-duration:.3s;
-    -webkit-transition-property:height,visibility;
-    -o-transition-property:height,visibility;
-    transition-property:height,visibility;
-    }
 
 .collapsing .panel-heading {
     margin-left: -100px;
@@ -394,7 +415,6 @@ body {
 .panel-default > .panel-heading {
     background-color: rgba(0,0,0,0.04);
 }
-
 
 /* /about */
 .nav-tabs li {
@@ -404,10 +424,13 @@ body {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0px;
-    color: black;
+    color: #495867;
+}
+.tab-pane:active {
+    background-color: #DEE7EF;
 }
 #tab-content div {
-    padding: 10px;
+    padding: 5px;
 }
 #contact-btn input {
     margin-left: 0px;
@@ -425,14 +448,7 @@ body {
     text-align: center;
 }
 #photo-archive img {
-    height: 200px;
-}
-#hist-carousel .carousel-inner > .item > img {
-    margin: 0 auto;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    width: 50%;
-    height: auto;
+    width: 400px;
 }
 
 
@@ -463,7 +479,8 @@ body {
 
 /* Add a gray background color and some padding to the footer */
 footer {
-    background-color: #f2f2f2;
+    background-color: #586F8E;
+    color: #F7F7FF;
     padding: 20px;
     margin-left: 10%;
     margin-right: 10%;
@@ -473,17 +490,20 @@ footer {
     #media-space { 
         display: inline-block
     }  
-    .navbar-nav {
-        margin-left: 0px;
-        margin-top: 15px;
-    }
     #mobile-navigation-title a {
         margin-left: 0%;
         position: static;
     }
     #members-main img {
-        width: 180px;
+    width: 190px;
+}
+
+}
+@media screen and (max-width: 1200px) {
+    #gsea-header {
+        margin-top: -30px;
     }
+
     #members-main h3 {
         font-size: 20px;
         color: rgb(0,0,0);
@@ -495,24 +515,18 @@ footer {
         font-weight: 400;
         text-align: center;
     }
-
-}
-@media screen and (max-width: 1200px) {
-    #gsea-header {
-        margin-top: -30px;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .navbar-toggle {
-        border-color: black;
+        border-color: #1B1B1E;
         &:hover, &:focus {
-            background-color: black;
+            background-color: #1B1B1E;
         }
     
     }
     .icon-bar {
-        background-color: black;
+        background-color: #1B1B1E;
     }
     .navbar-header {
         margin-bottom: -120px;
@@ -520,7 +534,7 @@ footer {
     .navbar-brand {
         display:none;
         letter-spacing: 2px;
-        color: black;
+        color: #1B1B1E;
         font-size: 20px;
         font-weight: 600;
     }

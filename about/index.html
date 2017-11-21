@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body style="background-color: #F7F7FF;">
+    <div style="margin: 0 auto;">
+        <img src="../img/top-banner.png" style="width: 101%; margin-left: -10px; ">
+    </div>
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -19,10 +22,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav" id="navigation">
-                    <li id="mobile-navigation-title"><a href="../">MESIROV LAB</a></li>
-                    <br id=media-space>
-                    <br id=media-space>
-                    <br id=media-space>
+                    <li><a href="../">HOME</a></li>
                     <li><a href="../about/">ABOUT</a></li>
                     <li><a href="../members/">PEOPLE</a></li>
                     <li><a href="../projects/">RESEARCH</a></li>
@@ -34,17 +34,15 @@
         </div>
     </nav>
     
-    <div id="about-main" style="margin-left: 10%; margin-right: 10%;">
-        <div class="row" id="about-container">
+    <div id="about-main" style="margin-left: 5%; margin-right: 5%;">
+        <div class="row container-fluid" id="about-container">
             <div id="title">
                 <h1 style="margin-bottom: -10px;">ABOUT</h1>
             </div>
             <ul class="nav nav-tabs">
-                <li class="active" style="margin-left: 10px;"><a data-toggle="tab" href="#photo-archive">Lab History</a></li>
-                <li><a data-toggle="tab" href="#contact">Contact Us</a></li>
+                <li style="margin-left: 10px;" class="active"><a data-toggle="tab" href="#contact">Contact Us</a></li>
                 <li><a data-toggle="tab" href="#positions">Available Positions</a></li>
-                <!--<li><a data-toggle="tab" href="#funding">Research Support</a></li>-->
-                
+                <!-- <li><a data-toggle="tab" href="#photo-archive">Lab History</a></li>  -->               
             </ul>
             
             <!--
@@ -53,8 +51,8 @@
                 <li style="margin-bottom: 20px; margin-right: 0px;"><a href="#">Available Positions</a></li>
             </ul> -->
             <div class="tab-content" id="tab-content">
-                <div id="contact" class="tab-pane fade">
-                    <h2>Contact Us</h2>
+                <div id="contact" class="tab-pane fade in active">
+                    <h2>Contact Us</h2><br>
                     <h4>Principal Investigator</h4>
                     <p><b>Jill Mesirov, PhD</b><br>
                     Professor of Medicine, Division of Medical Genetics;
@@ -66,8 +64,13 @@
                     <br>
                     School of Medicine and Moores Cancer Center, UC San Diego<br>
                     <u>jmesirov@ucsd.edu</u><br>
+                    </p><br>
+                    <h4>Directors</h4>
+                    <p>
+                        <b>Michael Reich</b><br>
+                        Assistant Director of Bioinformatics<br>
+                        <u>mmreich@cloud.ucsd.edu</u><br><br>
                     </p>
-                    <br>
                     <h4>Administrators</h4>
                     <p>
                         <b>Sara Morimoto</b><br>
@@ -76,13 +79,11 @@
                         <b>Forrest Kim</b><br>
                         Technical Assistant<br>
                         Website Administrator<br>
-                        <u>f1kim@ucsd.edu</u><br>
+                        <u>f1kim@ucsd.edu</u><br><br>
                     </p>
-                    <h2>Location</h2>
-                    <p><p>Biomedical Research Facility II 2A21-2A32,<br>
-                    9500 Gilman Dr,<br>
+                    <h2>Lab Location</h2>
+                    <p><p>Biomedical Research Facility II 2A21-2A32 (floor 2A),<br>
                     La Jolla, CA 92037<br><br>
-                    Our lab is located in the Biomedical Research Facility II on the office side of the second floor </p>  
                 </div>
                 <div id="positions" class="tab-pane fade">
                     <h2>Available Postions</h2>
@@ -93,60 +94,26 @@
                     <h3>Undergraduate Students</h3>
                     <p>Please e-mail Dr. Mesirov if you are an undergraduate student interested in the Mesirov lab.</p>
                 </div>
-                <!--<div id="funding" class="tab-pane fade">
-                    <div class="container-fluid">
-                        <h2>Research Support</h2>
-                        <p>The Mesirov Lab is supported by the National Institute of Health, the University of California, San Diego, and The Broad Institute</p>
-                    </div>
-                </div>
-                -->
-                <div id="photo-archive" class="tab-pane fade in active">
-                    <div id="hist-carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="../img/lab-members/gsea-old.jpg" alt="Mesirov Group">
-                            </div>
-                            <div class="item">
-                                <img src="../img/lab-members/group-old.jpg">
-                            </div>
-                            <div class="item">
-                                <img src="../img/medullo-group.png">
-                            </div>
+                <!-- <div id="photo-archive" class="tab-pane fade">
+                    <div class="grid" id="list">
+                        <div class="grid-item"> 
+                            <img src="../img/lab-members/gsea-old.jpg">
+                            <div class="middle"><p class="card-text">GSEA Team (2004)</p></div>
                         </div>
-                        <a class="left carousel-control" href="#hist-carousel" data-slide="prev">
-                            <span class="glyphicon"></span>
-                        </a>
-                        <a class="right carousel-control" href="#hist-carousel" data-slide="next">
-                            <span class="glyphicon"></span>
-                        </a>
-                    </div>
-                    
-                    
-                    <div> 
-                        <img src="../img/lab-members/gsea-old.jpg">
-                        <p>GSEA Team (2004)</p>
-                    </div>
-                    <div> 
-                        <img src="../img/lab-members/group-old.jpg">
-                        <p>GenePattern Team (2005)</p>
-                    </div>
-                    <div>
-                        <img src="../img/medullo-group.png">
-                        <p>Medulloblastoma Team (Jan. 2015)</p>
-                    </div>
-                    <!--
-                    <div class="container-fluid row">
-                        <div class="col-sm-4"> 
-                            <img src="../img/lab-members/jill-1991.jpg">
-                            <p>Dr. Mesirov (1991)</p>
+                        <div class="grid-item"> 
+                            <img src="../img/lab-members/group-old.jpg">
+                            <div class="middle"><p class="card-text">GenePattern Team (2005)</p></div>
                         </div>
-                        <div class="col-sm-4"> 
-                            <img src="../img/lab-members/jill-1983.jpg">
-                            <p>Dr. Mesirov (1983)</p>
+                        <div class="grid-item">
+                            <img src="../img/medullo-group.png">
+                            <div class="middle"><p class="card-text">Mesirov Lab (Jan. 2015)</p></div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="../img/medulloblastoma-group.png">
+                            <div class="middle"><p class="card-text">Medulloblastoma Group (2015)</p></div>
                         </div>
                     </div>
-                    -->
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -156,5 +123,19 @@
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var $grid = $('.grid').masonry({
+            // options...
+            itemSelector: '.grid-item',
+            fitWidth: true,
+            gutter: 10,
+            horizontalOrder: true,
+        });
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+    </script>
 </body>  
 </html>

@@ -5,17 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script>
-        $(window).load(function() {
-            $('#container').masonry({
-                itemSelector: '.grid-item',
-                isAnimated: true
-            });
-        });
-    </script>
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>    
 </head>
-<body>
+<body style="background-color: white;">
+    <div style="margin: 0 auto;">
+        <img src="../img/top-banner.png" style="width: 101%; margin-left: -10px; ">
+    </div>
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -27,10 +23,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav" id="navigation">
-                    <li id="mobile-navigation-title"><a href="../">MESIROV LAB</a></li>
-                    <br id=media-space>
-                    <br id=media-space>
-                    <br id=media-space>
+                    <li><a href="../">HOME</a></li>
                     <li><a href="../about/">ABOUT</a></li>
                     <li><a href="../members/">PEOPLE</a></li>
                     <li><a href="../projects/">RESEARCH</a></li>
@@ -41,21 +34,11 @@
             </div>
         </div>
     </nav>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="../img/mesirov-group.jpg" alt="Mesirov Group" width="55%" style="margin-top: 0px; margin-bottom: 0px;">
-            </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon"></span>
-        </a>
-    </div>
     
     <div>
+        <div class="text-center">
+            <img src="../img/mesirov-group.jpg" alt="Mesirov Group" width="70%" style="margin-top: 0px; margin-bottom: 0px;">
+        </div>
         <div class="container-fluid" id="jill">    
             <h1>JILL MESIROV, Ph.D. M.A.</h1>
             <hr>
@@ -83,12 +66,12 @@
         <div id="members-main" style="margin: 0 auto;">
             <h1 style="margin-bottom: 50px; padding: 30px;">LAB MEMBERS</h1>
             <div class="container" id="member-center" style="margin: 0 auto;">
-                <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "fitWidth": true, "gutter": 10, "horizontalOrder": true}' id="list">
+                <div class="grid" id="list" style="margin: 0 auto;">
                     <div class="grid-item">
                         <img src="../img/lab-members/Michael_Reich%202016.png" >
                         <div class="middle">
-                            <h3 class="card-title">Michael Reich</h3><hr>
-                            <p class="card-text">Assistant Director, Bioinformatics</p> 
+                            <h3>Michael Reich</h3><hr>
+                            <p>Assistant Director, Bioinformatics</p> 
                         </div>
                     </div>
                     <div class="grid-item">      
@@ -105,7 +88,7 @@
                             <p>Lab Manager<br>Sr. Software Architect</p> 
                         </div>
                     </div>
-                    <div class="grid-item">       
+                    <div class="grid-item"> 
                         <img src="../img/lab-members/jim-robinson.jpeg">
                         <div class="middle"> 
                             <h3>Jim Robinson, PhD</h3><hr>
@@ -119,6 +102,13 @@
                             <p>Adjunct Professor, Department of Medicine</p> 
                         </div>
                     </div>
+                    <div class="grid-item">        
+                        <img src="../img/lab-members/Arthur-Liberzon.png">
+                        <div class="middle"> 
+                            <h3>Arthur Liberzon, PhD</h3><hr>
+                            <p>Bioinformatics Scientist</p>
+                        </div>
+                    </div>
                     <div class="grid-item">       
                         <img src="../img/lab-members/eby_profile.jpg">
                         <div class="middle"> 
@@ -126,7 +116,7 @@
                             <p>Consultant</p> 
                         </div>
                     </div>
-                    <div class="grid-item">        
+                    <div class="grid-item">
                         <img src="../img/lab-members/Peter_Carr.jpg">
                         <div class="middle"> 
                             <h3>Peter Carr</h3><hr>
@@ -152,13 +142,6 @@
                         <div class="middle">
                             <h3>Edwin Juárez, PhD</h3><hr>
                             <p>Bioinformatics Programmer</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/Arthur-Liberzon.png">
-                        <div class="middle"> 
-                            <h3>Arthur Liberzon, PhD</h3><hr>
-                            <p>Bioinformatics Scientist</p>
                         </div>
                     </div>
                     <div class="grid-item">       
@@ -200,18 +183,22 @@
                 <br>
             </div> 
         </div>
-        <div id ="jill" style="text-align: left;">
-            <br>
-            <h1>Undergraduate Researchers</h1>
-            <hr>
-            <p style="text-align: left;">Isaac Shanley</p>
-            <p style="text-align: left;">Andy Zhang</p>
-            <br>
-        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+        var $container = $('.grid');
+        $container.ready(function(){
+          $container.masonry({
+            itemSelector: '.grid-item',
+            isAnimate: true,
+            isFitWidth: true,
+            gutter: 10,
+            horizontalOrder: true,
+          });
+        });
+    </script>
     <footer class="container-fluid text-center">
         <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p>
     </footer>

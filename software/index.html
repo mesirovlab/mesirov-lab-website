@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body style="background-color: #F7F7FF;">
+    <div style="margin: 0 auto;">
+        <img src="../img/top-banner.png" style="width: 101%; margin-left: -10px; ">
+    </div>
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -19,10 +22,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav" id="navigation">
-                    <li id="mobile-navigation-title"><a href="../">MESIROV LAB</a></li>
-                    <br id=media-space>
-                    <br id=media-space>
-                    <br id=media-space>
+                    <li><a href="../">HOME</a></li>
                     <li><a href="../about/">ABOUT</a></li>
                     <li><a href="../members/">PEOPLE</a></li>
                     <li><a href="../projects/">RESEARCH</a></li>
@@ -49,7 +49,7 @@
     </div> -->
     
     <div id="software-main">
-        <div class="container" id="software-container" style="background-color: white; padding: 30px;">
+        <div class="container" id="software-container" style="padding: 30px;">
             <div id="title">
                 <h1>CURRENT SOFTWARE</h1>
                 <hr>
@@ -57,83 +57,81 @@
             <div style="padding: 50px; margin-top: -20px; margin-bottom: -30px;">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                             <div style="padding: 31px;">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><img src="../img/software/genepattern.png"></a> 
+                                <img src="../img/software/genepattern.png">
                                 <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">GenePattern &amp; GenePattern Notebooks</a>
+                                    GenePattern &amp; GenePattern Notebooks
                                 </h2>
                             </div>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <a href="https://genepattern.broadinstitute.org"><h2 >GenePattern</h2></a>
+                                <h2><a href="https://genepattern.broadinstitute.org">GenePattern</a></h2>
                                 <p>We have developed a software package called GenePattern, which provides a comprehensive environment that can support a broad community of users at all levels of computational experience and sophistication, access to a repository of analytic and visualization tools and easy creation of complex analytic methods from them and the rapid development and dissemination of new methods. Perhaps the most important feature of GenePattern is that it supports a mechanism to guarantee the capture and independent replication of published computational methods and in silico results.</p>
-                                <p2>Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP. <b>GenePattern 2.0</b>. Nature Genetics 38 no. 5 (2006): pp500-501</p2>
-                                <a href="http://genepattern-notebook.org/"><h2>GenePattern Notebooks</h2></a>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP. <b>GenePattern 2.0</b>. Nature Genetics 38 no. 5 (2006): pp500-501</p>
+                                <h2><a href="http://genepattern-notebook.org/">GenePattern Notebook</a></h2>
                                 <p>Interactive analysis notebook environments promise to streamline genomics research through interleaving text, multimedia, and executable code into unified, sharable, reproducible “research narratives.” However, current notebook systems require programming knowledge, limiting their wider adoption by the research community. We have developed the GenePattern Notebook environment, to our knowledge the first system to integrate the dynamic capabilities of notebook systems with an investigator-focused, easy-to-use interface that provides access to hundreds of genomic tools without the need to write code.</p>
-                                <p2>Reich et al. <b>The GenePattern Notebook Environment</b>. Cell Systems. 2017(5):149-51</p2>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Reich et al. <b>The GenePattern Notebook Environment</b>. Cell Systems. 2017(5):149-51</p>
                             </div>
                         </div>
                     </div>
                 
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                             <div style="padding: 31px;">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><img src="../img/software/11527111.png"></a> 
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">The Integrative Genomics Viewer (IGV)</a>
+                                <img src="../img/software/11527111.png"> 
+                                <h2 class="panel-title">The Integrative Genomics Viewer (IGV)
                                 </h2>
                             </div>
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <a href="http://igv.org/"><h2>The Integrative Genomics Viewer</h2></a>
+                                <h2><a href="http://igv.org/">IGV</a></h2>
                                 <p>The Integrative Genomics Viewer (IGV) is a high-performance visualization tool for interactive exploration of large, integrated genomic datasets. It supports a wide variety of data types, including array-based and next-generation sequence data, and genomic annotations.</p>
-                                <p2>James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov. <b>Integrative Genomics Viewer.</b> Nature Biotechnology 29, 24–26 (2011)</p2>
-                                <br><br>
-                                <p2>
-                                Helga Thorvaldsdóttir, James T. Robinson, Jill P. Mesirov. <b>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration.</b> Briefings in Bioinformatics 14, 178-192 (2013).</p2>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov. <b>Integrative Genomics Viewer.</b> Nature Biotechnology 29, 24–26 (2011)</p>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">
+                                Helga Thorvaldsdóttir, James T. Robinson, Jill P. Mesirov. <b>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration.</b> Briefings in Bioinformatics 14, 178-192 (2013).</p>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                             <div style="padding: 31px;">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><img src="../img/software/gsea-msigdb.jpg" id="gsea-header"></a>
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Gene Set Enrichment Analysis &amp; Molecular Signatures Database</a>
+                                <img src="../img/software/gsea-msigdb.jpg" id="gsea-header">
+                                <h2 class="panel-title">Gene Set Enrichment Analysis &amp; Molecular Signatures Database
                                 </h2>
                             </div>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <a href="http://software.broadinstitute.org/gsea/index.jsp"><h2>GSEA</h2></a><p>Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes).</p>
-                                <p2>
-                                Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, Paulovich A,  Pomeroy SL, Golub TR, Lander ES, Mesirov JP. <b>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.</b> Proc Natl Acad Sci U S A. 2005 Oct 25;102(43):15545-50. Epub 2005 Sep 30. PubMed PMID: 16199517; PubMed Central PMCID: PMC1239896.</p2>
-                                <a href="http://software.broadinstitute.org/gsea/index.jsp"><h2>MSigDB</h2></a>
+                                <h2><a href="http://software.broadinstitute.org/gsea/index.jsp">GSEA</a></h2>
+                                <p>Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes).</p>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">
+                                Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, Paulovich A,  Pomeroy SL, Golub TR, Lander ES, Mesirov JP. <b>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.</b> Proc Natl Acad Sci U S A. 2005 Oct 25;102(43):15545-50. Epub 2005 Sep 30. PubMed PMID: 16199517; PubMed Central PMCID: PMC1239896.</p>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Mootha VK, Lindgren CM, Eriksson KF, Subramanian A, Sihag S, Lehar J, Puigserver P, Carlsson E, Ridderstråle M, Laurila E, Houstis N, Daly MJ, Patterson N, Mesirov JP, Golub TR, Tamayo P, Spiegelman B, Lander ES, Hirschhorn JN, Altshuler D, Groop LC. <b>PGC-1alpha-responsive genes involved in oxidative phosphorylation are coordinately downregulated in human diabetes.</b> Nat Genet. 2003 Jul;34(3):267-73. PubMed PMID: 12808457.</p>
+                                <h2><a href="http://software.broadinstitute.org/gsea/index.jsp">MSigDB</a></h2>
                                 <p>The Molecular Signatures Database (MSigDB) is a collection of annotated gene sets for use with GSEA software. From this website, you can search for gene sets by keyword, browse gene sets by name or collection, examine a gene set and its annotations, download gene sets, compute overlaps between your gene set and gene sets in MSigDB, Categorize members of a gene set by gene families, and view the expression profile of a gene set in a provided public expression compendia.
                                 </p>
-                                <p2>Arthur Liberzon, Chet Birger, Helga Thorvaldsdóttir, Mahmoud Ghandi, Jill P. Mesirov, Pablo Tamayo, <b>The Molecular Signatures Database Hallmark Gene Set Collection</b>, In Cell Systems, Volume 1, Issue 6, 2015, Pages 417-425, ISSN 2405-4712, https://doi.org/10.1016/j.cels.2015.12.004.</p2>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Arthur Liberzon, Chet Birger, Helga Thorvaldsdóttir, Mahmoud Ghandi, Jill P. Mesirov, Pablo Tamayo, <b>The Molecular Signatures Database Hallmark Gene Set Collection</b>, In Cell Systems, Volume 1, Issue 6, 2015, Pages 417-425, ISSN 2405-4712, https://doi.org/10.1016/j.cels.2015.12.004.</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                             <div style="padding: 31px;">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><img src="../img/software/gs.png"></a> 
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">GenomeSpace</a>
+                                <img src="../img/software/gs.png">
+                                <h2 class="panel-title">GenomeSpace
                                 </h2>
                             </div>
                         </div>
                         <div id="collapse4" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <a href="http://www.genomespace.org/"><h2>GenomeSpace</h2></a>
+                                <h2><a href="http://www.genomespace.org/">GenomeSpace</a></h2>
                                 <p>GenomeSpace is a cloud-based interoperability framework to support integrative genomics analysis through an easy-to-use Web interface. GenomeSpace provides access to a diverse range of bioinformatics tools, and bridges the gaps between the tools, making it easy to leverage the available analyses and visualizations in each of them. The tools retain their native look and feel, with GenomeSpace providing frictionless conduits between them through a lightweight interoperability layer. GenomeSpace does not perform any analyses itself; these are done within the member tools wherever they live – desktop, Web service, cloud, in-house server, etc. Rather, GenomeSpace provides tool selection and launch capabilities, and acts as a data highway automatically reformatting data as required when results move from the output of one tool to input for the next.
                                 </p>
-                                <p2>Qu K, Garamszegi S, Wu F, et al. <b>Integrative genomic analysis by interoperation of bioinformatics tools in GenomeSpace.</b> Nature methods. 2016;13(3):245-247. doi:10.1038/nmeth.3732.</p2>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Qu K, Garamszegi S, Wu F, et al. <b>Integrative genomic analysis by interoperation of bioinformatics tools in GenomeSpace.</b> Nature methods. 2016;13(3):245-247. doi:10.1038/nmeth.3732.</p>
                             </div>
                         </div>
                     </div>
@@ -146,7 +144,7 @@
                         <a href="http://www.genomespace.org/"><h2>GenomeSpace</h2></a>
                         <p>GenomeSpace is a cloud-based interoperability framework to support integrative genomics analysis through an easy-to-use Web interface. GenomeSpace provides access to a diverse range of bioinformatics tools, and bridges the gaps between the tools, making it easy to leverage the available analyses and visualizations in each of them. The tools retain their native look and feel, with GenomeSpace providing frictionless conduits between them through a lightweight interoperability layer. GenomeSpace does not perform any analyses itself; these are done within the member tools wherever they live – desktop, Web service, cloud, in-house server, etc. Rather, GenomeSpace provides tool selection and launch capabilities, and acts as a data highway automatically reformatting data as required when results move from the output of one tool to input for the next.
                         </p>
-                        <p2>Qu K, Garamszegi S, Wu F, et al. <b>Integrative genomic analysis by interoperation of bioinformatics tools in GenomeSpace.</b> Nature methods. 2016;13(3):245-247. doi:10.1038/nmeth.3732.</p2>
+                        <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Qu K, Garamszegi S, Wu F, et al. <b>Integrative genomic analysis by interoperation of bioinformatics tools in GenomeSpace.</b> Nature methods. 2016;13(3):245-247. doi:10.1038/nmeth.3732.</p>
                     </div>
                 </li>
             </ul>
