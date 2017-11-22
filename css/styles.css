@@ -8,7 +8,7 @@ html, body {
     overflow-x: hidden !important;
 }
 body {
-    background-color: #F7F7FF;
+    background-color: rgba(156,173,206,0.2);
     font-family: "Arial", Helvetica, sans-serif;
     color: #495867;
     margin-top: -2px;
@@ -24,7 +24,7 @@ body {
 }
 .navbar-nav {
     padding: 0px;
-    margin-left: -20px;
+    margin-left: -7px;
 }
 .navbar-nav li a {
     letter-spacing: 1px;
@@ -60,10 +60,10 @@ body {
     height: auto;
 }
 .carousel {
-    background-color: #F7F7FF;
+    background-color: white;
 }
 .carousel-caption h3 {
-    color: #F7F7FF;
+    color: white;
     outline-color: #1B1B1E;
     display: none;
 }
@@ -118,7 +118,7 @@ a:hover {
 }
 #about-the-lab p {
     color: #495867;
-    font-size: 1.1vw;
+    font-size: 1vw;
     margin-bottom: auto;
     margin-left: 10%;
     margin-right: 10%;
@@ -158,7 +158,7 @@ a:hover {
     margin-right: 15%;
 }
 #icons {
-    background-color: #F7F7FF;
+    background-color: white;
     text-align: center;
 }
 #icons img{
@@ -166,8 +166,11 @@ a:hover {
     height: 100px;
     width: auto;
 }
-#about-the-lab, #news-front {
-    background-color: #F7F7FF;
+#about-the-lab {
+    background-color: rgba(156,173,206,0.2);
+}
+#news-front {
+    background-color: white;
 }
 
 /* /projects /pubs */
@@ -208,7 +211,8 @@ a:hover {
 #title h1{
     color: #495867;
     letter-spacing: 10px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 40px;
 }
 
 #project-main h2 {
@@ -259,9 +263,6 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
 }*/
-#members-main img {
-    width: 230px;
-}
 
 #members-main h2 {
     font-size: 20px;
@@ -290,7 +291,7 @@ a:hover {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    color: #586F8E;
+    color: #6B84A5;
 }
 #alumni-main hr, #members-main hr {
     margin-left: 0%;
@@ -315,7 +316,7 @@ a:hover {
 .grid-item img {
     opacity: 1;
     transition: .1s ease;
-    backface-visibility: hidden;
+    width: 230px;
 }
 
 .middle {
@@ -357,7 +358,7 @@ a:hover {
     
 }
 .panel {
-    background-color: white;
+    background-color: #D0E1EF;
 }
 .panel-body {
     background-color: white;
@@ -479,23 +480,17 @@ a:hover {
 
 /* Add a gray background color and some padding to the footer */
 footer {
-    background-color: #586F8E;
-    color: #F7F7FF;
+    background-color: #495867;
+    color: white;
     padding: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+
 }
 
-@media screen and (max-width: 1310px) {
-    #media-space { 
-        display: inline-block
-    }  
+@media screen and (max-width: 1310px) {  
     #mobile-navigation-title a {
         margin-left: 0%;
         position: static;
     }
-    #members-main img {
-    width: 190px;
 }
 
 }
@@ -566,6 +561,9 @@ footer {
     }
     #gsea p {
         margin-left: 0px;
+    }
+    #media-space { 
+        display: inline-block
     }
     
     
