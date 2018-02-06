@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <html lang="en">
     
 <head>
     <title>Home | Mesirov Lab</title>
@@ -11,10 +10,11 @@
     
 <body>
     
-    <div style="margin: 0 auto;">
-        <a href="#"><img src="img/top-banner-tall.png?x=2" style="width: 101%; margin-left: -10px; "></a>
+    <div style="margin: 0 auto;" id="banner">
+        <a href="#"><img src="img/top-banner-tall.png" style="width: 101%; margin-left: -10px; opacity: 1;"></a>
     </div>
     
+    <!-- Navbar --> 
     <nav class="navbar">
         <div class="container-fluid" style="position: relative;">
             <div class="navbar-header" style="position: relative;">
@@ -24,7 +24,6 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            
             <div class="collapse navbar-collapse" id="myNavbar" style="position: relative;">
                 <ul class="nav navbar-nav" id="navigation">
                     <span id="media-space" style="height: 65px"></span>
@@ -40,20 +39,25 @@
         </div>
     </nav>
     
+<!--
     <div class="container row" style="margin: 0 auto; margin-top: 3%;">    
-        <div class="col-sm-5" id="about-the-lab" style="margin: 0 auto; background-color: white; padding: 35px; box-shadow: 5px 5px 10px lightgrey; margin-right: 5%">
+        <div class="col-sm-7" id="about-the-lab" style="margin: 0 auto; background-color: white; padding: 35px; box-shadow: 5px 5px 10px lightgrey; margin-right: 5%">
             <h1 style="font-size: 30px; letter-spacing: 5px; margin-top: 20px">ABOUT THE LAB</h1>
             <p style="margin-top: 40px; margin-bottom: 40px;">Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets. Our lab is committed to the development of practical, accessible, <a href="software/">open source software tools</a> to bring these methods to the general biomedical research community. These tools support the research of hundreds of thousands of investigators worldwide. Thus, to achieve its goals, the lab includes both computational biologists and software engineers working together to further our understanding and treatment of disease. <a href="projects/">Learn more...</a>
             </p>
         </div>
-        <div class="col-sm-6" style="padding 0px;">
-            <img src="img/Mesirov1-2-web.jpg" alt="Mesirov Group" width="105%" style="box-shadow: 3px 3px 10px grey;">
+        <div class="col-sm-4" style="padding 0px;">
+            <img src="img/Mesirov1-2-web.jpg" alt="Mesirov Group" width="110%" style="box-shadow: 3px 3px 10px grey;">
         </div>
+    </div> 
+-->
+    <div class="container" style="margin: 0 auto; margin-top: 3%; background-image: url(img/stretch-empty.png); background-size: 100%; box-shadow: 3px 3px 10px grey; height: 40vw; width: 85vw;" id="stretch-empty">
+        <a href="projects/"><img src="img/about-text-3.png" style=" width: 100%; margin-top: 16%;" class="img-hidden"></a>
     </div>
     
     <div id="main">
         <div class="container" id="jill" style="margin-top: 5%; box-shadow: 5px 5px 10px lightgrey;">    
-            <h1 style="font-size: 35px; letter-spacing: 5px; margin-top: 50px; margin-bottom: 70px;">JILL MESIROV, Ph.D.</h1>
+            <h1 style="font-size: 35px; letter-spacing: 5px; margin-top: 50px; margin-bottom: 70px;">JILL P. MESIROV, Ph.D. </h1>
             <div><img src="img/mesirov_portrait.jpg" style="box-shadow: 3px 3px 10px grey;" alt="Image"></div>
             <p style="font-weight: 600; margin-top: -70px; text-align: left;">
                 Professor of Medicine, Division of Medical Genetics;
@@ -71,7 +75,7 @@
     </div>
     
     <div id="main" style="margin-top: 5%; margin-bottom: 5%;">
-        <div class="container" id="news-front" style="box-shadow: 5px 5px 10px lightgrey;"> 
+        <div class="container" id="news-front" style="box-shadow: 5px 5px 10px lightgrey; text-align: left;"> 
             <h1 style="font-size: 35px; letter-spacing: 5px; margin-top: 50px; margin-bottom: 30px;">LATEST AND UPCOMING</h1>
             <div style="padding: 10px">
                 <h3>January 2018</h3> 
@@ -90,6 +94,7 @@
                     Hosted by Michael Reich, Assistant Director of Bioinformatics, UC San Diego and the Cancer Cell Map Initiative (CCMI).<br>
                 </p>
                 <br>
+                
                 <p>Robinson JT, Thorvaldsdóttir H, Wenger AM, Zehir A, Mesirov JP. <b> Variant Review with the Integrative Genomics Viewer</b>. Cancer Res. 2017 Nov 1;77(21):e31-e34. doi: 10.1158/0008-5472.CAN-17-0337. PubMed PMID: 29092934; PubMed Central PMCID: PMC5678989. 
                     <a href="http://cancerres.aacrjournals.org/content/77/21/e31.long"><b>[Cancer Research]</b></a>
                 <h3>August 2017</h3>
@@ -98,27 +103,14 @@
                 <p>Kim JW, Abudayyeh OO, Yeerna H, Yeang CH, Stewart M, Jenkins RW, Kitajima S, Konieczkowski DJ, Medetgul-Ernar K, Cavazos T, Mah C, Ting S, Van Allen EM, Cohen O, Mcdermott J, Damato E, Aguirre AJ, Liang J, Liberzon A, Alexe G, Doench J, Ghandi M, Vazquez F, Weir BA, Tsherniak A, Subramanian A, Meneses-Cime K, Park J, Clemons P, Garraway LA, Thomas D, Boehm JS, Barbie DA, Hahn WC, Mesirov JP, Tamayo P. <b>Decomposing Oncogenic Transcriptional Signatures to Generate Maps of Divergent Cellular States</b>. <a href="http://www.sciencedirect.com/science/article/pii/S2405471217303356"><b>[Cell Systems]</b></a> 2017 Aug 23;5(2):105-118.e9. doi: 10.1016/j.cels.2017.08.002. PubMed PMID: 28837809.</p>
             </div>
         </div>
-        <!--
-        <div class="container-fluid" id="icons">
-            <h2>SOFTWARE</h2>
-            <hr>
-            <a href="http://www.genomespace.org/"><img src="img/software/gs-long.png"></a>
-            <a href="http://software.broadinstitute.org/cancer/software/genepattern/"><img src="img/software/genepattern.png"></a> 
-            <a href="http://igv.org/"><img src="img/software/11527111.png"></a>
-            <a href="http://software.broadinstitute.org/gsea/index.jsp"><img src="img/software/GSEA-logo.gif"></a>
-            <a href="http://software.broadinstitute.org/gsea/msigdb/"><img src="img/software/MSigDB-logo-small.gif"></a>
-            <br><br>
-            <a href="software/" class="btn btn-default" style="margin-left: 0px;" role="button">Learn more</a>
-        </div>
-        -->
     </div>
     
     <footer class="container-fluid text-center">
         <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p>
     </footer>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     
 </body>
 </html>
