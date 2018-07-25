@@ -274,7 +274,9 @@ a:hover {
     font-weight: 500;
     letter-spacing: 1px;
 }
-
+#pubs-container a:hover .panel {
+    background-color: rgba(156,173,206,0.2);
+}
 
 /* /members */
 
@@ -374,9 +376,6 @@ a:hover {
     /* border: 0.1px solid #495867; */
     box-shadow: 4px 4px 5px lightgrey;
 }
-#software-main .panel:hover {
-    background-color: rgba(156,173,206,0.2);
-}
 .panel-body {
     background-color: white;
     
@@ -432,11 +431,10 @@ a:hover {
     margin-left: -100px;
 }
 .panel-default > .panel-heading {
-    background-color: #E2ECF4;
+    background-color: rgba(156,173,206,0.2);
 }
-
 #software-main .panel-default > .panel-heading {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(156,173,206,0.2);
 }
 
 /* /about */
@@ -501,7 +499,12 @@ a:hover {
     font-weight: 400;
     font-size: 14px;
 }
-
+#about-main h4{
+    font-size: 23px;
+}
+#about-main p {
+    font-size: 16px;
+}
 
 /* Add a gray background color and some padding 
 to the footer */
