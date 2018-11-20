@@ -6,39 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106705148-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106705148-2');
+    </script>
 </head>
 <body>
-    
-    <div style="margin: 0 auto;">
-        <a href="../"><img  src="../img/top-banner-tall.png?x=2" style="width: 101%; margin-left: -10px; "></a>
-    </div>
-    
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" id="navigation">
-                    <span id="media-space" style="height: 65px"></span>
-                    <li><a href="../">HOME</a></li>
-                    <li><a href="../members/">PEOPLE</a></li>
-                    <li><a href="../projects/">RESEARCH</a></li>
-                    <li><a href="../pubs/">PUBLICATIONS</a></li>
-                    <li><a href="../software/">SOFTWARE</a></li>
-                    <li><a href="../teaching/">TEACHING</a></li>
-                    <li><a href="../about/">CONTACT</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href=".." style="">
+            <img src="../img/mes-lab-logo-2.png" width="200px">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" id="navigation" style="">
+                <span id="media-space" style="height: 65px"></span>
+                <li><a href="../members/">OUR TEAM</a></li>
+                <li><a href="../projects/">RESEARCH</a></li>
+                <li><a href="../pubs/">PUBLICATIONS</a></li>
+                <li><a href="../software/">SOFTWARE</a></li>
+                <li><a href="../teaching/">TEACHING</a></li>
+                <li><a href="../about/">CONTACT</a></li>
+            </ul>
         </div>
     </nav>
+        
+    <div class="row">
+        <div class="col-sm-10"></div>
+        <div class="col-sm-2" style="padding:0px; margin:auto; align-content: right;">
+            <nav id="myScrollspy" style="padding: 0px;">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#section1">1</a></li>
+                    <li><a href="#section2">2</a></li>
+                    <li><a href="#section3">3</a></li>
+                    <li><a href="#section4">4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     
-    <div id="teaching-main">
-        <div class="container" id="teaching-container" style="box-shadow: 5px 5px 10px lightgrey;">
+    <!-- <div id="teaching-main" class>
+        <div class="container" id="teaching-container" style="">
             <div id="title" style="padding: 30px;">
                 <h1>COURSES</h1><br>
             </div>
@@ -57,13 +76,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div style="background-color: rgba(156,173,206,0.2); height: 1%; ">
-    </div>
-    
+    </div> -->
+
+    <!--
     <div id="teaching-main">
-        <div class="container" id="teaching-container" style="box-shadow: 5px 5px 10px lightgrey;">
+        <div class="container" id="teaching-container" style="">
             <div id="title" style="padding: 30px;">
                 <h1>WORKSHOPS &amp; BOOTCAMPS</h1>
                 <br>
@@ -93,18 +110,54 @@
                             CCMI: "Integrative Genomic Analysis with GenePattern"<br>
                             9:00 AM – 4:00 PM PST <br>
                             UC San Diego, Pharmaceutical Sciences Building (PSB), Room 1170 <br>
-                            Hosted by <b>Michael Reich</b>, Assistant Director of Bioinformatics, UC San Diego and the Cancer Cell Map Initiative (CCMI).
+                            Hosted by <b>Michael Reich</b>, Assistant Director of Bioinfoxrmatics, UC San Diego and the Cancer Cell Map Initiative (CCMI).
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
     
-<footer class="container-fluid text-center">
-    <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p>
-</footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <footer style="margin-top: 0px; padding: 50px; padding-bottom: 80px; ">
+            <div class="row">
+                <div class="col-sm-3" style="padding-top:0px; ">
+                    <h1 style="margin-top:0px;">Mesirov Lab</h1>
+                    <p>
+                        Department of Medicine<br>
+                        UC San Diego, School of Medicine<br>
+                        Biomedical Research Facility II<br>
+                        La Jolla, CA 92093<br><br>
+    
+                        Biomedical Science Building<br>
+                        La Jolla, CA 92093<br><br>
+    
+                        Mail Code: 0602<br>
+                    </p>
+                    <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p>
+                </div>
+                <div class="col-sm-4">   
+                </div>
+                <div class="col-sm-5 row">
+                    <div class="col-sm-4">
+                        <a href="members/">Our Team</a><br><br>
+                        <a href="projects/">Research</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="pubs/">Publications</a><br><br>
+                        <a href="software/">Software</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="teaching/">Teaching</a><br><br>
+                        <a href="about/">Contact</a>
+                    </div>
+                    <div class="col-12" style="text-align: right;">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p> -->
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 </body>  
 </html>

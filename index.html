@@ -5,140 +5,315 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    
+
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <style>
+        html {
+            overflow-x: hidden !important;
+            background:lightgrey;
+            background-image: url("img/stretch-empty_2.png?x=1");
+            background-repeat: repeat;
+        }
+    </style>
 </head>
     
 <body>
-    
-    <div style="margin: 0 auto;" id="banner">
-        <a href="#"><img src="img/top-banner-tall.png" style="width: 101%; margin-left: -10px; opacity: 1;"></a>
-    </div>
-    
+
+    <!-- <div class="col-12" style="margin: auto;">
+        <a href="."><img src="img/front-3.png"  style="width: 100%; opacity: 0.9;"></a>
+        <h1 style="margin-top: 50px; padding-bottom: 50px;padding-top:100px; color:white;">Mesirov Lab</h1> 
+    </div> -->
+
     <!-- Navbar --> 
-    <nav class="navbar">
-        <div class="container-fluid" style="position: relative;">
-            <div class="navbar-header" style="position: relative;">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar" style="position: relative;">
-                <ul class="nav navbar-nav" id="navigation">
-                    <span id="media-space" style="height: 65px"></span>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="members/">PEOPLE</a></li>
-                    <li><a href="projects/">RESEARCH</a></li>
-                    <li><a href="pubs/">PUBLICATIONS</a></li>
-                    <li><a href="software/">SOFTWARE</a></li>
-                    <li><a href="teaching/">TEACHING</a></li>
-                    <li><a href="about/">CONTACT</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href="." style="">
+            <img src="img/mes-lab-logo-2.png" width="200px">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" id="navigation" style="">
+                <span id="media-space" style="height: 65px"></span>
+                <li class="active"><a href="members/">OUR TEAM</a></li>
+                <li><a href="projects/">RESEARCH</a></li>
+                <li><a href="pubs/">PUBLICATIONS</a></li>
+                <li><a href="software/">SOFTWARE</a></li>
+                <li><a href="teaching/">TEACHING</a></li>
+                <li><a href="about/">CONTACT</a></li>
+            </ul>
         </div>
     </nav>
-    
-<!--
-    <div class="container row" style="margin: 0 auto; margin-top: 3%;">    
-        <div class="col-sm-7" id="about-the-lab" style="margin: 0 auto; background-color: white; padding: 35px; box-shadow: 5px 5px 10px lightgrey; margin-right: 5%">
-            <h1 style="font-size: 30px; letter-spacing: 5px; margin-top: 20px">ABOUT THE LAB</h1>
-            <p style="margin-top: 40px; margin-bottom: 40px;">Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets. Our lab is committed to the development of practical, accessible, <a href="software/">open source software tools</a> to bring these methods to the general biomedical research community. These tools support the research of hundreds of thousands of investigators worldwide. Thus, to achieve its goals, the lab includes both computational biologists and software engineers working together to further our understanding and treatment of disease. <a href="projects/">Learn more...</a>
-            </p>
-        </div>
-        <div class="col-sm-4" style="padding 0px;">
-            <img src="img/Mesirov1-2-web.jpg" alt="Mesirov Group" width="110%" style="box-shadow: 3px 3px 10px grey;">
-        </div>
-    </div> 
--->
-    <div class="container" style="margin: 0 auto; margin-top: 3%; background-image: url(img/stretch-empty.png); background-size: 100%; box-shadow: 3px 3px 10px grey; height: 40vw; width: 85vw;" id="stretch-empty">
-        <a href="projects/"><img src="img/about-text-3.png" style=" width: 100%; margin-top: 16%;" class="img-hidden"></a>
-    </div>
-    
-    <div id="main">
-        <div class="container" id="jill" style="margin-top: 5%; box-shadow: 5px 5px 10px lightgrey;">    
-            <h1 style="font-size: 35px; letter-spacing: 5px; margin-top: 50px; margin-bottom: 70px;">JILL P. MESIROV, Ph.D. </h1>
-            <div><img src="img/mesirov_portrait.jpg" style="box-shadow: 3px 3px 10px grey;" alt="Image"></div>
-            <p style="font-weight: 600; margin-top: -90px; text-align: left;">
-                Professor of Medicine, Division of Medical Genetics;
-                <br>
-                Associate Vice Chancellor
-                for Computational Health Sciences;
-                <br>
-                Co-Lead, Structural and Functional Cancer Genomics Research Program, Moores Cancer Center; 
-                <br>
-                UC San Diego, School of Medicine
-                <br>
-            </p>
-            <p style="margin-bottom: 5%;">Jill Mesirov is associate vice chancellor for computational health sciences and professor of medicine at UC San Diego School of Medicine. As associate vice chancellor, Mesirov is responsible for the overarching strategy for computational health sciences and research computing at UC San Diego School of Medicine.  She is a member of the UCSD Moores Cancer Center, where she serves as co-lead for the structural and functional cancer genomics research program. <a href="members/#jill">Learn more...</a></p>
-        </div>
-    </div>
-    
-    <div id="main" style="margin-top: 5%; margin-bottom: 5%;">
-        <div class="container" id="news-front" style="box-shadow: 5px 5px 10px lightgrey; text-align: left;"> 
-            <h1 style="font-size: 35px; letter-spacing: 5px; margin-top: 50px; margin-bottom: 30px;">NEWS AND EVENTS</h1>
-            
-            <div class="panel panel-default" style="margin-left: 8%; margin-right: 8%; padding: 0px;">
-                <h3 class="panel-heading" style="padding: 2%;">March 2018</h3>
-                <div class="panel-body" style="padding: 3%;">
-                    <b>Thursday, March 15th</b>
-                    <p><a href="https://www.eventbrite.com/e/integrative-genomic-analysis-with-genepattern-registration-42542258039">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
-                    University of California, San Francisco
-                    </p>
-                </div>
+
+
+    <!-- <div class="row" style="margin: auto; padding: 50px;">
+        <div class="col-12 col-sm-7" >
+            <div style="padding: 23px; background-color: rgba(197, 198, 198, 0.4); border-radius: 10px; margin-top: 120px; text-align: center; margin-bottom: 50px;">
+                <h3 style="color: white; letter-spacing: 2px; font-weight: 100; font-size: 35px; padding: 15px;">Integrating bioinformatics and mathematics to further the knowledge and application of precision medicine</h3>
             </div>
-            
-            <div class="panel panel-default" style="margin-left: 8%; margin-right: 8%; padding: 0px;">
-                <h3 class="panel-heading" style="padding: 2%;">February 2018</h3>
-                <div class="panel-body" style="padding: 3%;">
-                    <b>Tuesday, February 6th</b>
-                    <p><a href="https://medschool.ucsd.edu/research/moores/education/ct2/Pages/lecture-series.aspx">CT2 (Cancer Therapeutics Training Program) Talk</a></p>
-                </div>
-            </div>
-            
-            <div class="panel panel-default" style="margin-left: 8%; margin-right: 8%; padding: 0px;">
-                <h3 class="panel-heading" style="padding: 2%;">January 2018</h3>
-                <div class="panel-body" style="padding: 3%;">
-                    <p><b>Tuesday, Jan 23, 2018</b><br>
-                        <a href="https://www.facebook.com/events/172014710069849/">UBIC (UCSD Ungerdraguate Bioinformatics Club) Workshop</a><br>
-                    </p>
-                </div>
-            </div> 
-            <div class="panel panel-default" style="margin-left: 8%; margin-right: 8%; padding: 0px;">
-                <h3 class="panel-heading" style="padding: 2%;">December 2017</h3>
-                <div class="panel-body" style="padding: 3%;">
-                    <p><b>Friday, Dec 15, 2017</b><br>
-                        <a href="https://www.eventbrite.com/e/integrative-genomic-analysis-with-genepattern-registration-39662726282#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
-                    </p><br>
+        </div>
+        
+        <div class="col-12 col-sm-1">
+        </div>
+        <div class="col-12 col-sm-4" style="margin-right:0px; opacity: 1; margin: auto; padding: 0px;"> 
+            <div class="panel panel-default" style="padding: 0px;">
+                <h3 class="panel-heading" style="padding: 15px;">Featured News</h3>
+                <ul class="panel-body" style="padding:30px; text-align: justify; padding-bottom: 10px;">
+                    <li>
+                        <b>Oct. 2018</b>
+                        <p>Dan, Forrest, and Jill's <a href="https://f1000research.com/articles/7-1636/v1">GenomeSpace Recipe paper</a> was published on F1000 Research. </p>
+                    </li>
                     
-                    <p>Hachigian LJ, Carmona V, Fenster RJ, Kulicke R, Heilbut A, Sittler A, Pereira de Almeida L, Mesirov JP, Gao F, Kolaczyk ED, Heiman M. <b>Control of Huntington's Disease-Associated Phenotypes by the Striatum-Enriched Transcription Factor Foxp2.</b> Cell Rep. 2017 Dec 5;21(10):2688-2695. doi: 10.1016/j.celrep.2017.11.018. PubMed PMID: 29212017. <a href="https://www.sciencedirect.com/science/article/pii/S2211124717316388?via%3Dihub">[Cell Reports]</a>
-                    </p>
-                </div>
-            </div>
-            <div class="panel panel-default" style="margin-left: 8%; margin-right: 8%; padding: 0px;">
-                <h3 class="panel-heading" style="padding: 2%;">November 2017</h3>
-                <div class="panel-body" style="padding: 3%;">
-                    <p><b>Tuesday, Nov 7, 2017</b><br>
-                        <a href="https://www.eventbrite.com/e/integrative-genomic-analysis-with-genepattern-registration-38639219947#">CCMI (Cancer Cell Map Initiative) Workshop: "Integrative Genomic Analysis with GenePattern"</a><br>
-                        9:00AM - 4:00 PM PST<br>
-                        UC San Diego, Pharmaceutical Sciences Building (PSB), Room 1170<br>
-                        Hosted by Michael Reich, Assistant Director of Bioinformatics, UC San Diego and the Cancer Cell Map Initiative (CCMI).<br>
-                    </p>
-                    <br>
-                    <p>Robinson JT, Thorvaldsdóttir H, Wenger AM, Zehir A, Mesirov JP. <b> Variant Review with the Integrative Genomics Viewer</b>. Cancer Res. 2017 Nov 1;77(21):e31-e34. doi: 10.1158/0008-5472.CAN-17-0337. PubMed PMID: 29092934; PubMed Central PMCID: PMC5678989. 
-                    <a href="http://cancerres.aacrjournals.org/content/77/21/e31.long">[Cancer Research]</a>
-                    </p>
-                </div>
+                    <li><b>Sept. 26th 2018</b>
+                        <p><a href="#">CSBC/PSON Annual Meeting</a><br>
+                        @ Bethesda
+                        </p>
+                    </li>
+                    
+                    <li><b>Sept. 24th 2018</b>
+                        <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
+                        @ University of California, San Diego
+                        </p>
+                    </li>
+
+                    <li><b>Sept. 20th 2018</b>
+                        <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
+                        @ University of California, San Diego
+                        </p>
+                    </li>
+
+                    <li><b>Sept. 10th 2018</b>
+                        <p>Jill, Clarence, and James's <a href="https://www.ncbi.nlm.nih.gov/pubmed/30205044">Proteomics Paper</a> was published in Cancer Cell!<br>
+                        </p>
+                    </li>
+                    <a class="btn button" href="#news-feed" style="margin-top: 10px;">Read More...</a>
+                </ul>
             </div> 
         </div>
+        <div class="col-12" style="margin:auto; text-align: center;">
+            <a href="#about-lab"><i class="fa fa-angle-down" style="font-size: 50px;"></i></a>
+        </div>
+    </div> -->
+    
+    <div class="container-fluid" style="text-align: center; margin: 150px; margin-bottom: 80px;" id="banner">
+        <div style="padding: 30px; background-color: rgba(197, 198, 198, 0.4); margin:auto; width:85%; border-radius: 0px;"><h3 style="color: white; letter-spacing: 1.5px; font-weight: 100; font-size: 35px; padding: 20px;">..</h3> <p style="color: white">slogan is a work in progress</p></div>
+        <div class="row" style="margin:auto;" id="banner-btn">
+            <div class="col-sm-1"></div>
+            <a class="btn button col-sm-2" href="#about-lab" style="background: transparent;; margin-top: 150px; font-size: 18px;">Learn more</a>
+            <div class="col-sm-2"></div>
+            <a class="btn button col-sm-2" href="#newsfront" style="background: transparent; margin-top: 150px; font-size: 18px; ">Featured News</a>
+            <div class="col-sm-2"></div>
+            <a class="btn button col-sm-2" href="about/" style="background: transparent; margin-top: 150px; font-size: 18px; ">Contact Us</a>
+            <div class="col-sm-1"></div>
+        </div>
+        
+        <!-- <div class="col-12" style="margin:auto; text-align: center; margin-top: 20px;">
+            <a href="#about-lab"><i class="fa fa-angle-down" style="font-size: 50px;"></i></a>
+        </div> -->
     </div>
+
+    <div style="background-color: white;" id="about-lab">
+        <div class= "row" style="width: 90%; margin: auto; padding: 50px; padding-top: 100px; padding-bottom: 50px;">
+            <div class="col-12 col-sm-3" style="margin: auto; margin-top: 30px;">
+                <h1 style="margin:auto; padding: 0px; font-size: 25px; margin-bottom: 15px;">Jill P. Mesirov, Ph.D.</h1>
+                <img src="img/mesirov_portrait.jpg" width="200px" style="">
+                <p style="font-size: 15px; margin-top: 15px; font-weight: 500;">
+                    UC San Diego, School of Medicine<br>
+                    UC San Diego, Moores Cancer Center
+                </p>
+                <p style="font-weight: 100; text-align: left; font-size: 15px; margin-top: 20px;">
+                    <b>Professor of Medicine</b>, Division of Medical Genetics;
+                    <br>
+                    <b>Associate Vice Chancellor</b>
+                    for Computational Health Sciences;
+                    <br>
+                    <b>Co-Lead</b>, Structural and Functional Cancer Genomics Research Program;
+                    <br>
+                    
+                </p>
+                <!-- <p style="font-size: 15px; margin-top: 15px;">
+                    UC San Diego, School of Medicine<br>
+                    UC San Diego, Moores Cancer Center
+                </p>
+                <p style="font-weight: 500; margin-top: 0px; text-align: left; font-size: 12px;">
+                    
+                    <li><strong>Professor of Medicine</strong>, Division of Medical Genetics</li>
+                    <li><strong>Associate Vice Chancellor</strong> for Computational Health Sciences</li>
+                    <li><strong>Co-Lead</strong>, Structural and Functional Cancer Genomics Research Program</li>
+                    
+                </p> -->
+            </div>
+            <div class="col-12 col-sm-8" style="margin: auto; padding: 0px; color: black; margin-top: 30px; text-align: center; margin-left: 70px;">
+                <p style="text-align: left;">Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets. Our lab is committed to the development of practical, accessible, open source software tools to bring these methods to the general biomedical research community. These tools support the research of hundreds of thousands of investigators worldwide. Thus, to achieve its goals, the lab includes both computational biologists and software engineers working together to further our understanding and treatment of disease.</p>
+                <div class="col-12 col-md-4" id="front-btn">
+                    <a class="front-icon" href="projects/" style="font-size: 20px;font-weight: 600; text-align: center; ">
+                        <img src="img/research-2.png" width="150px">
+                        <p>Bioinformatics research</p>
+                    </a>
+                    
+                </div>
+                <div class="col-12 col-md-4" id="front-btn" > 
+                    <a class="front-icon" href="software/" style="font-size: 20px; font-weight: 600; text-align: center;">
+                        <img src="img/soft-3.png" width="150px" style="">
+                        <p>Open source software tools</p>
+                    </a>
+                    
+                </div>
+                <div class="col-12 col-md-4" id="front-btn" >
+                    <a class="front-icon" href="members/" style="font-size: 20px;font-weight: 600; text-align: center; ">
+                        <img src="img/people-5.png" width="150px">
+                        <p>Meet the lab</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" style="width: 90%; margin: auto; ">
+            <!-- <div class="col-12 col-md-3">
+            </div> -->
+        </div>
+    </div>
+
+<div style="background-color: lightgrey" id="newsfront">
+    <div class="row" style="width: 95%; margin: auto; padding: 50px; padding-top: 100px;">
+            <div class="container-fluid col-sm-7" style=""> 
+                <div class="panel panel-default" style="padding: 0px; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                    <h3 class="panel-heading" style="padding: 15px;">Featured News</h3>
+                    <ul class="panel-body" style="padding:30px; text-align: justify;">
+                        <li>
+                            <b>Oct. 2018</b>
+                            <p>Dan, Forrest, and Jill's <a href="https://f1000research.com/articles/7-1636/v1">GenomeSpace Recipe paper</a> was published on F1000 Research. </p>
+                        </li>
+                        
+                        <li><b>Sept. 26th 2018</b>
+                            <p><a href="#">CSBC/PSON Annual Meeting</a><br>
+                            @ Bethesda
+                            </p>
+                        </li>
+                        
+                        <li><b>Sept. 24th 2018</b>
+                            <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
+                            @ University of California, San Diego
+                            </p>
+                        </li>
+
+                        <li><b>Sept. 20th 2018</b>
+                            <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
+                            @ University of California, San Diego
+                            </p>
+                        </li>
+
+                        <li><b>Sept. 10th 2018</b>
+                            <p>Jill, Clarence, and James's <a href="https://www.ncbi.nlm.nih.gov/pubmed/30205044">Proteomics Paper</a> was published in Cancer Cell!<br>
+                            </p>
+                        </li>
+                        <a class="btn button" href="" style="margin-top: 10px; color:white;">Read More...</a>
+                    </ul>
+                </div> 
+            </div>
+            <div class="col-sm-5">
+                <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                    <h3 class="panel-heading" style="padding: 15px;">Spotlight</h3>
+                    <ul class="panel-body" style="padding:30px; margin: 0 auto;">
+                        <li>
+                            <b>Open positions in the lab</b><br>
+                            <p>No openings currently available</p>
+                        </li>
+                        
+                    </ul>
+                </div> 
+                <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                    <h3 class="panel-heading" style="padding: 15px;">Lab Resources</h3>
+                    <ul class="panel-body" style="padding:30px; margin: 0 auto;">
+                        <a href="http://genepattern.org"><img src="img/software/genepattern.png" width="50px" height="50px" style="margin:5px;"></a>
+                        <a href="http://mesirovlab.org/medulloblastoma"><img src="img/medullo-cartoon.png" height="45px" width="45px" style="margin:5px;"></a>
+                        <a href="http://igv.org"><img src="img/software/IGVlogo.png" height="50px" style="margin:5px;"></a>
+                        <a href="http://software.broadinstitute.org/gsea/index.jsp"><img src="img/software/GSEA-logo.gif" height="50px" style="margin:5px;"></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <div id="jill" style="padding: 50px; margin: auto;"> 
+            <h1 style="">JILL P. MESIROV, Ph.D. </h1>
+            <div class="row" style="padding: 0px;">
+                <div class="col-12 col-sm-10" style="padding:0px;">
+                    <p style="font-weight: 600;">
+                        Professor of Medicine, Division of Medical Genetics;
+                        <br>
+                        Associate Vice Chancellor
+                        for Computational Health Sciences;
+                        <br>
+                        Co-Lead, Structural and Functional Cancer Genomics Research Program, 
+                        <br>Moores Cancer Center; 
+                        <br>
+                        UC San Diego, School of Medicine
+                        <br>
+                    </p>
+                    <p style=";">Jill Mesirov is Associate Vice Chancellor for Computational Health Sciences and Professor of Medicine at UC San Diego School of Medicine. As Associate Vice Chancellor, Dr. Mesirov is responsible for the overarching strategy for computational health sciences and research computing at UC San Diego School of Medicine.</p>
+                </div>
+                <div class="col-12 col-sm-2" style="padding:0px;"> 
+                    <img src="img/mesirov_portrait.jpg?x=1" alt="Image" height="200px;">
+                </div>
+            </div>
+        </div>
+    </div> -->
     
-    <footer class="container-fluid text-center">
-        <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p>
+    <footer style="margin-top: 0px; padding: 50px; padding-bottom: 80px;" id='footer'>
+        <div class="row">
+            <div class="col-sm-3" style="padding-top:0px; ">
+                <h1 style="margin-top:0px;">Mesirov Lab</h1>
+                <p>
+                   Department of Medicine<br>
+                   UC San Diego, School of Medicine<br>
+                   Biomedical Research Facility II<br>
+                   La Jolla, CA 92093<br><br>
+
+                   Biomedical Science Building<br>
+                   La Jolla, CA 92093<br><br>
+
+                   Mail Code: 0602<br>
+                </p>
+                <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p>
+            </div>
+            <div class="col-sm-4">   
+            </div>
+            <div class="col-sm-5 row">
+                <div class="col-sm-4">
+                    <a href="members/">Our Team</a><br><br>
+                    <a href="projects/">Research</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="pubs/">Publications</a><br><br>
+                    <a href="software/">Software</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="teaching/">Teaching</a><br><br>
+                    <a href="about/">Contact</a>
+                </div>
+                <div class="col-12" style="text-align: right;">
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p> -->
     </footer>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="js/smooth-scroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-    
 </body>
 </html>

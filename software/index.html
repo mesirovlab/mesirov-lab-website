@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106705148-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106705148-2');
+    </script>
 </head>
 <body >
-    <div style="margin: 0 auto;">
-        <a href="../"><img  src="../img/top-banner-tall.png?x=2" style="width: 101%; margin-left: -10px; "></a>
-    </div>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" id="navigation">
-                    <span id="media-space" style="height: 65px"></span>
-                    <li><a href="../">HOME</a></li>
-                    <li><a href="../members/">PEOPLE</a></li>
-                    <li><a href="../projects/">RESEARCH</a></li>
-                    <li><a href="../pubs/">PUBLICATIONS</a></li>
-                    <li><a href="../software/">SOFTWARE</a></li>
-                    <li><a href="../teaching/">TEACHING</a></li>
-                    <li><a href="../about/">CONTACT</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href=".." style="">
+            <img src="../img/mes-lab-logo-2.png" width="200px">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" id="navigation" style="">
+                <span id="media-space" style="height: 65px"></span>
+                <li><a href="../members/">OUR TEAM</a></li>
+                <li><a href="../projects/">RESEARCH</a></li>
+                <li><a href="../pubs/">PUBLICATIONS</a></li>
+                <li><a href="../software/">SOFTWARE</a></li>
+                <li><a href="../teaching/">TEACHING</a></li>
+                <li><a href="../about/">CONTACT</a></li>
+            </ul>
         </div>
     </nav>
+        
     
     <!-- <div id="myCarousel" class="carousel">
         <div class="carousel-inner">
@@ -49,8 +57,22 @@
         </a>
     </div> -->
     
-    <div id="software-main">
-        <div class="container" id="software-container" style="padding: 30px; box-shadow: 5px 5px 10px lightgrey;">
+    <div class="row">
+        <div class="col-sm-10"></div>
+        <div class="col-sm-2" style="padding:0px; margin:auto; align-content: right;">
+            <nav id="myScrollspy" style="padding: 0px;">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#section1">1</a></li>
+                    <li><a href="#section2">2</a></li>
+                    <li><a href="#section3">3</a></li>
+                    <li><a href="#section4">4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- <div id="software-main">
+        <div class="container" id="software-container" style="padding: 30px;">
             
             <div id="title" style="padding: 30px;">
                 <h1>SOFTWARE</h1>
@@ -59,16 +81,18 @@
             <div style="padding: 50px; margin-top: -30px; margin-bottom: -30px;">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
-                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                            <div style="padding: 31px;">
+                        
+                        <div class="panel-heading row" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="padding-bottom: 0px;">
+                            <div class="container-fluid col-sm-10" style="padding: 31px; padding-bottom: 0px;">
                                 <img src="../img/software/genepattern.png">
-                                <h2 class="panel-title">
-                                    GenePattern &amp; GenePattern Notebook
-                                    <span class="caret"></span>
+                                <h2 class="panel-title">GenePattern &amp; GenePattern Notebook
                                 </h2>
-                                
+                            </div>
+                            <div class="col-sm-2" style="padding: 31px; text-align: right">
+                                <div class="glyphicon glyphicon-chevron-right" style="font-size: 20px"></div>
                             </div>
                         </div>
+                        <div id="collapse1" class="panel-collapse collapse">
                             <div class="panel-body" style="padding: 3%;">
                                 <h2><a href="https://genepattern.broadinstitute.org">GenePattern</a></h2>
                                 <p>We have developed a software package called GenePattern, which provides a comprehensive environment that can support a broad community of users at all levels of computational experience and sophistication, access to a repository of analytic and visualization tools and easy creation of complex analytic methods from them and the rapid development and dissemination of new methods. Perhaps the most important feature of GenePattern is that it supports a mechanism to guarantee the capture and independent replication of published computational methods and in silico results.</p>
@@ -77,35 +101,49 @@
                                 <p>Interactive analysis notebook environments promise to streamline genomics research through interleaving text, multimedia, and executable code into unified, sharable, reproducible “research narratives.” However, current notebook systems require programming knowledge, limiting their wider adoption by the research community. We have developed the GenePattern Notebook environment, to our knowledge the first system to integrate the dynamic capabilities of notebook systems with an investigator-focused, easy-to-use interface that provides access to hundreds of genomic tools without the need to write code.</p>
                                 <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Reich et al. <b>The GenePattern Notebook Environment</b>. Cell Systems. 2017(5):149-51</p>
                             </div>
+                        </div>
                     </div>
                 
                     <div class="panel panel-default">
-                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                            <div style="padding: 31px;">
+                        <div class="panel-heading row" data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="padding-bottom: 0px;">
+                            <div class="container-fluid col-sm-10" style="padding: 31px; padding-bottom: 0px;">
                                 <img src="../img/software/11527111.png"> 
                                 <h2 class="panel-title">The Integrative Genomics Viewer (IGV)
-                                <span class="caret"></span>
                                 </h2>
                             </div>
+                            <div class="col-sm-2" style="padding: 31px; text-align: right">
+                                <div class="glyphicon glyphicon-chevron-right" style="font-size: 20px"></div>
+                            </div>
                         </div>
+                        <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body" style="padding: 3%;">
                                 <h2><a href="http://igv.org/">IGV</a></h2>
                                 <p>The Integrative Genomics Viewer (IGV) is a high-performance visualization tool for interactive exploration of large, integrated genomic datasets. It supports a wide variety of data types, including array-based and next-generation sequence data, and genomic annotations.</p>
                                 <p style="color: rgba(0,0,0,0.6); font-size: 14px;">James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler, Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov. <b>Integrative Genomics Viewer.</b> Nature Biotechnology 29, 24–26 (2011)</p>
                                 <p style="color: rgba(0,0,0,0.6); font-size: 14px;">
                                 Helga Thorvaldsdóttir, James T. Robinson, Jill P. Mesirov. <b>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration.</b> Briefings in Bioinformatics 14, 178-192 (2013).</p>
+                                <h2><a href="http://igv.org/doc/doc.html">IGV.js</a></h2>
+                                <p>IGV.js is an embeddable interactive genome visualization component written in JavaScript and CSS. It is based on the Integrative Genomics Viewer(IGV), and developed by the same team.</p>
+                                <h2><a href="http://igv.org/doc/juiceboxjs.html">Juicebox.js</a></h2>
+                                <p>Juicebox.js is an interactive contact map viewer for .hic files, written in JavaScript and CSS. <br>It is based on the desktop Juicebox visualization application, and developed by the same team.</p>
+                                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Robinson JT, Turner D, Durand NC, Thorvaldsdóttir H, Mesirov JP, Aiden EL. <b>Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data.</b> Cell Syst. 2018 Feb 28;6(2):256-258.e1. doi: 10.1016/j.cels.2018.01.001. Epub 2018 Feb 7. PubMed PMID: 29428417; PubMed Central PMCID: PMC6047755.</p>
                             </div>
+                        </div>
                     </div>
                     
                     <div class="panel panel-default">
-                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                            <div style="padding: 31px;">
+                        
+                        <div class="panel-heading row" data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="padding-bottom: 0px;">
+                           <div class="container-fluid col-sm-10" style="padding: 31px; padding-bottom: 0px;">
                                 <img src="../img/software/gsea-msigdb.jpg" id="gsea-header">
                                 <h2 class="panel-title">Gene Set Enrichment Analysis &amp; Molecular Signatures Database
-                                <span class="caret"></span>
                                 </h2>
                             </div>
+                            <div class="col-sm-2" style="padding: 31px; text-align: right">
+                                <div class="glyphicon glyphicon-chevron-right" style="font-size: 20px"></div>
+                            </div>
                         </div>
+                        <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body" style="padding: 3%;">
                                 <h2><a href="http://software.broadinstitute.org/gsea/index.jsp">GSEA</a></h2>
                                 <p>Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes).</p>
@@ -116,35 +154,77 @@
                                 </p>
                                 <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Arthur Liberzon, Chet Birger, Helga Thorvaldsdóttir, Mahmoud Ghandi, Jill P. Mesirov, Pablo Tamayo, <b>The Molecular Signatures Database Hallmark Gene Set Collection</b>, In Cell Systems, Volume 1, Issue 6, 2015, Pages 417-425, ISSN 2405-4712, https://doi.org/10.1016/j.cels.2015.12.004.</p>
                             </div>
+                        </div>
                     </div>
                     
                     <div class="panel panel-default">
-                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                            <div style="padding: 31px;">
+                        <div class="panel-heading row" data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="padding-bottom: 0px;">
+                            <div class="container-fluid col-sm-10" style="padding: 31px; padding-bottom: 0px;">
                                 <img src="../img/software/gs.png">
                                 <h2 class="panel-title">GenomeSpace
-                                <span class="caret"></span>
                                 </h2>
                             </div>
+                            <div class="col-sm-2" style="padding: 31px; text-align: right">
+                                <div class="glyphicon glyphicon-chevron-right" style="font-size: 20px"></div>
+                            </div>
                         </div>
+                        <div id="collapse4" class="panel-collapse collapse">
                             <div class="panel-body" style="padding: 3%;">
                                 <h2><a href="http://www.genomespace.org/">GenomeSpace</a></h2>
                                 <p>GenomeSpace is a cloud-based interoperability framework to support integrative genomics analysis through an easy-to-use Web interface. GenomeSpace provides access to a diverse range of bioinformatics tools, and bridges the gaps between the tools, making it easy to leverage the available analyses and visualizations in each of them. The tools retain their native look and feel, with GenomeSpace providing frictionless conduits between them through a lightweight interoperability layer. GenomeSpace does not perform any analyses itself; these are done within the member tools wherever they live – desktop, Web service, cloud, in-house server, etc. Rather, GenomeSpace provides tool selection and launch capabilities, and acts as a data highway automatically reformatting data as required when results move from the output of one tool to input for the next.
                                 </p>
                                 <p style="color: rgba(0,0,0,0.6); font-size: 14px;">Qu K, Garamszegi S, Wu F, et al. <b>Integrative genomic analysis by interoperation of bioinformatics tools in GenomeSpace.</b> Nature methods. 2016;13(3):245-247. doi:10.1038/nmeth.3732.</p>
                             </div>
+                        </div>
                     </div>
                     
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
-    <footer class="container-fluid text-center">
-        <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p>
-    </footer>
+    <footer style="margin-top: 0px; padding: 50px; padding-bottom: 80px; ">
+            <div class="row">
+                <div class="col-sm-3" style="padding-top:0px; ">
+                    <h1 style="margin-top:0px;">Mesirov Lab</h1>
+                    <p>
+                        Department of Medicine<br>
+                        UC San Diego, School of Medicine<br>
+                        Biomedical Research Facility II<br>
+                        La Jolla, CA 92093<br><br>
+    
+                        Biomedical Science Building<br>
+                        La Jolla, CA 92093<br><br>
+    
+                        Mail Code: 0602<br>
+                    </p>
+                    <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p>
+                </div>
+                <div class="col-sm-4">   
+                </div>
+                <div class="col-sm-5 row">
+                    <div class="col-sm-4">
+                        <a href="members/">Our Team</a><br><br>
+                        <a href="projects/">Research</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="pubs/">Publications</a><br><br>
+                        <a href="software/">Software</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="teaching/">Teaching</a><br><br>
+                        <a href="about/">Contact</a>
+                    </div>
+                    <div class="col-12" style="text-align: right;">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p> -->
+        </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="../js/smooth-scroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 </body>  
 </html>
