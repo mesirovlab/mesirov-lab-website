@@ -11,12 +11,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106705148-2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-106705148-2');
+        gtag('config', 'UA-106705148-2');
     </script>
+
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="100">
     <!-- Navbar -->
@@ -45,29 +46,24 @@
     </nav>
 
     <div class="row">
-        <div class="col-sm-10" style="padding:0px;">
+        <div class="col-12 col-sm-10" style="padding:0px;">
             <div id="section1" style="padding: 50px;">    
                     <div>    
                         <div id="title">
                             <h1 >MESIROV LAB</h1>
                             <br>
                         </div>
-
                         <div class="row" style="background:white; padding: 50px; padding-bottom: 0px;">
-                            <h2 style="letter-spacing: 3px; font-weight: 100; padding-bottom: 25px; margin-top:0px;">JILL P. MESIROV, Ph.D. </h2>
-                            <br>
-                            <div class="col-sm-3" style="padding:0px;">
-                                <img src="../img/mesirov_portrait.jpg?x=1" alt="Image" height="250px" style="box-shadow: 5px 5px 10px lightgrey; margin-bottom:25px;">
-                                <li><a href="https://healthsciences.ucsd.edu/som/medicine/divisions/med-genetics/research/Pages/Mesirov-Lab.aspx">UC
+                            <h2 style="letter-spacing: 3px; font-weight: 100; padding-bottom: 50px; margin-top:20px;">JILL P. MESIROV, Ph.D. </h2>
+                            <div class="col-12 col-sm-3" style="padding:0px;">
+                                <img src="../img/mesirov_portrait.jpg?x=1" alt="Image" height="250px" style="box-shadow: 2px 2px 5px lightgrey; margin-bottom:25px;"><br>
+                                <a href="https://healthsciences.ucsd.edu/som/medicine/divisions/med-genetics/research/Pages/Mesirov-Lab.aspx">UC
                                 Health
-                                        Sciences Profile</a></li>
-                                <li><a href="https://www.ncbi.nlm.nih.gov/sites/myncbi/jill.mesirov.1/bibliography/41149863/public/?sort=date&direction=ascending">Pubmed
-                                    Bibliography</a></li>
-                                <li><a></a>
-                                </li>
-                                
+                                        Sciences Profile</a>
+                                <a href="https://www.ncbi.nlm.nih.gov/sites/myncbi/jill.mesirov.1/bibliography/41149863/public/?sort=date&direction=ascending">Pubmed
+                                    Bibliography</a>
                             </div>
-                            <div class="col-sm-9" >
+                            <div class="col-12 col-sm-9" style="padding-left: 30px;" >
                                 <p style="font-weight: 500; text-align: left; font-size: 15px;">
                                     <strong>Professor of Medicine</strong>, Division of Medical Genetics;
                                     <br>
@@ -78,7 +74,7 @@
                                     <br>
                                     UC San Diego, School of Medicine
                                 </p>
-                                <p style="font-size: 14px; margin-bottom: 0px; padding-bottom: 25px;">
+                                <p style="font-size: 14px; margin-bottom: 0px; padding-bottom: 50px; ">
                                         Jill Mesirov is associate vice chancellor for computational health sciences and professor of medicine at UC San Diego School of Medicine. As associate vice chancellor, Mesirov is responsible for the overarching strategy for computational health sciences and research computing at UC San Diego School of Medicine. She is a member of the UCSD Moores Cancer Center, where she serves as co-lead for the structural and functional genomics research program.<br><br>
                                         Mesirov is a computational scientist who has spent many years working in the area of high-performance computing on problems that arise in science, engineering, and business applications. Her research focuses on cancer genomics applying machine-learning methods to functional data derived from patient tumors. The lab analyzes this molecular data to determine the underlying biological mechanisms of specific tumor subtypes, to stratify patients according to their relative risks of relapse, and to identify candidate treatments. In addition, Mesirov is committed to the development of practical, accessible software tools to bring these methods to the general biomedical research community. Her tools support over half a million users worldwide.<br><br>
                                         Before moving to UC San Diego in 2015, Mesirov was associate director and chief informatics officer at the Broad Institute of MIT and Harvard, formerly the whitehead Institute/MIT Center for Genome Research, where she directed the Computational Biology and Bioinformatics Program and was a member of the Cancer Program steering committee. She previously served as manager of computational biology and bioinformatics in the Healthcare/Pharmaceutical Solutions Organization of IBM, director of research at Thinking Machines Corporation and has also held positions in the mathematics department at the University of California at Berkeley and served as associate executive director of the American Mathematical Society.<br><br>
@@ -90,16 +86,16 @@
                         </div>
                     </div>
             </div>
-            <div id="section2" style="padding: 50px;">
+            <div id="section2" style="padding: 50px; padding-top: 20px;">
                 <div style="background: white;" class="row">
                     <div id="title" style="padding-top: 50px; padding-bottom: 2%;">
-                        <h1 style="">LAB MEMBERS</h1>
+                        <h1>LAB MEMBERS</h1>
                         <br>
                     </div>
                     <div style="text-align: center;">
-                        <img src="../img/mesirov-group.jpg" alt="Mesirov Group" width="90%" style="margin: 0 auto;">
+                        <img src="../img/mesirov-group.jpg" alt="Mesirov Group" width="60%" style="margin: 0 auto;">
                     </div>
-                    <div class="container" id="member-center" style="margin: 0 auto; width: 100%; margin-top: 25px;">
+                    <div class="container" id="member-center" style="margin: 0 auto; width: 90%; margin-top: 25px;">
                         <div class="grid cs-style-3" id="list" style="margin: 0 auto;">
                             <div class="grid-item">
                                 <div class="card">
@@ -107,7 +103,7 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Michael Reich</h4>
                                         <p class="card-text">Director of Software Development</p>
-                                        <a type="button" class="btn" data-toggle="modal" data-target="#myModal">See Bio</a>
+                                        <!-- <a type="button" class="btn" data-toggle="modal" data-target="#myModal">See Bio</a> -->
                                     </div>
                                     <div id="myModal" class="modal fade" role="dialog">
                                         <div class="modal-dialog">
@@ -133,7 +129,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="../img/lab-members/ted-liefeld.JPG" alt="Card image" style="">
                                     <div class="card-body">
-                                        <h4 class="card-title">Ted Liefeld, M.S.</h4>
+                                        <h4 class="card-title">Ted Liefeld</h4>
                                         <p class="card-text">Lead Software Architect</p>
                                     </div>
                                 </div>
@@ -142,7 +138,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="../img/lab-members/Helga_Thorvaldsdottir.png" alt="Card image" style="">
                                     <div class="card-body">
-                                        <h4 class="card-title">Helga Thorvaldsdóttir, M.S.</h4>
+                                        <h4 class="card-title">Helga Thorvaldsdóttir</h4>
                                         <p class="card-text">Lab Manager <br>Sr. Software Architect</p>
                                     </div>
                                 </div>
@@ -169,7 +165,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="../img/lab-members/eby_profile.jpg" alt="Card image" style="">
                                     <div class="card-body">
-                                        <h4 class="card-title">David Eby, M.S.</h4>
+                                        <h4 class="card-title">David Eby</h4>
                                         <p class="card-text">Consultant</p>
                                     </div>
                                 </div>
@@ -196,7 +192,7 @@
                                 <div class="card">
                                     <img class="card-img-top" src="../img/lab-members/Thorin_Tabor.jpg" alt="Card image" style="">
                                     <div class="card-body">
-                                        <h4 class="card-title">Thorin Tabor, M.S.</h4>
+                                        <h4 class="card-title">Thorin Tabor</h4>
                                         <p class="card-text">Sr. Software Engineer</p>
                                     </div>
                                 </div>
@@ -207,6 +203,15 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Edwin Juárez, Ph.D.</h4>
                                         <p class="card-text">Bioinformatics Programmer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/lab-members/placeholder.png" alt="Card image" style="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Anthony Castanza, Ph.D.</h4>
+                                        <p class="card-text">MSigDB Curator</p>
                                     </div>
                                 </div>
                             </div>
@@ -260,132 +265,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div id="section2" style="padding-top: 50px; padding-left: 80px; padding-right: 50px; padding-bottom: 0px"> 
-                <div style="background: white;" class="row">
-                    <div id="title" style="padding-top: 50px; padding-bottom: 2%;">
-                        <h1 style="">LAB MEMBERS</h1>
-                        <br>
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="../img/mesirov-group.jpg" alt="Mesirov Group" width="90%" style="margin: 0 auto;">
-                    </div> 
-                    <div class="container" id="member-center" style="margin: 0 auto; width: 90%; margin-top: 25px;">
-                        <div class="grid cs-style-3" id="list" style="margin: 0 auto;">
-                            <div class="grid-item">
-                                <img src="../img/lab-members/Michael_Reich%202016.png" >
-                                <div class="middle">
-                                    <h3>Michael Reich</h3><hr>
-                                    <p>Director of Software Development</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">      
-                                <img src="../img/lab-members/ted-liefeld.JPG">
-                                <div class="middle"> 
-                                    <h3>Ted Liefeld, M.S.</h3><hr>
-                                    <p>Lead Software Architect</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item"> 
-                                <img src="../img/lab-members/Helga_Thorvaldsdottir.png">
-                                <div class="middle"> 
-                                    <h3>Helga Thorvaldsdóttir, M.S.</h3><hr>
-                                    <p>Lab Manager<br>Sr. Software Architect</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item"> 
-                                <img src="../img/lab-members/jim-robinson.jpeg">
-                                <div class="middle"> 
-                                    <h3>Jim Robinson, Ph.D.</h3><hr>
-                                    <p>Sr. Principal Software Engineer</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item">       
-                                <img src="../img/lab-members/lukas-chavez.jpg">
-                                <div class="middle"> 
-                                    <h3>Lukas Chavez, Ph.D.</h3><hr>
-                                    <p>Adjunct Assistant Professor</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item">       
-                                <img src="../img/lab-members/eby_profile.jpg">
-                                <div class="middle"> 
-                                    <h3>David Eby, M.S.</h3><hr>
-                                    <p>Consultant</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <img src="../img/lab-members/Peter_Carr.jpg">
-                                <div class="middle"> 
-                                    <h3>Peter Carr</h3><hr>
-                                    <p>Sr. Software Engineer</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/Barbara_Hill.jpg" >
-                                <div class="middle"> 
-                                    <h3>Barbara Hill</h3><hr>
-                                    <p>Sr. Test Engineer</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/Thorin_Tabor.jpg" >
-                                <div class="middle">
-                                    <h3>Thorin Tabor, M.S.</h3><hr>
-                                    <p>Sr. Software Engineer</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/Edwin-thumbnail.jpg?x=1">
-                                <div class="middle">
-                                    <h3>Edwin Juárez, Ph.D.</h3><hr>
-                                    <p>Bioinformatics Programmer</p> 
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/dan-carlin.jpg" >
-                                <div class="middle"> 
-                                    <h3>Dan Carlin, Ph.D.</h3><hr>
-                                    <p>Postdoc in the Ideker Lab</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/alex_wenzel.jpg">
-                                <div class="middle"> 
-                                    <h3>Alex Wenzel</h3><hr>
-                                    <p>PhD Candidate</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/placeholder.png">
-                                <div class="middle"> 
-                                    <h3>Owen Chapman</h3><hr>
-                                    <p>PhD Candidate</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/placeholder.png">
-                                <div class="middle"> 
-                                    <h3>Sara Morimoto</h3><hr>
-                                    <p>Administrative Assistant</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">        
-                                <img src="../img/lab-members/forrest-kim.jpg?x=1">
-                                <div class="middle"> 
-                                    <h3>Forrest Kim</h3><hr>
-                                    <p>Technical Assistant</p>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                    </div> 
-                </div>
-            </div>   -->
 
             <div id="section3" style="padding: 50px;">
                 <div class="row" style="background:white;">
                     <div id="title" style=" padding: 50px;">
-                        <h1 style="">STUDENTS & INTERNSHIPS</h1>
+                        <h1 style="">STUDENTS & INTERNS</h1>
                     </div>
                     <div style="padding: 5%; padding-top: 0%;">
                         <table class="table table-striped table-hover" >
@@ -489,243 +373,6 @@
         </div>
     </div>
 
-    <!-- <div class="container" id="members" style="margin: 0 auto; margin-top: 3%">
-        <div id="jill" style="padding: 30px;">    
-            <div id="title" style="">
-                <h1 style="letter-spacing: 3px;">JILL P. MESIROV, Ph.D. </h1>
-                <br>
-            </div>
-            <div style="padding: 20px"><img src="../img/mesirov_portrait.jpg?x=1" alt="Image" height="300px" style="margin-right: 8%; box-shadow: 5px 5px 10px lightgrey; margin-top: -40px;"></div>
-            <p style="font-weight: 600; margin-top: -50px; text-align: left;">
-                Professor of Medicine, Division of Medical Genetics;
-                <br>
-                Associate Vice Chancellor
-                for Computational Health Sciences;
-                <br>
-                Co-Lead, Structural and Functional Cancer Genomics Research Program, Moores Cancer Center; 
-                <br>
-                UC San Diego, School of Medicine
-            </p>
-            <br>
-            <p style="margin-right: 10%">
-                Jill Mesirov is associate vice chancellor for computational health sciences and professor of medicine at UC San Diego School of Medicine. As associate vice chancellor, Mesirov is responsible for the overarching strategy for computational health sciences and research computing at UC San Diego School of Medicine. She is a member of the UCSD Moores Cancer Center, where she serves as co-lead for the structural and functional genomics research program.<br><br>
-                Mesirov is a computational scientist who has spent many years working in the area of high-performance computing on problems that arise in science, engineering, and business applications. Her research focuses on cancer genomics applying machine-learning methods to functional data derived from patient tumors. The lab analyzes this molecular data to determine the underlying biological mechanisms of specific tumor subtypes, to stratify patients according to their relative risks of relapse, and to identify candidate treatments. In addition, Mesirov is committed to the development of practical, accessible software tools to bring these methods to the general biomedical research community. Her tools support over 500,000 users worldwide.<br><br>
-                Before moving to UC San Diego in 2015, Mesirov was associate director and chief informatics officer at the Broad Institute of MIT and Harvard, formerly the whitehead Institute/MIT Center for Genome Research, where she directed the Computational Biology and Bioinformatics Program and was a member of the Cancer Program steering committee. She previously served as manager of computational biology and bioinformatics in the Healthcare/Pharmaceutical Solutions Organization of IBM, director of research at Thinking Machines Corporation and has also held positions in the mathematics department at the University of California at Berkeley and served as associate executive director of the American Mathematical Society.<br><br>
-                Mesirov is a fellow of the American Association for the Advancement of Science (AAAS), the American Mathematical Society (AMS), the International Society for Computational Biology (ISCB), and the Association for Women in Mathematics (AWM) where she formerly served as president. She was appointed as a founding member of Governor Jerry Brown’s California Precision Medicine Advisory Committee. The committee will advise the Governor's Office on all aspects of the state’s new precision medicine initiative and provide recommendations on further actions the public and private sectors can take to integrate precision medicine into health care.<br><br>
-                Mesirov received her B.A. in mathematics from the University of Pennsylvania. She earned her M.A. and Ph.D. in mathematics from Brandeis University.<br><br>
-                <a href="https://healthsciences.ucsd.edu/som/medicine/divisions/med-genetics/research/Pages/Mesirov-Lab.aspx">UC Health Sciences Profile Webpage</a><br><br>
-            </p>
-        </div>
-        
-        <div id="members-main" style="margin: 0 auto; margin-top: 5%; margin-bottom: 5%; background-color:rgba(255, 255, 255, 1); padding: 0px; ">
-            <div id="title" style="padding-top: 5%; padding-bottom: 2%;">
-                <h1 style="">MESIROV LAB MEMBERS</h1>
-                <br>
-            </div>
-            <div style="text-align: center; margin-bottom: 30px;">
-                <img src="../img/mesirov-group.jpg" alt="Mesirov Group" width="80%" style="margin: 0 auto;">
-            </div> 
-            <div class="container" id="member-center" style="margin: 0 auto; width: 80%;">
-                <div class="grid cs-style-3" id="list" style="margin: 0 auto;">
-                    <div class="grid-item">
-                        <img src="../img/lab-members/Michael_Reich%202016.png" >
-                        <div class="middle">
-							<h3>Michael Reich</h3><hr>
-							<p>Director of Software Development</p>
-						</div>
-                    </div>
-                    <div class="grid-item">      
-                        <img src="../img/lab-members/ted-liefeld.JPG">
-                        <div class="middle"> 
-                            <h3>Ted Liefeld, M.S.</h3><hr>
-                            <p>Lead Software Architect</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item"> 
-                        <img src="../img/lab-members/Helga_Thorvaldsdottir.png">
-                        <div class="middle"> 
-                            <h3>Helga Thorvaldsdóttir, M.S.</h3><hr>
-                            <p>Lab Manager<br>Sr. Software Architect</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item"> 
-                        <img src="../img/lab-members/jim-robinson.jpeg">
-                        <div class="middle"> 
-                            <h3>Jim Robinson, Ph.D.</h3><hr>
-                            <p>Sr. Principal Software Engineer</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item">       
-                        <img src="../img/lab-members/lukas-chavez.jpg">
-                        <div class="middle"> 
-                            <h3>Lukas Chavez, Ph.D.</h3><hr>
-                            <p>Adjunct Assistant Professor</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item">       
-                        <img src="../img/lab-members/eby_profile.jpg">
-                        <div class="middle"> 
-                            <h3>David Eby, M.S.</h3><hr>
-                            <p>Consultant</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="../img/lab-members/Peter_Carr.jpg">
-                        <div class="middle"> 
-                            <h3>Peter Carr</h3><hr>
-                            <p>Sr. Software Engineer</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/Barbara_Hill.jpg" >
-                        <div class="middle"> 
-                            <h3>Barbara Hill</h3><hr>
-                            <p>Sr. Test Engineer</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/Thorin_Tabor.jpg" >
-                        <div class="middle">
-                            <h3>Thorin Tabor, M.S.</h3><hr>
-                            <p>Sr. Software Engineer</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/Edwin-thumbnail.jpg?x=1">
-                        <div class="middle">
-                            <h3>Edwin Juárez, Ph.D.</h3><hr>
-                            <p>Bioinformatics Programmer</p> 
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/dan-carlin.jpg" >
-                        <div class="middle"> 
-                            <h3>Dan Carlin, Ph.D.</h3><hr>
-                            <p>Postdoc in the Ideker Lab</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/placeholder.png">
-                        <div class="middle"> 
-                            <h3>Alex Wenzel</h3><hr>
-                            <p>PhD Candidate</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/placeholder.png">
-                        <div class="middle"> 
-                            <h3>Owen Chapman</h3><hr>
-                            <p>PhD Candidate</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/placeholder.png">
-                        <div class="middle"> 
-                            <h3>Sara Morimoto</h3><hr>
-                            <p>Administrative Assistant</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">        
-                        <img src="../img/lab-members/forrest-kim.jpg?x=1">
-                        <div class="middle"> 
-                            <h3>Forrest Kim</h3><hr>
-                            <p>Technical Assistant</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-            </div> 
-        </div>
-        <div id="members-main" style="margin: 0 auto; margin-top: 5%; margin-bottom: 5%; background-color: white; padding: 0px">
-            <div id="title" style=" padding: 50px;">
-                <h1 style="">STUDENTS & INTERNSHIPS</h1>
-            </div>
-            <div style="padding: 5%; padding-top: 0%;">
-                <table class="table table-striped table-hover" >
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Program</th>
-                            <th>Project Title/Description</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mengyi (Miko) Liu</td>
-                            <td>Undergraduate Intern</td>
-                            <td>NMF</td>
-                            <td>Sept 2018 -  Present</td>
-                        </tr>
-                        <tr>
-                            <td>Xavier Gonzales</td>
-                            <td>Summer Internship</td>
-                            <td>NMF</td>
-                            <td>July - August 2018</td>
-                        </tr>
-                        <tr>
-                            <td>Marylu Villa R.</td>
-                            <td>ENLACE</td>
-                            <td>Developing a suite of TCGA Data Importer Notebooks</td>
-                            <td>June - August 2018</td>
-                        </tr>
-                        <tr>
-                            <td>Alejandra Ramos</td>
-                            <td>ENLACE</td>
-                            <td>Developing a suite of TCGA Data Importer Notebooks</td>
-                            <td>June - August 2018</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Isaac Shanley</td>
-                            <td>Undergraduate Intern</td>
-                            <td>IGV</td>
-                            <td>October 2017 - June 2018</td>
-                        </tr>
-                </tbody>
-                </table>
-            </div>
-        </div>
-        
-        <div id="members-main" style="margin: 0 auto; margin-top: 5%; margin-bottom: 5%; background-color: white; padding: 0px">
-            <div id="title" style=" padding: 50px;">
-                <h1 style="">ALUMNI</h1>
-            </div>
-            <div style="padding: 5%; padding-top: 0%;">
-                <table class="table table-striped table-hover" >
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Years Worked</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Arthur Liberzon, PhD</td>
-                            <td>Bioinformatics Scientist & MSigDB Curator</td>
-                            <td>...</td>
-                            <td> - July 2018</td>
-                        </tr>
-                        <tr>
-                            <td>James Jensen, PhD</td>
-                            <td>PhD Candidate</td>
-                            <td>...</td>
-                            <td>- June 2018</td>
-                        </tr>
-                        <tr>
-                            <td>Clarence Mah</td>
-                            <td>Associate Computational Biologist</td>
-                            <td>...</td>
-                            <td>September 2016 - August 2018</td>
-                        </tr>
-                </tbody>
-                </table>
-            </div>
-        </div>
-        
-    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/smooth-scroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

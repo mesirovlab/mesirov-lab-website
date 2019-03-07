@@ -1,16 +1,15 @@
 /*
 Theme Name: 	Mesirov Lab Website
-Author:         Forrest Kim
+Author:         Forrest Kim/Jill Mesirov
 */
 
 html {
     overflow-x: hidden !important;
     background:	rgba(73, 88, 103, 0.7);
     /* background-image: url("../img/stretch-empty_2.png?x=1"); */
-    background-repeat: repeat;
 }
 body {
-    background:transparent;
+    background:	rgba(73, 88, 103, 0.7);
     font-family: "Helvetica";
     font-weight: 100;
     /* color: #495867;*/
@@ -20,8 +19,6 @@ body {
     position:relative
 }
 
-.container {
-}
 a {
     font-weight: 600;
 }
@@ -46,7 +43,7 @@ borders and increase the bottom margin */
     /* background-image: url("../img/front-banner.jpg"); */
     /* box-shadow: 0px 5px 10px lightgrey; */
     margin: auto;
-    border-bottom: 0.5px solid grey;
+    border-bottom: 1px solid black;
 }
 
 .navbar-nav {
@@ -155,6 +152,7 @@ a:hover {
 
 #banner-btn .btn {
     border: 1px solid white;
+    background: rgba(255,255,255,0.2);
 }
 
 #banner-btn .btn:hover {
@@ -208,9 +206,10 @@ a:hover {
 }
 
 #newsfront p, #newsfront a{
-    font-size: 14px;
-    color: #495867;
+    font-size: 16px;
+    color: black;
     text-align: left;
+    font-weight: 100;
 }
 
 #newsfront h3{
@@ -396,7 +395,7 @@ a:hover {
     box-shadow: 2px 2px 5px lightgrey;
     overflow: hidden;
     background: #DEE7EF;
-    border: 0.5px solid lightgrey;
+    border: 0px solid lightgrey;
 }
 .grid {
     text-align: center;
@@ -406,7 +405,7 @@ a:hover {
 .grid-item img, .card {
     /* opacity: 1;
     transition: .2s ease; */
-    width: 180px;
+    width: 160px;
 }
 
 .grid-item img {
@@ -427,9 +426,8 @@ a:hover {
 /* .grid-item:hover {
     opacity: 0.5;
      /* -webkit-transform: scale(1.1);
-    transform: scale(1.1); */
-} */
-
+    transform: scale(1.1); 
+}*/
 .grid-item:hover .middle {
     opacity: 1;
 }
@@ -453,6 +451,7 @@ a:hover {
 }
 #myScrollspy li a:active {
     border-radius: 0px;
+    background: rgb(14, 56, 110);
 }
 #myScrollspy li:hover > a {
     color: white;
@@ -508,6 +507,13 @@ ul.nav-pills {
 }
 .panel-body {
     background-color: white;
+    font-size: 15px;
+    padding: 35px;
+}
+
+#newsfront .panel-body p {
+    font-size: 15px;
+    font-weight: 100
 }
 .panel-heading {
     margin: 0 auto;
@@ -518,8 +524,7 @@ ul.nav-pills {
 }
 .panel-body h2 {
     margin-top: 0px;
-    font-size: 15px;
-    
+    font-size: 20px;
 }
 .panel-body li b {
     margin-top: 0px;
@@ -530,19 +535,24 @@ ul.nav-pills {
 .panel-body li a {
     font-size: 15px;
     text-align: left;
-    font-weight: 500;
+    font-weight: 100;
+}
+
+#software-panels .panel-body h2{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 100;
 }
 .panel-body li a:hover {
     color: #FE5F55;
     text-decoration: none;
 }
-.panel-heading h2, .panel-heading a {
-    font-size: 20px;
+.panel-heading h2, .panel-heading a, .panel-heading {
+    font-size: 18px;
     text-align: left;
     text-decoration: none;
     font-weight: 400;
-    /*color: #495867;*/
-    color: black;
+    /* color: #495867; */
 }
 
 #newsfront .panel-heading {
@@ -566,10 +576,14 @@ ul.nav-pills {
     margin-left: -30px;
     margin-right: 10px;
 }
+.panel-heading h2 {
+    letter-spacing: 0px;
+    font-weight: 100;
+}
 
 .panel-body p{
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 100;
     text-align: justify;
     /*color: #495867;*/
     color: black;
@@ -581,7 +595,7 @@ ul.nav-pills {
     transition-property: transform;
 }
 .panel-heading:hover [class*="glyphicon-"] {
-	color: #FE5F55;
+	color: #861F05;
     -webkit-transform:rotate(90deg);
 }
 
@@ -593,17 +607,20 @@ ul.nav-pills {
     /* background-color: rgba(156,173,206,0.15); */
     font-weight: 100;
 }
-#software-main .panel-default > .panel-heading:hover {
-    background-color: rgba(156,173,206,0.4);
+#software-panels .panel-default > .panel-heading:hover {
+    background-color: rgb(175, 184, 196);
 }
 
 #newsfront .panel-body li p a {
     text-align: left;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 #newsfront .panel-body li b {
     color: #2FB1CB;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /*
@@ -701,9 +718,9 @@ footer a {
         position: static;
     }
     
+    
 }
 
-}
 @media screen and (max-width: 1200px) {
     #gsea-header {
         margin-top: -30px;
@@ -719,6 +736,9 @@ footer a {
         font-size: 15px;
         font-weight: 400;
         text-align: center;
+    }
+    #banner-btn {
+        display: none;
     }
     
 }
@@ -770,7 +790,5 @@ footer a {
     }
     scoll, #myScrollspy {
         display: none;
-    }
-    
-    
+    }   
 }

@@ -1,5 +1,5 @@
-<!DOCTYPE html> <html lang="en">
-    
+<!DOCTYPE html> 
+<html lang="en">    
 <head>
     <title>Home | Mesirov Lab</title>
     <meta charset="utf-8">
@@ -8,28 +8,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    
-
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <style>
-        html {
-            overflow-x: hidden !important;
-            background:lightgrey;
-            background-image: url("img/stretch-empty_2.png?x=1");
-            background-repeat: repeat;
+    html {
+        overflow-x: hidden !important;
+        background:lightgrey;
+        /*background-image: url("img/stretch-empty_2.png?x=1");*/
+        background-repeat: repeat;
+    }
+    body {
+        background: url("img/stretch-new-hires.png") !important;
+        background-size: 100%!important;
+        background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 1200px) {
+        body {
+            background: transparent;
         }
+    }
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106705148-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106705148-2');
+    </script>
 </head>
-    
-<body>
 
-    <!-- <div class="col-12" style="margin: auto;">
-        <a href="."><img src="img/front-3.png"  style="width: 100%; opacity: 0.9;"></a>
-        <h1 style="margin-top: 50px; padding-bottom: 50px;padding-top:100px; color:white;">Mesirov Lab</h1> 
-    </div> -->
-
-    <!-- Navbar --> 
+<body id="top">
     <nav class="navbar navbar-fixed-top">
         <a class="navbar-brand" href="." style="">
             <img src="img/mes-lab-logo-2.png" width="200px">
@@ -54,79 +64,35 @@
         </div>
     </nav>
 
-
-    <!-- <div class="row" style="margin: auto; padding: 50px;">
-        <div class="col-12 col-sm-7" >
-            <div style="padding: 23px; background-color: rgba(197, 198, 198, 0.4); border-radius: 10px; margin-top: 120px; text-align: center; margin-bottom: 50px;">
-                <h3 style="color: white; letter-spacing: 2px; font-weight: 100; font-size: 35px; padding: 15px;">Integrating bioinformatics and mathematics to further the knowledge and application of precision medicine</h3>
-            </div>
-        </div>
-        
-        <div class="col-12 col-sm-1">
-        </div>
-        <div class="col-12 col-sm-4" style="margin-right:0px; opacity: 1; margin: auto; padding: 0px;"> 
-            <div class="panel panel-default" style="padding: 0px;">
-                <h3 class="panel-heading" style="padding: 15px;">Featured News</h3>
-                <ul class="panel-body" style="padding:30px; text-align: justify; padding-bottom: 10px;">
-                    <li>
-                        <b>Oct. 2018</b>
-                        <p>Dan, Forrest, and Jill's <a href="https://f1000research.com/articles/7-1636/v1">GenomeSpace Recipe paper</a> was published on F1000 Research. </p>
-                    </li>
-                    
-                    <li><b>Sept. 26th 2018</b>
-                        <p><a href="#">CSBC/PSON Annual Meeting</a><br>
-                        @ Bethesda
-                        </p>
-                    </li>
-                    
-                    <li><b>Sept. 24th 2018</b>
-                        <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
-                        @ University of California, San Diego
-                        </p>
-                    </li>
-
-                    <li><b>Sept. 20th 2018</b>
-                        <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
-                        @ University of California, San Diego
-                        </p>
-                    </li>
-
-                    <li><b>Sept. 10th 2018</b>
-                        <p>Jill, Clarence, and James's <a href="https://www.ncbi.nlm.nih.gov/pubmed/30205044">Proteomics Paper</a> was published in Cancer Cell!<br>
-                        </p>
-                    </li>
-                    <a class="btn button" href="#news-feed" style="margin-top: 10px;">Read More...</a>
-                </ul>
-            </div> 
-        </div>
-        <div class="col-12" style="margin:auto; text-align: center;">
-            <a href="#about-lab"><i class="fa fa-angle-down" style="font-size: 50px;"></i></a>
-        </div>
-    </div> -->
-    
-    <div class="container-fluid" style="text-align: center; margin: 150px; margin-bottom: 80px;" id="banner">
-        <div style="padding: 30px; background-color: rgba(197, 198, 198, 0.4); margin:auto; width:85%; border-radius: 0px;"><h3 style="color: white; letter-spacing: 1.5px; font-weight: 100; font-size: 35px; padding: 20px;">..</h3> <p style="color: white">slogan is a work in progress</p></div>
-        <div class="row" style="margin:auto;" id="banner-btn">
-            <div class="col-sm-1"></div>
-            <a class="btn button col-sm-2" href="#about-lab" style="background: transparent;; margin-top: 150px; font-size: 18px;">Learn more</a>
-            <div class="col-sm-2"></div>
-            <a class="btn button col-sm-2" href="#newsfront" style="background: transparent; margin-top: 150px; font-size: 18px; ">Featured News</a>
-            <div class="col-sm-2"></div>
-            <a class="btn button col-sm-2" href="about/" style="background: transparent; margin-top: 150px; font-size: 18px; ">Contact Us</a>
-            <div class="col-sm-1"></div>
-        </div>
-        
-        <!-- <div class="col-12" style="margin:auto; text-align: center; margin-top: 20px;">
-            <a href="#about-lab"><i class="fa fa-angle-down" style="font-size: 50px;"></i></a>
+    <div class="container-fluid" style="text-align: center; margin: 150px; margin-bottom: 40px;" id="banner">
+        <!-- <div style="text-align: center;">
+            <img src="img/mlogo-new.png" width="50%" style="margin:auto; padding: 50px; opacity: 0.8">
         </div> -->
+        <div style="padding: 30px; background-color: rgba(255,255,255, 0.3); margin:auto; width:70%; border-radius: 0px;">
+            <h3 style="color: white; letter-spacing: 1.5px; font-weight: 100; font-size: 50px; padding: 20px;">Jill P. Mesirov Lab</h3>
+            <p style="color: white; font-weight: 100;font-size: 18px; padding: 10px;"></p>
+        </div>
+        <div class="row" style="margin:auto;" id="banner-btn">
+            <div class="col-lg-1"></div>
+            <a class="col-12 btn button col-lg-2" href="#about-lab" style="margin-top: 100px; font-size: 18px; border-radius: 50px; padding: 10px;">Learn more</a>
+            <div class="col-lg-2"></div>
+            <a class="col-12 btn button col-lg-2" href="#newsfront" style="margin-top: 100px; font-size: 18px; border-radius: 50px; padding: 10px;">Featured News</a>
+            <div class="col-lg-2"></div>
+            <a class="col-12 btn button col-lg-2" href="about/" style="margin-top: 100px; font-size: 18px; border-radius: 50px; padding: 10px;">Contact Us</a>
+            <div class="col-lg-1"></div>
+        </div>
+    
     </div>
+    <!-- <div style="text-align: center;">
+        <img src="img/m-logo.png" width="50%" style="margin:auto; padding: 50px">
+    </div> -->
 
     <div style="background-color: white;" id="about-lab">
         <div class= "row" style="width: 90%; margin: auto; padding: 50px; padding-top: 100px; padding-bottom: 50px;">
             <div class="col-12 col-sm-3" style="margin: auto; margin-top: 30px;">
                 <h1 style="margin:auto; padding: 0px; font-size: 25px; margin-bottom: 15px;">Jill P. Mesirov, Ph.D.</h1>
                 <img src="img/mesirov_portrait.jpg" width="200px" style="">
-                <p style="font-size: 15px; margin-top: 15px; font-weight: 500;">
+                <p style="font-size: 14px; margin-top: 15px; font-weight: 500;">
                     UC San Diego, School of Medicine<br>
                     UC San Diego, Moores Cancer Center
                 </p>
@@ -138,39 +104,28 @@
                     <br>
                     <b>Co-Lead</b>, Structural and Functional Cancer Genomics Research Program;
                     <br>
-                    
                 </p>
-                <!-- <p style="font-size: 15px; margin-top: 15px;">
-                    UC San Diego, School of Medicine<br>
-                    UC San Diego, Moores Cancer Center
-                </p>
-                <p style="font-weight: 500; margin-top: 0px; text-align: left; font-size: 12px;">
-                    
-                    <li><strong>Professor of Medicine</strong>, Division of Medical Genetics</li>
-                    <li><strong>Associate Vice Chancellor</strong> for Computational Health Sciences</li>
-                    <li><strong>Co-Lead</strong>, Structural and Functional Cancer Genomics Research Program</li>
-                    
-                </p> -->
+                <a class="btn button" href="members/" style="margin-top: 10px; color:white;">Learn More...</a>
             </div>
             <div class="col-12 col-sm-8" style="margin: auto; padding: 0px; color: black; margin-top: 30px; text-align: center; margin-left: 70px;">
                 <p style="text-align: left;">Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets. Our lab is committed to the development of practical, accessible, open source software tools to bring these methods to the general biomedical research community. These tools support the research of hundreds of thousands of investigators worldwide. Thus, to achieve its goals, the lab includes both computational biologists and software engineers working together to further our understanding and treatment of disease.</p>
                 <div class="col-12 col-md-4" id="front-btn">
                     <a class="front-icon" href="projects/" style="font-size: 20px;font-weight: 600; text-align: center; ">
                         <img src="img/research-2.png" width="150px">
-                        <p>Bioinformatics research</p>
+                        <p>Computational Biology research</p>
                     </a>
                     
                 </div>
                 <div class="col-12 col-md-4" id="front-btn" > 
                     <a class="front-icon" href="software/" style="font-size: 20px; font-weight: 600; text-align: center;">
-                        <img src="img/soft-3.png" width="150px" style="">
+                        <img src="img/soft-4.png" width="150px" style="">
                         <p>Open source software tools</p>
                     </a>
                     
                 </div>
                 <div class="col-12 col-md-4" id="front-btn" >
                     <a class="front-icon" href="members/" style="font-size: 20px;font-weight: 600; text-align: center; ">
-                        <img src="img/people-5.png" width="150px">
+                        <img src="img/people-6.png" width="150px">
                         <p>Meet the lab</p>
                     </a>
                 </div>
@@ -184,14 +139,24 @@
     </div>
 
 <div style="background-color: lightgrey" id="newsfront">
-    <div class="row" style="width: 95%; margin: auto; padding: 50px; padding-top: 100px;">
-            <div class="container-fluid col-sm-7" style=""> 
+    <div class="row" style="width: 100%; margin: auto; padding: 50px; padding-top: 100px;">
+            <div class="container-fluid col-sm-8" style=""> 
                 <div class="panel panel-default" style="padding: 0px; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
                     <h3 class="panel-heading" style="padding: 15px;">Featured News</h3>
-                    <ul class="panel-body" style="padding:30px; text-align: justify;">
+                    <ul class="panel-body" style="padding: 50px; text-align: justify; padding-top: 30px; padding-bottom: 30px;">
+                        <li>
+                            <b>Dec. 18 2018</b>
+                            <p>Krug K, Mertins P, Zhang B, Hornbeck P, Raju R, Ahmad R, Szucs M, Mundt F, Forestier D, Jane-Valbuena J, Keshishian H,
+                            Gillette MA, Tamayo P, Mesirov JP, Jaffe JD, Carr SA, Mani DR. <a href="https://www.mcponline.org/content/18/3/576">A curated resource for phosphosite-specific signature
+                            analysis.</a> Mol Cell Proteomics. 2018 Dec 18. pii: mcp.TIR118.000943. doi: 10.1074/mcp.TIR118.000943. [Epub ahead of
+                            print] PubMed PMID: 30563849.</p>
+                        </li>
+
                         <li>
                             <b>Oct. 2018</b>
-                            <p>Dan, Forrest, and Jill's <a href="https://f1000research.com/articles/7-1636/v1">GenomeSpace Recipe paper</a> was published on F1000 Research. </p>
+                            <p>Carlin DE, Kim F, Ideker T and Mesirov JP. <a href="https://f1000research.com/articles/7-1636/v1">A unified GenomeSpace recipe to identify essential genes and associated
+                            subnetworks from Genome-Scale CRISPR-Cas9 knockout screens </a> [version 1; referees: awaiting peer review]. F1000Research
+                            2018, 7:1636</p>
                         </li>
                         
                         <li><b>Sept. 26th 2018</b>
@@ -212,15 +177,25 @@
                             </p>
                         </li>
 
-                        <li><b>Sept. 10th 2018</b>
-                            <p>Jill, Clarence, and James's <a href="https://www.ncbi.nlm.nih.gov/pubmed/30205044">Proteomics Paper</a> was published in Cancer Cell!<br>
-                            </p>
+                        <li>
+                            <b>Sept. 10th 2018</b>
+                            <p>Archer TC, Ehrenberger T, Mundt F, Gold MP, Krug K, Mah CK, Mahoney EL, Daniel CJ, LeNail A, Ramamoorthy D,
+                                Mertins P,
+                                Mani DR, Zhang H, Gillette MA, Clauser K, Noble M, Tang LC, Pierre-François J, Silterra J, Jensen J, Tamayo P,
+                                Korshunov A, Pfister SM, Kool M, Northcott PA, Sears RC, Lipton JO, Carr SA, Mesirov JP, Pomeroy SL, Fraenkel E.
+                                <a href="https://www.sciencedirect.com/science/article/pii/S1535610818303581?via%3Dihub">Proteomics, Post-translational Modifications, and
+                                    Integrative Analyses Reveal Molecular Heterogeneity within
+                                    Medulloblastoma Subgroups.</a> Cancer Cell. 2018 Sep 10;34(3):396-410.e8. doi: 10.1016/j.ccell.2018.08.004.
+                                PubMed PMID:
+                                30205044. </p>
                         </li>
-                        <a class="btn button" href="" style="margin-top: 10px; color:white;">Read More...</a>
+
+                        <a class="btn button" href="pubs/" style="margin-top: 10px; color:white;">Publications</a>
+                        <a class="btn button" href="teaching/" style="margin-top: 10px; color:white;">Courses & Workshops</a>
                     </ul>
                 </div> 
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
                     <h3 class="panel-heading" style="padding: 15px;">Spotlight</h3>
                     <ul class="panel-body" style="padding:30px; margin: 0 auto;">
@@ -228,48 +203,32 @@
                             <b>Open positions in the lab</b><br>
                             <p>No openings currently available</p>
                         </li>
+                        <a class="btn button" href="about/" style="margin-top: 10px; color:white;">Learn More...</a>
                         
                     </ul>
-                </div> 
-                <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                </div>
+                <!-- <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
                     <h3 class="panel-heading" style="padding: 15px;">Lab Resources</h3>
                     <ul class="panel-body" style="padding:30px; margin: 0 auto;">
                         <a href="http://genepattern.org"><img src="img/software/genepattern.png" width="50px" height="50px" style="margin:5px;"></a>
                         <a href="http://mesirovlab.org/medulloblastoma"><img src="img/medullo-cartoon.png" height="45px" width="45px" style="margin:5px;"></a>
                         <a href="http://igv.org"><img src="img/software/IGVlogo.png" height="50px" style="margin:5px;"></a>
                         <a href="http://software.broadinstitute.org/gsea/index.jsp"><img src="img/software/GSEA-logo.gif" height="50px" style="margin:5px;"></a>
+                        <a class="btn button" href="software/" style="margin-top: 10px; color:white;">Software</a>
                     </ul>
-                </div>
+                    
+                </div> -->
             </div>
         </div>
+        <a href="#top" style="text-align:center; ">
+            <div style="margin:auto; margin-top: 10px; background: rgba(0,0,0,0.8); width:100%; padding:20px;">
+                <div class="glyphicon glyphicon-chevron-up" style="font-size: 20px; color: white;"></div>
+                <br>
+
+            </div>
+        </a>
     </div>
 
-    <!-- <div>
-        <div id="jill" style="padding: 50px; margin: auto;"> 
-            <h1 style="">JILL P. MESIROV, Ph.D. </h1>
-            <div class="row" style="padding: 0px;">
-                <div class="col-12 col-sm-10" style="padding:0px;">
-                    <p style="font-weight: 600;">
-                        Professor of Medicine, Division of Medical Genetics;
-                        <br>
-                        Associate Vice Chancellor
-                        for Computational Health Sciences;
-                        <br>
-                        Co-Lead, Structural and Functional Cancer Genomics Research Program, 
-                        <br>Moores Cancer Center; 
-                        <br>
-                        UC San Diego, School of Medicine
-                        <br>
-                    </p>
-                    <p style=";">Jill Mesirov is Associate Vice Chancellor for Computational Health Sciences and Professor of Medicine at UC San Diego School of Medicine. As Associate Vice Chancellor, Dr. Mesirov is responsible for the overarching strategy for computational health sciences and research computing at UC San Diego School of Medicine.</p>
-                </div>
-                <div class="col-12 col-sm-2" style="padding:0px;"> 
-                    <img src="img/mesirov_portrait.jpg?x=1" alt="Image" height="200px;">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    
     <footer style="margin-top: 0px; padding: 50px; padding-bottom: 80px;" id='footer'>
         <div class="row">
             <div class="col-sm-3" style="padding-top:0px; ">
@@ -285,7 +244,7 @@
 
                    Mail Code: 0602<br>
                 </p>
-                <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p>
+                <!-- <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p> -->
             </div>
             <div class="col-sm-4">   
             </div>
@@ -307,11 +266,9 @@
                 </div>
             </div>
         </div>
-        
-        
-        
-        <!-- <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p> -->
+
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
