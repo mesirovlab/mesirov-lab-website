@@ -16,11 +16,17 @@
         /*background-image: url("img/stretch-empty_2.png?x=1");*/
         background-repeat: repeat;
     }
-    body {
-        background: url("img/stretch-new-hires.png") !important;
-        background-size: 100%!important;
-        background-repeat: no-repeat;
+    #banner {
+        background: url("img/stretch-new-hires.png");
+        background-position: center;
+        background-size: 100%;
+        transition: all .7s;
     }
+    #banner:hover {
+        transition: all 0.5s ease-in-out;
+        background-size: 105%;
+   }
+
     @media screen and (max-width: 1200px) {
         body {
             background: transparent;
@@ -64,13 +70,13 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="text-align: center; margin: 150px; margin-bottom: 40px;" id="banner">
+    <div class="container-fluid" style="text-align: center;padding: 150px;" id="banner">
         <!-- <div style="text-align: center;">
             <img src="img/mlogo-new.png" width="50%" style="margin:auto; padding: 50px; opacity: 0.8">
         </div> -->
-        <div style="padding: 30px; background-color: rgba(255,255,255, 0.3); margin:auto; width:70%; border-radius: 0px;">
-            <h3 style="color: white; letter-spacing: 1.5px; font-weight: 100; font-size: 50px; padding: 20px;">Jill P. Mesirov Lab</h3>
-            <p style="color: white; font-weight: 100;font-size: 18px; padding: 10px;"></p>
+        <div style="padding: 30px; background-color:transparent; margin:auto; width:80%; border-radius: 0px;">
+            <h3 style="color: white; letter-spacing: 1.5px; font-weight: 500; font-size: 70px; padding: 20px;">Jill P. Mesirov Lab</h3>
+            <!-- <p style="color: white; font-weight: 100;font-size: 18px; padding: 10px;"></p> -->
         </div>
         <div class="row" style="margin:auto;" id="banner-btn">
             <div class="col-lg-1"></div>
@@ -157,12 +163,6 @@
                             <p>Carlin DE, Kim F, Ideker T and Mesirov JP. <a href="https://f1000research.com/articles/7-1636/v1">A unified GenomeSpace recipe to identify essential genes and associated
                             subnetworks from Genome-Scale CRISPR-Cas9 knockout screens </a> [version 1; referees: awaiting peer review]. F1000Research
                             2018, 7:1636</p>
-                        </li>
-                        
-                        <li><b>Sept. 26th 2018</b>
-                            <p><a href="#">CSBC/PSON Annual Meeting</a><br>
-                            @ Bethesda
-                            </p>
                         </li>
                         
                         <li><b>Sept. 24th 2018</b>
