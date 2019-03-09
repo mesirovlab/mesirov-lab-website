@@ -5,18 +5,18 @@ Author:         Forrest Kim/Jill Mesirov
 
 html {
     overflow-x: hidden !important;
-    background:	rgba(73, 88, 103, 0.7);
+    /* background:	rgba(73, 88, 103, 0.7); */
     /* background-image: url("../img/stretch-empty_2.png?x=1"); */
 }
 body {
-    background:	rgba(73, 88, 103, 0.7);
+    background: rgba(73, 88, 103, 0.3);
+    background-repeat: repeat;
     font-family: "Helvetica";
     font-weight: 100;
     /* color: #495867;*/
     color: black;
     margin: auto;
-    padding-top:80px;
-    position:relative
+    padding-top:70px;
 }
 
 a {
@@ -63,7 +63,6 @@ borders and increase the bottom margin */
 .navbar-nav li a:hover{
     color:#FE5F55;
     background-color: transparent;
-    /* color: #2FB1CB; */
 }
 .navbar-brand {
     color:  black;
@@ -83,10 +82,13 @@ a.navbar-brand:hover {
     display: none;
 }
 .dropdown-menu {
-    background-color: #78BDD2;
+    list-style-type: none;
 }
-.dropdown-menu li a:hover{
-    background-color: #1B1B1E;
+.dropdown-menu li {
+    
+}
+.dropdown-menu li a{
+    color: black !important;
 }
 
 .aside {display: block}
@@ -95,9 +97,6 @@ a.navbar-brand:hover {
 .aside li a { display: block; background: #f0efef; padding: 7px 0; font-size: 16px; color: #9d94a1; border-radius: 30px; text-decoration: none; }
 .aside li a:hover, #main aside li.current a { background: #8580b3; color: #FFF; }
 
-#banner {
-    /* background-image: url("../img/stretch-empty_2.png") */
-}
 b {
     margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline;
 }
@@ -127,6 +126,12 @@ a:hover {
 .btn-text {
     display: none;
 }
+
+.glyphicon {
+    color: white;
+    font-weight: 100;
+}
+
 #front-btn a {
     color:black;
 }
@@ -142,6 +147,11 @@ a:hover {
     min-height: 280px;
 }
 
+#front-btn a p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .front-icon {
     min-height: 300px;
 }
@@ -150,14 +160,32 @@ a:hover {
     color: white;
 }
 
-#banner-btn .btn {
+/* #banner-btn .btn {
     border: 1px solid white;
     background: rgba(255,255,255,0.2);
-}
+} */
+
+/* #banner-btn .btn:hover {
+    color: #FE5F55;
+    border: 1px solid #FE5F55;
+} */
+
+#banner-btn .btn {
+    border: none;
+    background: transparent;
+    font-weight: 100;
+} 
 
 #banner-btn .btn:hover {
     color: #FE5F55;
-    border: 1px solid #FE5F55;
+}
+
+#mission-statement {
+    color: transparent;
+}
+
+#banner-btn .btn:hover #mission-statement {
+    color:white;
 }
 
 .btn:hover {
@@ -517,6 +545,7 @@ ul.nav-pills {
 }
 .panel-heading {
     margin: 0 auto;
+    font-size: 25px;
 }
 .panel-group .panel-heading+.panel-collapse>.list-group,
 .panel-group .panel-heading+.panel-collapse>.panel-body {
@@ -547,7 +576,7 @@ ul.nav-pills {
     color: #FE5F55;
     text-decoration: none;
 }
-.panel-heading h2, .panel-heading a, .panel-heading {
+.panel-heading h2, .panel-heading a{
     font-size: 18px;
     text-align: left;
     text-decoration: none;
