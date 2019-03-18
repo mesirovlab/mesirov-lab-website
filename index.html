@@ -10,61 +10,87 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
-    <style>
-    html {
-        overflow-x: hidden !important;
-        background:lightgrey;
-        /*background-image: url("img/stretch-upright-half.png");*/
-        background-repeat: repeat;
-    }
-    body {
-        padding-top: 0px;
-    }
-    #banner {
-        background: url("img/stretch-empty.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: background 1s ease-in-out;
-
-    }
-    #banner:hover {
-        transition: background 1s ease-in-out !important;
-        background: url("img/stretch-new-hires3.png" );
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    @media screen and (max-width: 1200px) {
-        body {
-            background: transparent;
+    <style >
+        html {
+            overflow-x: hidden !important;
+            background:lightgrey;
+            /*background-image: url("img/stretch-upright-half.png");*/
+            background-repeat: repeat;
         }
-    }
-    .navbar {
-        background: transparent;
-        border: none;
-    }
-    .navbar-nav li a {
-        color:white;
-    }
-    .dropdown.open a {
-        background: transparent !important;
-    }
-    .navbar-fixed-top.scrolled {
-        background: #fff !important;
-        border-bottom: 1px solid black;
-        transition: background-color 200ms linear;
-    }
+        body {
+            padding-top: 0px;
+        }
+        #banner {
+            /*background: url("img/stretch-empty.png");*/
+            /*background: url("img/stretch-new-hires3.png" );*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: fadein 5s forwards;
+            margin:0 auto;
+            padding: 0 auto;
+        }
 
-    .navbar-fixed-top.scrolled li a  {
-        color: #172A49 !important;
-        transition: background-color 200ms linear;
+        /*#banner:hover {
+            transition: background 1s ease-in-out !important;
+            ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }*/
+        .lab-title {
+            animation: lab-title 4s forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        @keyframes lab-title {
+            0%  { 
+                opacity: 0;
+            }
+            100% { 
+                opacity: 1;
+            }
+        }
+        @keyframes fadein {
+            0%  { 
+                background: url("img/stretch-empty.png");
+                background-repeat: no-repeat;
+                background-size: cover; 
+            }
+            100% { 
+                background: url("img/stretch-new-hires3.png" ); background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            body {
+                background: transparent;
+            }
+        }
+        .navbar {
+            background: transparent;
+            border: none;
+        }
+        .navbar-nav li a {
+            color:white;
+        }
+        .dropdown.open a {
+            background: transparent !important;
+        }
+        .navbar-fixed-top.scrolled {
+            background: #fff !important;
+            border-bottom: 1px solid black;
+            transition: background-color 200ms linear;
+        }
 
-    }
-    .navbar-fixed-top.scrolled li a:hover{
-        color:#FE5F55 !important;
-    }
+        .navbar-fixed-top.scrolled li a  {
+            color: #172A49 !important;
+            transition: background-color 200ms linear;
+
+        }
+        .navbar-fixed-top.scrolled li a:hover{
+            color:#FE5F55 !important;
+        }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,7 +100,7 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-106705148-2');
+        gtag('config', 'UA-130775773-1');
     </script>
     <script>
     $(function () {
@@ -89,7 +115,7 @@
 <body id="top">
     <nav class="navbar navbar-fixed-top">
         <a class="navbar-brand" href="." style="">
-            <img src="img/mes-lab-logo-2.png" width="190px" style="background: white;margin-left: 10px;">
+            <img src="img/mes-lab-logo-2.png" width="190px" style="background: white;">
         </a>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -111,27 +137,55 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="text-align: center; padding: 150px; padding-bottom: 50px;" id="banner">
-        <h3 style="font-family: 'Helvetica Neue';color: white; letter-spacing: 1.5px; font-weight: 200; font-size: 90px; padding: 100px; padding-top:100px;">Jill P. Mesirov Lab</h3>
-        <!-- <p style="color: white; font-weight: 100;font-size: 18px; padding: 10px;" id="mission-statement">Mesirov Lab Mission Statement</p> -->
-        <div class="row" style="margin:auto;" id="banner-btn">
-            <div class="col-12 col-sm-1"></div>
-            <a class="btn button col-12 col-sm-2" href="#about-lab" style="margin-top: 150px; font-size: 22px;">Learn More</a>
-            <div class="col-sm-2 col-12 "></div>
-            <a class="btn button col-sm-2 col-12 " href="#newsfront" style="margin-top: 150px; font-size: 22px; border-radius: 50px; padding: 10px;">Featured News</a>
-            <div class="col-sm-2 col-12 "></div>
-            <a class="btn button col-sm-2 col-12 " href="about/" style="margin-top: 150px; font-size: 22px; border-radius: 50px; padding: 10px;">Contact Us</a>
-            <div class="col-sm-1 col-12 "></div>
+    <div style="text-align: center; " id="banner">
+        <!-- <img src="/img/stretch-new-hires3.png" style="width:100%; margin: 0 auto;"> -->
+        <div class="container-fluid" style="padding-bottom: 50px;">
+            <div id="lab-title" class="lab-title">
+                <h3 style="font-family: 'Helvetica Neue';color: white; letter-spacing: 1.5px; font-weight: 200; font-size: 90px; padding: 100px; padding-top:250px; padding-bottom: 50px;">
+                    Jill P. Mesirov Lab</h3>
+                <p style="color: white; font-weight: 100;font-size: 18px;" id="mission-statement"></p>
+                <div class="row" style="margin:auto;padding-bottom: 100px" id="banner-btn">
+                    <div class="col-12 col-sm-1"></div>
+
+                    <div class="col-12 col-sm-2" style="text-align:center" >
+                        <a class="btn button" href="#about-lab" >
+                            <p style="margin-top: 150px; font-size: 20px;">Learn More</p><br>
+                            <span class="glyphicon glyphicon-chevron-down" style="font-size: 30px;font-weight:100;"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2 col-12 "></div>
+
+                    <div class="col-12 col-sm-2" style="text-align:center">
+                        <a class="btn button" href="#newsfront">
+                            <p style="margin-top: 150px; font-size: 20px;">Featured News</p><br>
+                            <span class="glyphicon glyphicon-chevron-down" style="font-size: 30px;font-weight:100"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2 col-12 "></div>
+
+                    <div class="col-12 col-sm-2" style="text-align:center">
+                        <a class="btn button" href="/about/">
+                            <p style="margin-top: 150px; font-size: 20px;">Contact Us</p><br>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-1 col-12 "></div>
+                </div>
+            </div>
+            
+            
+            <!-- <a href="#about-lab" class="glyphicon glyphicon-menu-down" style="font-size: 30px; margin-top: 50px; margin-bottom: 0px;"></a> -->
         </div>
-        <!-- <a href="#about-lab" class="glyphicon glyphicon-menu-down" style="font-size: 30px; margin-top: 50px; margin-bottom: 0px;"></a> -->
     </div>
     <!-- <div style="text-align: center;">
         <img src="img/m-logo.png" width="50%" style="margin:auto; padding: 50px">
     </div> -->
 
     <div style="background-color: white;" id="about-lab">
-        <div class= "row" style="width: 95%; margin: auto; padding: 50px; padding-top: 100px; padding-bottom: 50px;">
-            <div class="col-12 col-sm-3" style="margin: auto; margin-top: 30px;">
+        <div class= "row" style="width: 95%; margin: auto; padding: 50px; padding-top: 100px; padding-bottom: 0px;">
+            <div class="col-12 col-sm-3" style="margin: auto; margin-top: 30px; padding:0px;">
                 <h1 style="margin:auto; padding: 0px; font-size: 25px; margin-bottom: 15px;">Jill P. Mesirov, Ph.D.</h1>
                 <img src="img/mesirov_portrait.jpg" width="200px" style="">
                 <p style="font-size: 14px; margin-top: 15px; font-weight: 500;">
@@ -156,14 +210,12 @@
                         <img src="img/research-3.png" width="150px">
                         <p>Computational Biology research</p>
                     </a>
-                    
                 </div>
                 <div class="col-12 col-md-4" id="front-btn" > 
                     <a class="front-icon" href="software/" style="font-size: 15px; font-weight: 600; text-align: center;">
                         <img src="img/soft-4.png" width="150px" style="">
                         <p>Open source software tools</p>
-                    </a>
-                    
+                    </a> 
                 </div>
                 <div class="col-12 col-md-4" id="front-btn" >
                     <a class="front-icon" href="members/" style="font-size: 20px;font-weight: 600; text-align: center; ">
@@ -173,10 +225,9 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row" style="width: 90%; margin: auto; ">
-            <!-- <div class="col-12 col-md-3">
-            </div> -->
+        <div style="text-align:center; padding-bottom: 50px;">
+            <a href="#newsfront" style="font-weight: 500; font-size: 17px; color:#FE5F55; text-align:center;display: block;margin-block-start: 1em;  margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">Featured News</a>
+            <a href="#newsfront" class="glyphicon glyphicon-chevron-down" style="font-size: 30px; margin-bottom: 0px; color:#FE5F55"></a>
         </div>
     </div>
 
