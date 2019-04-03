@@ -1,0 +1,363 @@
+<!DOCTYPE html> 
+<html lang="en">    
+<head>
+    <title>Home | Mesirov Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- IE6-10 -->
+    <link rel="shortcut icon" href="/img/meslab.ico">
+    <!-- Everybody else -->
+    <link rel="icon" href="/img/meslab.ico">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <style >
+        html {
+            overflow-x: hidden !important;
+            background:lightgrey;
+            /*background-image: url("img/stretch-upright-half.png");*/
+            background-repeat: repeat;
+        }
+        body {
+            padding-top: 0px;
+        }
+        #banner {
+            /*background: url("img/stretch-empty.png");*/
+            /*background: url("img/stretch-new-hires3.png" );*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: fadein 5s forwards;
+            margin:0 auto;
+            padding: 0 auto;
+        }
+
+        /*#banner:hover {
+            transition: background 1s ease-in-out !important;
+            ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }*/
+        .lab-title {
+            animation: lab-title 4s forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        @keyframes lab-title {
+            0%  { 
+                opacity: 0;
+            }
+            100% { 
+                opacity: 1;
+            }
+        }
+        @keyframes fadein {
+            0%  { 
+                background: url("img/stretch-empty.png");
+                background-repeat: no-repeat;
+                background-size: cover; 
+            }
+            100% { 
+                background: url("img/stretch-new-hires3.png" ); background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            body {
+                background: transparent;
+            }
+        }
+        .navbar {
+            background: transparent;
+            border: none;
+        }
+        .navbar-nav li a {
+            color:white;
+        }
+        .dropdown.open a {
+            background: transparent !important;
+        }
+        .navbar-fixed-top.scrolled {
+            background: #fff !important;
+            border-bottom: 1px solid black;
+            transition: background-color 200ms linear;
+        }
+
+        .navbar-fixed-top.scrolled li a  {
+            color: #172A49 !important;
+            transition: background-color 200ms linear;
+
+        }
+        .navbar-fixed-top.scrolled li a:hover{
+            color:#FE5F55 !important;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130775773-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130775773-1', {
+            'linker': {
+                'accept_incoming': true
+            }
+        });
+    </script>
+    <script>
+    $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</head>
+
+<body id="top">
+    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href="." style="">
+            <img src="img/mes-lab-logo-2.png" width="190px" style="background: white;">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" id="navigation">
+                <span id="media-space" style="height: 65px"></span>
+                <li><a href="members/">OUR TEAM</a></li>
+                <li><a href="projects/">RESEARCH</a></li>
+                <li><a href="pubs/">PUBLICATIONS</a></li>
+                <li><a href="software/">SOFTWARE</a></li>
+                <li><a href="teaching/">TEACHING</a></li>
+                <li><a href="about/">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="text-align: center; " id="banner">
+        <!-- <img src="/img/stretch-new-hires3.png" style="width:100%; margin: 0 auto;"> -->
+        <div class="container-fluid" style="padding-bottom: 50px;">
+            <div id="lab-title" class="lab-title">
+                <h3 style="font-family: 'Helvetica Neue';color: white; letter-spacing: 1.5px; font-weight: 200; font-size: 90px; padding: 100px; padding-top:250px; padding-bottom: 50px;">
+                    Jill P. Mesirov Lab</h3>
+                <p style="color: white; font-weight: 100;font-size: 18px;" id="mission-statement"></p>
+                <div class="row" style="margin:auto;padding-bottom: 100px" id="banner-btn">
+                    <div class="col-12 col-sm-1"></div>
+
+                    <div class="col-12 col-sm-2" style="text-align:center" >
+                        <a class="btn button" href="#about-lab" >
+                            <p style="margin-top: 150px; font-size: 20px;">Learn More</p><br>
+                            <span class="glyphicon glyphicon-chevron-down" style="font-size: 30px;font-weight:100;"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2 col-12 "></div>
+
+                    <div class="col-12 col-sm-2" style="text-align:center">
+                        <a class="btn button" href="#newsfront">
+                            <p style="margin-top: 150px; font-size: 20px;">Featured News</p><br>
+                            <span class="glyphicon glyphicon-chevron-down" style="font-size: 30px;font-weight:100"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2 col-12 "></div>
+
+                    <div class="col-12 col-sm-2" style="text-align:center">
+                        <a class="btn button" href="about/">
+                            <p style="margin-top: 150px; font-size: 20px;">Contact Us</p><br>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-1 col-12 "></div>
+                </div>
+            </div>
+            
+            
+            <!-- <a href="#about-lab" class="glyphicon glyphicon-menu-down" style="font-size: 30px; margin-top: 50px; margin-bottom: 0px;"></a> -->
+        </div>
+    </div>
+    <!-- <div style="text-align: center;">
+        <img src="img/m-logo.png" width="50%" style="margin:auto; padding: 50px">
+    </div> -->
+
+    <div style="background-color: white;" id="about-lab">
+        <div class= "row" style="width: 95%; margin: auto; padding: 50px; padding-top: 100px; padding-bottom: 0px;">
+            <div class="col-12 col-sm-3" style="margin: auto; margin-top: 30px; padding:0px;">
+                <h1 style="margin:auto; padding: 0px; font-size: 25px; margin-bottom: 15px;">Jill P. Mesirov, Ph.D.</h1>
+                <img src="img/mesirov_portrait.jpg" width="200px" style="">
+                <p style="font-size: 14px; margin-top: 15px; font-weight: 500;">
+                    UC San Diego, School of Medicine<br>
+                    UC San Diego, Moores Cancer Center
+                </p>
+                <p style="font-weight: 100; text-align: left; font-size: 15px; margin-top: 20px;">
+                    <b>Professor of Medicine</b>, Division of Medical Genetics;
+                    <br>
+                    <b>Associate Vice Chancellor</b>
+                    for Computational Health Sciences;
+                    <br>
+                    <b>Co-Lead</b>, Structural and Functional Cancer Genomics Research Program;
+                    <br>
+                </p>
+                <a class="btn button" href="members/" style="margin-top: 10px; color:white;">Learn More...</a>
+            </div>
+            <div class="col-12 col-sm-8" style="margin: auto; padding: 0px; color: black; margin-top: 30px; text-align: center; margin-left: 70px;">
+                <p style="text-align: left;">Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets. Our lab is committed to the development of practical, accessible, open source software tools to bring these methods to the general biomedical research community. These tools support the research of hundreds of thousands of investigators worldwide. Thus, to achieve its goals, the lab includes both computational biologists and software engineers working together to further our understanding and treatment of disease.</p>
+                <div class="col-12 col-md-4" id="front-btn">
+                    <a class="front-icon" href="projects/" style="font-weight: 600; text-align: center; ">
+                        <img src="img/research-3.png" width="150px">
+                        <p>Computational Biology research</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4" id="front-btn" > 
+                    <a class="front-icon" href="software/" style="font-size: 15px; font-weight: 600; text-align: center;">
+                        <img src="img/soft-4.png" width="150px" style="">
+                        <p>Open source software tools</p>
+                    </a> 
+                </div>
+                <div class="col-12 col-md-4" id="front-btn" >
+                    <a class="front-icon" href="members/" style="font-size: 20px;font-weight: 600; text-align: center; ">
+                        <img src="img/people-6.png" width="150px">
+                        <p>Meet the lab</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; padding-bottom: 50px;">
+            <a href="#newsfront" style="font-weight: 500; font-size: 17px; color:#FE5F55; text-align:center;display: block;margin-block-start: 1em;  margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">Featured News</a>
+            <a href="#newsfront" class="glyphicon glyphicon-chevron-down" style="font-size: 30px; margin-bottom: 0px; color:#FE5F55"></a>
+        </div>
+    </div>
+
+<div style="background-color: lightgrey" id="newsfront">
+    <div class="row" style="width: 100%; margin: auto; padding: 50px; padding-top: 100px;">
+            <div class="container-fluid col-sm-8" style=""> 
+                <div class="panel panel-default" style="padding: 0px; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                    <h3 class="panel-heading" style="padding: 15px;">Featured News</h3>
+                    <ul class="panel-body" style="padding: 50px; text-align: justify; padding-top: 30px; padding-bottom: 30px;">
+                        <li>
+                            <b>Dec. 18 2018</b>
+                            <p>Krug K, Mertins P, Zhang B, Hornbeck P, Raju R, Ahmad R, Szucs M, Mundt F, Forestier D, Jane-Valbuena J, Keshishian H,
+                            Gillette MA, Tamayo P, Mesirov JP, Jaffe JD, Carr SA, Mani DR. <a href="https://www.mcponline.org/content/18/3/576">A curated resource for phosphosite-specific signature
+                            analysis.</a> Mol Cell Proteomics. 2018 Dec 18. pii: mcp.TIR118.000943. doi: 10.1074/mcp.TIR118.000943. [Epub ahead of
+                            print] PubMed PMID: 30563849.</p>
+                        </li>
+                        
+                        <li><b>Sept. 24th 2018</b>
+                            <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
+                            @ University of California, San Diego
+                            </p>
+                        </li>
+
+                        <li><b>Sept. 20th 2018</b>
+                            <p><a href="#">CCMI (Cancer Cell Map Initiative) Workshop</a><br>
+                            @ University of California, San Diego
+                            </p>
+                        </li>
+
+                        <li>
+                            <b>Sept. 10th 2018</b>
+                            <p>Archer TC, Ehrenberger T, Mundt F, Gold MP, Krug K, Mah CK, Mahoney EL, Daniel CJ, LeNail A, Ramamoorthy D,
+                                Mertins P,
+                                Mani DR, Zhang H, Gillette MA, Clauser K, Noble M, Tang LC, Pierre-François J, Silterra J, Jensen J, Tamayo P,
+                                Korshunov A, Pfister SM, Kool M, Northcott PA, Sears RC, Lipton JO, Carr SA, Mesirov JP, Pomeroy SL, Fraenkel E.
+                                <a href="https://www.sciencedirect.com/science/article/pii/S1535610818303581?via%3Dihub">Proteomics, Post-translational Modifications, and
+                                    Integrative Analyses Reveal Molecular Heterogeneity within
+                                    Medulloblastoma Subgroups.</a> Cancer Cell. 2018 Sep 10;34(3):396-410.e8. doi: 10.1016/j.ccell.2018.08.004.
+                                PubMed PMID:
+                                30205044. </p>
+                        </li>
+
+                        <a class="btn button" href="pubs/" style="margin-top: 10px; color:white;">Publications</a>
+                        <a class="btn button" href="teaching/" style="margin-top: 10px; color:white;">Courses & Workshops</a>
+                    </ul>
+                </div> 
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                    <h3 class="panel-heading" style="padding: 15px;">Spotlight</h3>
+                    <ul class="panel-body" style="padding:30px; margin: 0 auto;">
+                        <li>
+                            <b>Open positions in the lab</b><br>
+                            <p>No openings currently available</p>
+                        </li>
+                        <a class="btn button" href="about/" style="margin-top: 10px; color:white;">Learn More...</a>
+                        
+                    </ul>
+                </div>
+                <!-- <div class="panel panel-default" style="padding: 0px; margin:0 auto; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
+                    <h3 class="panel-heading" style="padding: 15px;">Lab Resources</h3>
+                    <ul class="panel-body" style="padding:30px; margin: 0 auto;">
+                        <a href="https://genepattern.org"><img src="img/software/genepattern.png" width="50px" height="50px" style="margin:5px;"></a>
+                        <a href="https://mesirovlab.org/medulloblastoma"><img src="img/medullo-cartoon.png" height="45px" width="45px" style="margin:5px;"></a>
+                        <a href="https://igv.org"><img src="img/software/IGVlogo.png" height="50px" style="margin:5px;"></a>
+                        <a href="https://software.broadinstitute.org/gsea/index.jsp"><img src="img/software/GSEA-logo.gif" height="50px" style="margin:5px;"></a>
+                        <a class="btn button" href="software/" style="margin-top: 10px; color:white;">Software</a>
+                    </ul>
+                    
+                </div> -->
+            </div>
+        </div>
+        <!-- <a href="#top" style="text-align:center; ">
+            <div style="margin:auto; margin-top: 10px; background: rgba(0,0,0,0.8); width:100%; padding:20px;">
+                <div class="glyphicon glyphicon-chevron-up" style="font-size: 20px; color: white;"></div>
+                <br>
+
+            </div>
+        </a> -->
+    </div>
+
+    <footer style="margin-top: 0px; padding: 50px; padding-bottom: 80px;" id='footer'>
+        <div class="row">
+            <div class="col-sm-3" style="padding-top:0px; ">
+                <h1 style="margin-top:0px;">Mesirov Lab</h1>
+                <p>
+                   Department of Medicine<br>
+                   UC San Diego, School of Medicine<br>
+                   Biomedical Research Facility II<br>
+                   La Jolla, CA 92093<br><br>
+
+                   Biomedical Science Building<br>
+                   La Jolla, CA 92093<br><br>
+
+                   Mail Code: 0602<br>
+                </p>
+                <!-- <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p> -->
+            </div>
+            <div class="col-sm-4">   
+            </div>
+            <div class="col-sm-5 row">
+                <div class="col-sm-4">
+                    <a href="members/">Our Team</a><br><br>
+                    <a href="projects/">Research</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="pubs/">Publications</a><br><br>
+                    <a href="software/">Software</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="teaching/">Teaching</a><br><br>
+                    <a href="about/">Contact</a>
+                </div>
+                <div class="col-12" style="text-align: right;">
+                    
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>
+</html>

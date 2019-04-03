@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Publications | Mesirov Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- IE6-10 -->
+    <link rel="shortcut icon" href="/img/meslab.ico">
+    <!-- Everybody else -->
+    <link rel="icon" href="/img/meslab.ico">
+    <link type="text/css" rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130775773-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130775773-1', {
+            'linker': {
+                'accept_incoming': true
+            }
+        });
+    </script>
+
+    <script>
+        $("#myScrollspy ul li a[href^='#']").on('click', function (e) {
+
+            // prevent default anchor click behavior
+            e.preventDefault();
+
+            // store hash
+            var hash = this.hash;
+
+            // animate
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 300, function () {
+
+                // when done, add hash to url
+                // (default click behaviour)
+                window.location.hash = hash;
+            });
+
+        });
+    </script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="100">
+    <nav class="navbar navbar-fixed-top">
+        <a class="navbar-brand" href=".." style="">
+            <img src="../img/mes-lab-logo-2.png" width="190px">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" id="navigation" style="">
+                <span id="media-space" style="height: 65px"></span>
+                <li><a href="../members/">OUR TEAM</a></li>
+                <li><a href="../projects/">RESEARCH</a></li>
+                <li><a href="../pubs/">PUBLICATIONS</a></li>
+                <li><a href="../software/">SOFTWARE</a></li>
+                <li><a href="../teaching/">TEACHING</a></li>
+                <li><a href="../about/">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="row">
+        <div class="col-sm-10" style="background: rgba(255, 255, 255, 0.7); padding: 50px;">
+            
+            <div id="title" >
+                <h1 >RECENT PUBLICATIONS</h1>
+                <br>
+            </div>
+            <div style="padding: 50px; background:white;">
+            
+            <!-- <div class="panel panel-default" style="padding: 0px; margin-left: 5%; margin-right: 5%;">
+                <p class="panel-heading" style="font-size: 22px; text-align: center; color: #495867;"><a href="https://www.ncbi.nlm.nih.gov/sites/myncbi/jill.mesirov.1/bibliography/41149863/public/?sort=date&direction=ascending">Pubmed
+                        Bibliography</a></p>
+            </div> -->
+
+            <div id="section1" class="">
+                <h2 class="" style="padding: 20px;">2019</h2>
+                <ol >
+                    <li>Barretina J, Caponigro G, Stransky N, Venkatesan K, Margolin AA, Kim S, Wilson CJ, Lehár J, Kryukov GV, Sonkin D, Reddy A, Liu M, Murray L, Berger MF, Monahan JE, Morais P, Meltzer J, Korejwa A, Jané-Valbuena J, Mapa FA, Thibault J, Bric-Furlong E, Raman P, Shipway A, Engels IH, Cheng J, Yu GK, Yu J, Aspesi P Jr, de Silva M, Jagtap K, Jones MD, Wang L, Hatton C, Palescandolo E, Gupta S, Mahan S, Sougnez C, Onofrio RC, <b>Liefeld T</b>, MacConaill L, Winckler W, <b>Reich M</b>, Li N, <b>Mesirov JP</b>, Gabriel SB, Getz G, Ardlie K, Chan V, Myer VE, Weber BL, Porter J, Warmuth M, Finan P, Harris JL, Meyerson M, Golub TR, Morrissey MP, Sellers WR, Schlegel R, Garraway LA. Addendum: The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer drug sensitivity. Nature. 2019 Jan;565(7738):E5-E6. doi: 10.1038/s41586-018-0722-x. PubMed PMID: 30559381.</li><br>
+                </ol>
+            </div>
+
+            <div id="section2">
+                <h2 style="padding: 20px;">2018</h2>
+                <ol>
+                    <li>Krug K, Mertins P, Zhang B, Hornbeck P, Raju R, Ahmad R, Szucs M, Mundt F, Forestier D, Jane-Valbuena J, Keshishian H,
+                    Gillette MA, Tamayo P, <b>Mesirov JP</b>, Jaffe JD, Carr SA, Mani DR. A curated resource for phosphosite-specific signature
+                    analysis. Mol Cell Proteomics. 2018 Dec 18. pii: mcp.TIR118.000943. doi: 10.1074/mcp.TIR118.000943. [Epub ahead of
+                    print] PubMed PMID: 30563849.</li><br>
+
+                    <li><b>Mah CK, Tabor T and Mesirov JP</b>. An accessible, interactive GenePattern Notebook for analysis and exploration of
+                    single-cell transcriptomic data [version 1; referees: 2 approved with reservations]. F1000Research 2018, 7:1306
+                    (https://doi.org/10.12688/f1000research.15830.1)
+                    </li><br>
+
+                    <li><b>Carlin DE, Kim F</b>, Ideker T and <b>Mesirov JP</b>. A unified GenomeSpace recipe to identify essential genes and associated
+                    subnetworks from Genome-Scale CRISPR-Cas9 knockout screens [version 1; referees: awaiting peer review]. F1000Research
+                    2018, 7:1636</li><br>
+                    
+                    <li>Archer TC, Ehrenberger T, Mundt F, Gold MP, Krug K, <b>Mah CK</b>, Mahoney EL, Daniel
+                    CJ, LeNail A, Ramamoorthy D, Mertins P, Mani DR, Zhang H, Gillette MA, Clauser K,
+                    Noble M, Tang LC, Pierre-François J, Silterra J, <b>Jensen J</b>, Tamayo P, Korshunov A,
+                    Pfister SM, Kool M, Northcott PA, Sears RC, Lipton JO, Carr SA, <b>Mesirov JP</b>,
+                    Pomeroy SL, Fraenkel E. Proteomics, Post-translational Modifications, and
+                    Integrative Analyses Reveal Molecular Heterogeneity within Medulloblastoma
+                    Subgroups. Cancer Cell. 2018 Sep 10;34(3):396-410.e8. doi:
+                    10.1016/j.ccell.2018.08.004. PubMed PMID: 30205044.</li><br>
+                    
+                    <li>Li T, Kim A, Rosenbluh J, Horn H, Greenfeld L, An D, Zimmer A, <b>Liberzon A</b>, Bistline J, Natoli T, Li
+                        Y, Tsherniak A, Narayan R, Subramanian A, <b>Liefeld T</b>, Wong B, Thompson D, Calvo S, Carr S, Boehm J,
+                        Jaffe J, <b>Mesirov J</b>, Hacohen N, Regev A, Lage K. GeNets: a unified web platform for network-based
+                        genomic analyses. Nature methods. 2018; 15(7):543-546. PubMed PMID: 29915188</li><br>
+
+                    <li><b>Robinson JT</b>, Turner D, Durand NC, <b>Thorvaldsdóttir H, Mesirov JP</b>, Aiden EL. Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data. Cell systems. 2018; 6(2):256-258.e1. NIHMSID: NIHMS949176 PubMed PMID:29428417, PMCID: PMC6047755</li>
+                </ol>
+            </div>
+            <div id="section3">
+                <h2 style="padding: 20px;">2017</h2>
+                <ol >
+                    <li>Hachigian LJ, Carmona V, Fenster RJ, Kulicke R, Heilbut A, Sittler A, Pereira de Almeida L, <b>Mesirov JP</b>,
+                        Gao F, Kolaczyk ED, Heiman M. Control of Huntington's Disease-Associated Phenotypes by the
+                        Striatum-Enriched Transcription Factor Foxp2. Cell Rep. 2017 Dec 5;21(10):2688-2695. doi:
+                        10.1016/j.celrep.2017.11.018. PubMed PMID: 29212017.
+                    </li><br>
+            
+                    <li><b>Robinson JT</b>, <b>Thorvaldsdóttir H</b>, Wenger AM, Zehir A, <b>Mesirov JP</b>. Variant Review with
+                        the Integrative Genomics Viewer. Cancer Res. 2017 Nov 1;77(21):e31-e34. doi: 10.1158/0008-5472.CAN-17-0337.
+                        PubMed PMID: 29092934; PubMed Central PMCID: PMC5678989.
+                    </li><br>
+            
+                    <li>Huang FW, Mosquera JM, Garofalo A, Oh C, Baco M, Amin-Mansour A, Rabasha B, Bahl S, Mullane SA, Robinson
+                        BD, Aldubayan S, Khani F, Karir B, Kim E, Chimene-Weiss J, Hofree M, Romanel A, Osborne JR, Kim JW,
+                        Azabdaftari G, Woloszynska-Read A, Sfanos K, De Marzo AM, Demichelis F, Gabriel S, Van Allen EM, <b>Mesirov
+                            J</b>, Tamayo P, Rubin MA, Powell IJ, Garraway LA. Exome Sequencing of African-American Prostate Cancer
+                        Reveals Loss-of-Function ERF Mutations. Cancer Discov. 2017 Sep;7(9):973-983. doi:
+                        10.1158/2159-8290.CD-16-0960. Epub 2017 May 17. PubMed PMID: 28515055.
+                    </li><br>
+            
+                    <li>Kim JW, Abudayyeh OO, Yeerna H, Yeang CH, Stewart M, Jenkins RW, Kitajima S, Konieczkowski DJ, <b>Medetgul-Ernar
+                            K</b>, Cavazos T, <b>Mah C</b>, Ting S, Van Allen EM, Cohen O, Mcdermott J, Damato E, Aguirre AJ, Liang
+                        J, <b>Liberzon A</b>, Alexe G, Doench J, Ghandi M, Vazquez F, Weir BA, Tsherniak A, Subramanian A,
+                        Meneses-Cime K, Park J, Clemons P, Garraway LA, Thomas D, Boehm JS, Barbie DA, Hahn WC, <b>Mesirov JP</b>,
+                        Tamayo P. Decomposing Oncogenic Transcriptional Signatures to Generate Maps of Divergent Cellular States.
+                        Cell Syst. 2017 Aug 23;5(2):105-118.e9. doi: 10.1016/j.cels.2017.08.002. PubMed PMID: 28837809.</li><br>
+            
+                    <li><b>Reich M, Tabor T, Liefeld T, Thorvaldsdóttir H, Hill B</b>, Tamayo P, <b>Mesirov JP</b>. The GenePattern
+                        Notebook Environment. Cell Syst. 2017 Aug 23;5(2):149-151.e1. doi: 10.1016/j.cels.2017.07.003. Epub 2017
+                        Aug 16. PubMed PMID: 28822753; PubMed Central PMCID: PMC5572818.</li><br>
+            
+                    <li>Viswanathan VS, Ryan MJ, Dhruv HD, Gill S, Eichhoff OM, Seashore-Ludlow B,Kaffenberger SD, Eaton JK,
+                        Shimada K, Aguirre AJ, Viswanathan SR, Chattopadhyay S, Tamayo P, Yang WS, Rees MG, Chen S, Boskovic ZV,
+                        Javaid S, Huang C, Wu X, Tseng YY, Roider EM, Gao D, Cleary JM, Wolpin BM, <b>Mesirov JP</b>, Haber DA,
+                        Engelman JA, Boehm JS, Kotz JD, Hon CS, Chen Y, Hahn WC, Levesque MP, Doench JG, Berens ME, Shamji AF,
+                        Clemons PA, Stockwell BR, Schreiber SL. Dependency of a therapy-resistant state of cancer cells on a lipid
+                        peroxidase pathway. Nature. 2017 Jul 27;547(7664):453-457. doi: 10.1038/nature23007. Epub 2017 Jul 5.
+                        PubMed PMID: 28678785.</li><br>
+            
+                    <li><b>Carlin D, Kosnicki K, Garamszegi S et al.</b> A multi-tool recipe to identify regions of protein-DNA
+                        binding and their influence on associated gene expression. F1000Research 2017, 6:784 (doi:
+                        10.12688/f1000research.11616.1)</li><br>
+            
+                    <li>Boulay G, Awad ME, Riggi N, Archer TC, Iyer S, Boonseng WE, Rossetti NE, Naigles B, Rengarajan S, Volorio
+                        A, Kim JC, <b>Mesirov JP</b>, Tamayo P, Pomeroy SL, Aryee MJ, Rivera MN. OTX2 Activity at Distal Regulatory
+                        Elements Shapes the Chromatin Landscape of Group 3 Medulloblastoma. Cancer Discov. 2017 Mar;7(3):288-301.
+                        doi: 10.1158/2159-8290.CD-16-0844. Epub 2017 Feb 17. PubMed PMID: 28213356; PubMed Central PMCID:
+                        PMC5340587. </li><br>
+            
+                    <li>Silterra J, Gillette MA, Lanaspa M, Pellé KG, Valim C, Ahmad R, Acácio S, Almendinger KD, Tan Y, Madrid L,
+                        Alonso PL, Carr SA, Wiegand RC, Bassat Q, <b>Mesirov JP</b>, Milner DA Jr, Wirth DF. Transcriptional
+                        Categorization of the Etiology of Pneumonia Syndrome in Pediatric Patients in Malaria-Endemic Areas. J
+                        Infect Dis. 2017 Jan 15;215(2):312-320. doi: 10.1093/infdis/jiw531. PubMed PMID: 27837008.</li>
+            
+                    </ul>
+            </div>
+            <div id="section4">
+                <h2 style="padding: 20px;">2016</h2>
+                <ol >
+                    <li>Spira A, Disis ML, Schiller JT, Vilar E, Rebbeck TR, Bejar R, Ideker T, Arts J, Yurgelun MB, <b>Mesirov JP</b>,
+                        Rao A, Garber J, Jaffee EM, Lippman SM. Leveraging premalignant biology for immune-based cancer prevention.
+                        Proc Natl Acad Sci U S A. 2016 Sep 27;113(39):10750-8. doi: 10.1073/pnas.1608077113. Epub 2016 Sep 16.
+                        PubMed PMID: 27638202; PubMed Central PMCID: PMC5047191.</li><br>
+            
+                    <li>Hanaford AR, Archer TC, Price A, Kahlert UD, Maciaczyk J, Nikkhah G, Kim JW, Ehrenberger T, Clemons PA,
+                        Dančík V, Seashore-Ludlow B, Viswanathan V, Stewart ML, Rees MG, Shamji A, Schreiber S, Fraenkel E, Pomeroy
+                        SL, <b>Mesirov JP</b>, Tamayo P, Eberhart CG, Raabe EH. DiSCoVERing Innovative Therapies for Rare Tumors:
+                        Combining Genetically Accurate Disease Models with In Silico Analysis to Identify Novel Therapeutic
+                        Targets. Clin Cancer Res. 2016 Aug 1;22(15):3903-14. Doi: 10.1158/1078-0432.CCR-15-3011. Epub 2016 Mar 24.
+                        PubMed PMID: 27012813; PubMed Central PMCID: PMC5055054.</li><br>
+            
+                    <li>D'Antonio M, Tamayo P, <b>Mesirov JP</b>, Frazer KA. Kataegis Expression Signature in Breast Cancer Is
+                        Associated with Late Onset, Better Prognosis, and Higher HER2 Levels. Cell Rep. 2016 Jul 19;16(3):672-83.
+                        doi: 10.1016/j.celrep.2016.06.026. Epub 2016 Jun 30. PubMed PMID: 27373164; PubMed Central PMCID:
+                        PMC4972030.</li><br>
+            
+                    <li>Durand NC, <b>Robinson JT</b>, Shamim MS, Machol I, <b>Mesirov JP</b>, Lander ES, Aiden EL. Juicebox
+                        Provides a Visualization System for Hi-C Contact Maps with Unlimited Zoom. Cell Syst. 2016 Jul;3(1):99-101.
+                        doi: 10.1016/j.cels.2015.07.012. PubMed PMID: 27467250; PubMed Central PMCID: PMC5596920.</li><br>
+            
+                    <li>Lu Z, Zhang QC, Lee B, Flynn RA, Smith MA, <b>Robinson JT</b>, Davidovich C, Gooding AR, Goodrich KJ,
+                        Mattick JS, <b>Mesirov JP</b>, Cech TR, Chang HY. RNA Duplex Map in Living Cells Reveals Higher-Order
+                        Transcriptome Structure. Cell. 2016 May 19;165(5):1267-1279. doi: 10.1016/j.cell.2016.04.028. Epub 2016 May
+                        12. PubMed PMID: 27180905; PubMed Central PMCID: PMC5029792.</li><br>
+            
+                    <li>Kim JW, Botvinnik OB, Abudayyeh O, Birger C, Rosenbluh J, Shrestha Y, Abazeed ME, Hammerman PS, DiCara D,
+                        Konieczkowski DJ, Johannessen CM, <b>Liberzon A</b>, Alizad-Rahvar AR, Alexe G, Aguirre A, Ghandi M,
+                        Greulich H, Vazquez F, Weir BA, Van Allen EM, Tsherniak A, Shao DD, Zack TI, Noble M, Getz G, Beroukhim R,
+                        Garraway LA, Ardakani M, Romualdi C, Sales G, Barbie DA, Boehm JS, Hahn WC, <b>Mesirov JP</b>, Tamayo P.
+                        Characterizing genomic alterations in cancer by complementary functional associations. Nat Biotechnol. 2016
+                        May;34(5):539-46. doi: 10.1038/nbt.3527. Epub 2016 Apr 18. PubMed PMID: 27088724; PubMed Central PMCID:
+                        PMC4868596.</li><br>
+            
+                    <li>Qu K, <b>Garamszegi S</b>, Wu F, <b>Thorvaldsdottir H, Liefeld T</b>, Ocana M, Borges-Rivera D, Pochet N,
+                        <b>Robinson JT</b>, Demchak B, Hull T, Ben-Artzi G, Blankenberg D, Barber GP, Lee BT, Kuhn RM, Nekrutenko
+                        A, Segal E, Ideker T, <b>Reich M</b>, Regev A, Chang HY, <b>Mesirov JP</b>. Integrative genomic analysis by
+                        interoperation of bioinformatics tools in GenomeSpace. Nat Methods. 2016 Mar;13(3):245-247. doi:
+                        10.1038/nmeth.3732. Epub 2016 Jan 18. PubMed PMID: 26780094; PubMed Central PMCID: PMC4767623.</li><br>
+            
+                    <li>Valim C, Ahmad R, Lanaspa M, Tan Y, Acácio S, Gillette MA, Almendinger KD, Milner DA Jr, Madrid L, Pellé K,
+                        Harezlak J, Silterra J, Alonso PL, Carr SA, <b>Mesirov JP</b>, Wirth DF, Wiegand RC, Bassat Q. Responses to
+                        Bacteria, Virus, and Malaria Distinguish the Etiology of Pediatric Clinical Pneumonia. Am J Respir Crit
+                        Care Med. 2016 Feb 15;193(4):448-59. doi: 10.1164/rccm.201506-1100OC. PubMed PMID: 26469764; PubMed Central
+                        PMCID: PMC5440057.</li><br>
+            
+                    <li>Godec J, Tan Y, <b>Liberzon A</b>, Tamayo P, Bhattacharya S, Butte AJ, <b>Mesirov JP</b>, Haining WN.
+                        Compendium of Immune Signatures Identifies Conserved and Species-Specific Biology in Response to
+                        Inflammation. Immunity. 2016 Jan 19;44(1):194-206. doi: 10.1016/j.immuni.2015.12.006. Epub 2016 Jan 12.
+                        PubMed PMID: 26795250; PubMed Central PMCID: PMC5330663.</li><br>
+            
+                    <li>Zhu X, Girardo D, Govek EE, John K, Mellén M, Tamayo P, <b>Mesirov JP</b>, Hatten ME. Role of Tet1/3 Genes
+                        and Chromatin Remodeling Genes in Cerebellar Circuit Formation. Neuron. 2016 Jan 6;89(1):100-12. doi:
+                        10.1016/j.neuron.2015.11.030. Epub 2015 Dec 17. PubMed PMID: 26711116; PubMed Central PMCID: PMC4707072.</li>
+                </ol>
+            </div>
+            <div id="section5">
+                <h2 style="padding: 20px;">2015</h2>
+                <ol >
+                    <li><b>Liberzon A</b>, Birger C, <b>Thorvaldsdóttir H</b>, Ghandi M, <b>Mesirov JP</b>, Tamayo P. The Molecular
+                        Signatures Database (MSigDB) hallmark gene set collection. Cell Syst. 2015 Dec 23;1(6):417-425. PubMed
+                        PMID: 26771021; PubMed Central PMCID: PMC4707969.</li><br>
+                    <li>Katz Y, Wang ET, Silterra J, Schwartz S, Wong B, <b>Thorvaldsdóttir H</b>, <b>Robinson JT</b>, <b>Mesirov
+                            JP</b>, Airoldi EM, Burge CB. Quantitative visualization of alternative exon expression from RNA-seq
+                        data. Bioinformatics. 2015 Jul 15;31(14):2400-2. doi: 10.1093/bioinformatics/btv034. Epub 2015 Jan 22.
+                        PubMed PMID: 25617416; PubMed Central PMCID: PMC4542614.</li><br>
+                    <li>Wilson FH, Johannessen CM, Piccioni F, Tamayo P, Kim JW, Van Allen EM, Corsello SM, Capelletti M, Calles A,
+                        Butaney M, Sharifnia T, Gabriel SB, <b>Mesirov JP</b>, Hahn WC, Engelman JA, Meyerson M, Root DE, Jänne PA,
+                        Garraway LA. A functional landscape of resistance to ALK inhibition in lung cancer. Cancer Cell. 2015 Mar
+                        9;27(3):397-408. doi: 10.1016/j.ccell.2015.02.005. PubMed PMID: 25759024; PubMed Central PMCID: PMC4398996.
+                    </li><br>
+                    <li><b>Thorvaldsdóttir H</b>, <b>Robinson JT</b>, Turner D, <b>Mesirov JP</b>. A genomic data viewer for iPad.
+                        Genome Biol. 2015 Feb 26;16:46. doi: 10.1186/s13059-015-0595-3. PubMed PMID: 25723152; PubMed Central
+                        PMCID: PMC4342165.</li><br>
+                    <li>Tan Y, Wu F, Tamayo P, Haining WN, <b>Mesirov JP</b>. Constellation Map: Downstream visualization and
+                        interpretation of gene set enrichment results. F1000Res. 2015 Jun 24;4:167. doi:
+                        10.12688/f1000research.6644.1. eCollection 2015. PubMed PMID: 26594333; PubMed Central PMCID: PMC4648224.</li><br>
+                    <li>Papageorgiou A, Rapley J, <b>Mesirov JP</b>, Tamayo P, Avruch J. A genome-wide siRNA screen in mammalian
+                        cells for regulators of S6 phosphorylation. PLoS One. 2015 Mar 19;10(3):e0116096. doi:
+                        10.1371/journal.pone.0116096. eCollection 2015. PubMed PMID: 25790369; PubMed Central PMCID: PMC4366019.</li><br>
+                </ol>
+            </div>
+            </div>
+        </div>
+        <div id="scroll" class="col-sm-2" style="padding:0px; margin:auto; align-content: right;">
+            <nav id="myScrollspy" style="padding:0px">
+                <ul class="nav nav-pills nav-stacked">
+                    <h1 style="text-align: left; padding:10px; margin: auto; font-size: 20px; background: #DEE7EF;font-weight: 100;">Publications</h1>
+                    <li class="active"><a href="#title" style="padding-right: 250px;">2019</a></li>
+                    <li><a href="#section2">2018</a></li>
+                    <li><a href="#section3">2017</a></li>
+                    <li><a href="#section4">2016</a></li>
+                    <li><a href="#section5">2015</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- <div id="pubs-main">
+        <div class="container" id="pubs-container" style="">
+            <div id="title">
+                <h1>RECENT PUBLICATIONS</h1>
+            </div>
+                <div class="panel panel-default" style="padding: 0px; margin-left: 5%; margin-right: 5%;" >
+                    <p class="panel-heading" style="font-size: 22px; text-align: center; color: #495867;"><a href="https://www.ncbi.nlm.nih.gov/sites/myncbi/jill.mesirov.1/bibliography/41149863/public/?sort=date&direction=ascending">Pubmed Bibliography</a></p>
+                </div>
+            <div class="panel panel-default" style="padding: 0px; margin-left: 5%; margin-right: 5%;">
+                <h2 class="panel-heading" style="text-align: center; padding: 2%;">2018</h2>
+                <ol class="panel-body" style="padding: 4%">
+                    <li>Li T, Kim A, Rosenbluh J, Horn H, Greenfeld L, An D, Zimmer A, <b>Liberzon A</b>, Bistline J, Natoli T, Li Y, Tsherniak A, Narayan R, Subramanian A, <b>Liefeld T</b>, Wong B, Thompson D, Calvo S, Carr S, Boehm J, Jaffe J, <b>Mesirov J</b>, Hacohen N, Regev A, Lage K. GeNets: a unified web platform for network-based genomic analyses. Nature methods. 2018; 15(7):543-546. PubMed PMID: 29915188</li><br>
+                    <li><b>Robinson JT</b>, Turner D, Durand NC, <b>Thorvaldsdóttir H, Mesirov JP</b>, Aiden EL. Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data. Cell systems. 2018; 6(2):256-258.e1. NIHMSID: NIHMS949176 PubMed PMID:29428417, PMCID: PMC6047755</li>
+                </ol>
+            </div>
+            <div class="panel panel-default" style="padding: 0px; margin-left: 5%; margin-right: 5%;">
+                <h2 class="panel-heading" style="text-align: center; padding: 2%;">2017</h2>
+                <ol class="panel-body" style="padding: 4%">
+                    <li>Hachigian LJ, Carmona V, Fenster RJ, Kulicke R, Heilbut A, Sittler A, Pereira de Almeida L, <b>Mesirov JP</b>, Gao F, Kolaczyk ED, Heiman M. Control of Huntington's Disease-Associated Phenotypes by the Striatum-Enriched Transcription Factor Foxp2. Cell Rep. 2017 Dec 5;21(10):2688-2695. doi: 10.1016/j.celrep.2017.11.018. PubMed PMID: 29212017.
+                    </li><br>
+
+                    <li><b>Robinson JT</b>, <b>Thorvaldsdóttir H</b>, Wenger AM, Zehir A, <b>Mesirov JP</b>. Variant Review with the Integrative Genomics Viewer. Cancer Res. 2017 Nov 1;77(21):e31-e34. doi: 10.1158/0008-5472.CAN-17-0337. PubMed PMID: 29092934; PubMed Central PMCID: PMC5678989.
+                    </li><br>
+
+                    <li>Huang FW, Mosquera JM, Garofalo A, Oh C, Baco M, Amin-Mansour A, Rabasha B, Bahl S, Mullane SA, Robinson BD, Aldubayan S, Khani F, Karir B, Kim E, Chimene-Weiss J, Hofree M, Romanel A, Osborne JR, Kim JW, Azabdaftari G, Woloszynska-Read A, Sfanos K, De Marzo AM, Demichelis F, Gabriel S, Van Allen EM, <b>Mesirov J</b>, Tamayo P, Rubin MA, Powell IJ, Garraway LA. Exome Sequencing of African-American Prostate Cancer Reveals Loss-of-Function ERF Mutations. Cancer Discov. 2017 Sep;7(9):973-983. doi: 10.1158/2159-8290.CD-16-0960. Epub 2017 May 17. PubMed PMID: 28515055.
+                    </li><br>
+                    
+                    <li>Kim JW, Abudayyeh OO, Yeerna H, Yeang CH, Stewart M, Jenkins RW, Kitajima S, Konieczkowski DJ, <b>Medetgul-Ernar K</b>, Cavazos T, <b>Mah C</b>, Ting S, Van Allen EM, Cohen O, Mcdermott J, Damato E, Aguirre AJ, Liang J, <b>Liberzon A</b>, Alexe G, Doench J, Ghandi M, Vazquez F, Weir BA, Tsherniak A, Subramanian A, Meneses-Cime K, Park J, Clemons P, Garraway LA, Thomas D, Boehm JS, Barbie DA, Hahn WC, <b>Mesirov JP</b>, Tamayo P. Decomposing Oncogenic Transcriptional Signatures to Generate Maps of Divergent Cellular States. Cell Syst. 2017 Aug 23;5(2):105-118.e9. doi: 10.1016/j.cels.2017.08.002. PubMed PMID: 28837809.</li><br>
+                    
+                    <li><b>Reich M, Tabor T, Liefeld T, Thorvaldsdóttir H, Hill B</b>, Tamayo P, <b>Mesirov JP</b>. The GenePattern Notebook Environment. Cell Syst. 2017 Aug 23;5(2):149-151.e1. doi: 10.1016/j.cels.2017.07.003. Epub 2017 Aug 16. PubMed PMID: 28822753; PubMed Central PMCID: PMC5572818.</li><br>
+                    
+                    <li>Viswanathan VS, Ryan MJ, Dhruv HD, Gill S, Eichhoff OM, Seashore-Ludlow B,Kaffenberger SD, Eaton JK, Shimada K, Aguirre AJ, Viswanathan SR, Chattopadhyay S, Tamayo P, Yang WS, Rees MG, Chen S, Boskovic ZV, Javaid S, Huang C, Wu X, Tseng YY, Roider EM, Gao D, Cleary JM, Wolpin BM, <b>Mesirov JP</b>, Haber DA, Engelman JA, Boehm JS, Kotz JD, Hon CS, Chen Y, Hahn WC, Levesque MP, Doench JG, Berens ME, Shamji AF, Clemons PA, Stockwell BR, Schreiber SL. Dependency of a therapy-resistant state of cancer cells on a lipid peroxidase pathway. Nature. 2017 Jul 27;547(7664):453-457. doi: 10.1038/nature23007. Epub 2017 Jul 5. PubMed PMID: 28678785.</li><br>
+                    
+                    <li><b>Carlin D, Kosnicki K, Garamszegi S et al.</b> A multi-tool recipe to identify regions of protein-DNA binding and their influence on associated gene expression. F1000Research 2017, 6:784 (doi: 10.12688/f1000research.11616.1)</li><br>
+                    
+                    <li>Boulay G, Awad ME, Riggi N, Archer TC, Iyer S, Boonseng WE, Rossetti NE, Naigles B, Rengarajan S, Volorio A, Kim JC, <b>Mesirov JP</b>, Tamayo P, Pomeroy SL, Aryee MJ, Rivera MN. OTX2 Activity at Distal Regulatory Elements Shapes the Chromatin Landscape of Group 3 Medulloblastoma. Cancer Discov. 2017 Mar;7(3):288-301. doi: 10.1158/2159-8290.CD-16-0844. Epub 2017 Feb 17. PubMed PMID: 28213356; PubMed Central PMCID: PMC5340587. </li><br>
+                    
+                    <li>Silterra J, Gillette MA, Lanaspa M, Pellé KG, Valim C, Ahmad R, Acácio S, Almendinger KD, Tan Y, Madrid L, Alonso PL, Carr SA, Wiegand RC, Bassat Q, <b>Mesirov JP</b>, Milner DA Jr, Wirth DF. Transcriptional Categorization of the Etiology of Pneumonia Syndrome in Pediatric Patients in Malaria-Endemic Areas. J Infect Dis. 2017 Jan 15;215(2):312-320. doi: 10.1093/infdis/jiw531. PubMed PMID: 27837008.</li>
+                    
+                </ul>
+            </div>
+            <div class="panel panel-default" style="padding: 0px; margin-left: 5%; margin-right: 5%;">
+                <h2 class="panel-heading" style="text-align: center; padding: 2%;">2016</h2>
+                <ol class="panel-body" style="padding: 4%">
+                    <li>Spira A, Disis ML, Schiller JT, Vilar E, Rebbeck TR, Bejar R, Ideker T, Arts J, Yurgelun MB, <b>Mesirov JP</b>, Rao A, Garber J, Jaffee EM, Lippman SM. Leveraging premalignant biology for immune-based cancer prevention. Proc Natl Acad Sci U S A. 2016 Sep 27;113(39):10750-8. doi: 10.1073/pnas.1608077113. Epub 2016 Sep 16. PubMed PMID: 27638202; PubMed Central PMCID: PMC5047191.</li><br>
+
+                    <li>Hanaford AR, Archer TC, Price A, Kahlert UD, Maciaczyk J, Nikkhah G, Kim JW,  Ehrenberger T, Clemons PA, Dančík V, Seashore-Ludlow B, Viswanathan V, Stewart ML, Rees MG, Shamji A, Schreiber S, Fraenkel E, Pomeroy SL, <b>Mesirov JP</b>, Tamayo P, Eberhart CG, Raabe EH. DiSCoVERing Innovative Therapies for Rare Tumors: Combining Genetically Accurate Disease Models with In Silico Analysis to Identify Novel Therapeutic Targets. Clin Cancer Res. 2016 Aug 1;22(15):3903-14. Doi: 10.1158/1078-0432.CCR-15-3011. Epub 2016 Mar 24. PubMed PMID: 27012813; PubMed Central PMCID: PMC5055054.</li><br>
+
+                    <li>D'Antonio M, Tamayo P, <b>Mesirov JP</b>, Frazer KA. Kataegis Expression Signature in Breast Cancer Is Associated with Late Onset, Better Prognosis, and Higher HER2 Levels. Cell Rep. 2016 Jul 19;16(3):672-83. doi: 10.1016/j.celrep.2016.06.026. Epub 2016 Jun 30. PubMed PMID: 27373164; PubMed Central PMCID: PMC4972030.</li><br>
+                        
+                    <li>Durand NC, <b>Robinson JT</b>, Shamim MS, Machol I, <b>Mesirov JP</b>, Lander ES, Aiden EL. Juicebox Provides a Visualization System for Hi-C Contact Maps with Unlimited Zoom. Cell Syst. 2016 Jul;3(1):99-101. doi: 10.1016/j.cels.2015.07.012. PubMed PMID: 27467250; PubMed Central PMCID: PMC5596920.</li><br>
+                        
+                    <li>Lu Z, Zhang QC, Lee B, Flynn RA, Smith MA, <b>Robinson JT</b>, Davidovich C, Gooding AR, Goodrich KJ, Mattick JS, <b>Mesirov JP</b>, Cech TR, Chang HY. RNA Duplex Map in Living Cells Reveals Higher-Order Transcriptome Structure. Cell. 2016 May 19;165(5):1267-1279. doi: 10.1016/j.cell.2016.04.028. Epub 2016 May 12. PubMed PMID: 27180905; PubMed Central PMCID: PMC5029792.</li><br>
+                        
+                    <li>Kim JW, Botvinnik OB, Abudayyeh O, Birger C, Rosenbluh J, Shrestha Y, Abazeed ME, Hammerman PS, DiCara D, Konieczkowski DJ, Johannessen CM, <b>Liberzon A</b>, Alizad-Rahvar AR, Alexe G, Aguirre A, Ghandi M, Greulich H, Vazquez F, Weir BA, Van Allen EM, Tsherniak A, Shao DD, Zack TI, Noble M, Getz G, Beroukhim R, Garraway LA, Ardakani M, Romualdi C, Sales G, Barbie DA, Boehm JS, Hahn WC, <b>Mesirov JP</b>, Tamayo P. Characterizing genomic alterations in cancer by complementary functional associations. Nat Biotechnol. 2016 May;34(5):539-46. doi: 10.1038/nbt.3527. Epub 2016 Apr 18. PubMed PMID: 27088724; PubMed Central PMCID: PMC4868596.</li><br>
+
+                    <li>Qu K, <b>Garamszegi S</b>, Wu F, <b>Thorvaldsdottir H, Liefeld T</b>, Ocana M, Borges-Rivera D, Pochet N, <b>Robinson JT</b>, Demchak B, Hull T, Ben-Artzi G, Blankenberg D, Barber GP, Lee BT, Kuhn RM, Nekrutenko A, Segal E, Ideker T, <b>Reich M</b>, Regev A, Chang HY, <b>Mesirov JP</b>. Integrative genomic analysis by interoperation of bioinformatics tools in GenomeSpace. Nat Methods. 2016 Mar;13(3):245-247. doi: 10.1038/nmeth.3732. Epub 2016 Jan 18. PubMed PMID: 26780094; PubMed Central PMCID: PMC4767623.</li><br>
+
+                    <li>Valim C, Ahmad R, Lanaspa M, Tan Y, Acácio S, Gillette MA, Almendinger KD, Milner DA Jr, Madrid L, Pellé K, Harezlak J, Silterra J, Alonso PL, Carr SA, <b>Mesirov JP</b>, Wirth DF, Wiegand RC, Bassat Q. Responses to Bacteria, Virus, and Malaria Distinguish the Etiology of Pediatric Clinical Pneumonia. Am J Respir Crit Care Med. 2016 Feb 15;193(4):448-59. doi: 10.1164/rccm.201506-1100OC. PubMed PMID: 26469764; PubMed Central PMCID: PMC5440057.</li><br>
+                        
+                    <li>Godec J, Tan Y, <b>Liberzon A</b>, Tamayo P, Bhattacharya S, Butte AJ, <b>Mesirov JP</b>, Haining WN. Compendium of Immune Signatures Identifies Conserved and Species-Specific Biology in Response to Inflammation. Immunity. 2016 Jan 19;44(1):194-206. doi: 10.1016/j.immuni.2015.12.006. Epub 2016 Jan 12. PubMed PMID: 26795250; PubMed Central PMCID: PMC5330663.</li><br>
+
+                    <li>Zhu X, Girardo D, Govek EE, John K, Mellén M, Tamayo P, <b>Mesirov JP</b>, Hatten ME. Role of Tet1/3 Genes and Chromatin Remodeling Genes in Cerebellar Circuit Formation. Neuron. 2016 Jan 6;89(1):100-12. doi: 10.1016/j.neuron.2015.11.030. Epub 2015 Dec 17. PubMed PMID: 26711116; PubMed Central PMCID: PMC4707072.</li>
+                </ol>
+            </div>
+   <div class="panel panel-default" style="padding: 0px; margin-left: 5%; margin-right: 5%;">
+                <h2 class="panel-heading" style="text-align: center; padding: 2%;">2015</h2>
+                <ol class="panel-body" style="padding: 4%">
+                    <li><b>Liberzon A</b>, Birger C, <b>Thorvaldsdóttir H</b>, Ghandi M, <b>Mesirov JP</b>, Tamayo P. The Molecular Signatures Database (MSigDB) hallmark gene set collection. Cell Syst. 2015 Dec 23;1(6):417-425. PubMed PMID: 26771021; PubMed Central PMCID: PMC4707969.</li><br>
+                    <li>Katz Y, Wang ET, Silterra J, Schwartz S, Wong B, <b>Thorvaldsdóttir H</b>, <b>Robinson JT</b>, <b>Mesirov JP</b>, Airoldi EM, Burge CB. Quantitative visualization of alternative exon expression from RNA-seq data. Bioinformatics. 2015 Jul 15;31(14):2400-2. doi: 10.1093/bioinformatics/btv034. Epub 2015 Jan 22. PubMed PMID: 25617416; PubMed Central PMCID: PMC4542614.</li><br>
+                    <li>Wilson FH, Johannessen CM, Piccioni F, Tamayo P, Kim JW, Van Allen EM, Corsello SM, Capelletti M, Calles A, Butaney M, Sharifnia T, Gabriel SB, <b>Mesirov JP</b>, Hahn WC, Engelman JA, Meyerson M, Root DE, Jänne PA, Garraway LA. A functional landscape of resistance to ALK inhibition in lung cancer. Cancer Cell. 2015 Mar 9;27(3):397-408. doi: 10.1016/j.ccell.2015.02.005. PubMed PMID: 25759024; PubMed Central PMCID: PMC4398996. </li><br>
+                    <li><b>Thorvaldsdóttir H</b>, <b>Robinson JT</b>, Turner D, <b>Mesirov JP</b>. A genomic data viewer for iPad. Genome Biol. 2015 Feb 26;16:46. doi: 10.1186/s13059-015-0595-3. PubMed PMID: 25723152; PubMed Central PMCID: PMC4342165.</li><br>
+                    <li>Tan Y, Wu F, Tamayo P, Haining WN, <b>Mesirov JP</b>. Constellation Map: Downstream visualization and interpretation of gene set enrichment results. F1000Res. 2015 Jun 24;4:167. doi: 10.12688/f1000research.6644.1. eCollection 2015. PubMed PMID: 26594333; PubMed Central PMCID: PMC4648224.</li><br>
+                    <li>Papageorgiou A, Rapley J, <b>Mesirov JP</b>, Tamayo P, Avruch J. A genome-wide siRNA screen in mammalian cells for regulators of S6 phosphorylation. PLoS One. 2015 Mar 19;10(3):e0116096. doi: 10.1371/journal.pone.0116096. eCollection 2015. PubMed PMID: 25790369; PubMed Central PMCID: PMC4366019.</li><br>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+    
+    <footer style="margin-top: 0px; padding: 50px; padding-bottom: 80px; ">
+            <div class="row">
+                <div class="col-sm-3" style="padding-top:0px; ">
+                    <h1 style="margin-top:0px;">Mesirov Lab</h1>
+                    <p>
+                        Department of Medicine<br>
+                        UC San Diego, School of Medicine<br>
+                        Biomedical Research Facility II<br>
+                        La Jolla, CA 92093<br><br>
+    
+                        Biomedical Science Building<br>
+                        La Jolla, CA 92093<br><br>
+    
+                        Mail Code: 0602<br>
+                    </p>
+                    <p style="font-size: 10px;">© Copyright Mesirov Lab 2018 </p>
+                </div>
+                <div class="col-sm-4">   
+                </div>
+                <div class="col-sm-5 row">
+                    <div class="col-sm-4">
+                        <a href="members/">Our Team</a><br><br>
+                        <a href="projects/">Research</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="pubs/">Publications</a><br><br>
+                        <a href="software/">Software</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="teaching/">Teaching</a><br><br>
+                        <a href="about/">Contact</a>
+                    </div>
+                    <div class="col-12" style="text-align: right;">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <p>Mesirov Lab | UC San Diego School of Medicine | 9500 Gilman Drive | La Jolla, CA 92093</p> -->
+        </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src= "../js/smooth-scroll.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>  
+</html>
