@@ -6,7 +6,7 @@ Author:         Forrest Kim/Jill Mesirov
 html {
     overflow-x: hidden !important;
     /* background:	rgba(73, 88, 103, 0.7); */
-    /* background-image: url("../img/stretch-empty_2.png?x=1"); */
+    /* background-image: url("/img/stretch-empty_2.png?x=1"); */
 }
 body {
     background: rgba(73, 88, 103, 0.3);
@@ -23,13 +23,17 @@ a {
     font-weight: 600;
 }
 p {
-    font-size: 17px;
+    font-size: 14px;
 }
 .container-fluid {
     padding-right: 0px; 
 }
 .row {
     margin:auto;
+}
+h2 {
+    font-size: 25px;
+    font-weight: 100;
 }
     
 /* Navbar*/
@@ -40,7 +44,7 @@ borders and increase the bottom margin */
     border: none;
     background-color: white;
     opacity: 1;
-    /* background-image: url("../img/front-banner.jpg"); */
+    /* background-image: url("/img/front-banner.jpg"); */
     /* box-shadow: 0px 5px 10px lightgrey; */
     margin: auto;
     border-bottom: 1px solid black;
@@ -84,9 +88,6 @@ a.navbar-brand:hover {
 .dropdown-menu {
     list-style-type: none;
 }
-.dropdown-menu li {
-    
-}
 .dropdown-menu li a{
     color: black !important;
 }
@@ -125,6 +126,10 @@ a:hover {
 } */
 .btn-text {
     display: none;
+}
+
+.btn {
+    color:white;
 }
 
 .glyphicon {
@@ -238,7 +243,7 @@ a:hover {
 }
 
 #newsfront p, #newsfront a{
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     text-align: left;
     font-weight: 100;
@@ -313,6 +318,7 @@ a:hover {
     text-align: center;
     letter-spacing: 4px;
     font-weight: 100;
+    font-size: 30px;
 }
 
 #project-main h2 {
@@ -544,7 +550,7 @@ ul.nav-pills {
 }
 
 #newsfront .panel-body p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 100
 }
 .panel-heading {
@@ -629,7 +635,6 @@ ul.nav-pills {
 }
 .panel-heading:hover [class*="glyphicon-"] {
 	color: #861F05;
-    -webkit-transform:rotate(90deg);
 }
 
 .collapsing .panel-heading {
@@ -647,17 +652,27 @@ ul.nav-pills {
 #newsfront .panel-body li p a {
     text-align: left;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+    color: #2FB1CB
 }
 
 #newsfront .panel-body li b {
-    color: #2FB1CB;
-    font-size: 18px;
+    color: black;
+    font-size: 15px;
     font-weight: 400;
+}
+#myScrollspy ul {
+    z-index: 1001;
 }
 
 /*
 rgba(156,173,206,0.2)*/
+
+/* All pages*/
+.carousel-inner>.item>img {
+    width: 40%;
+    margin: auto;
+}
 
 /* /about */
 .nav-tabs li {
@@ -730,6 +745,14 @@ rgba(156,173,206,0.2)*/
     font-size: 16px;
 }
 
+.navbar-toggle {
+    border:1px solid white;
+}
+
+.icon-bar {
+    border:1px solid white;
+}
+
 /* Add a gray background color and some padding 
 to the footer */
 footer {
@@ -770,13 +793,25 @@ footer a {
         font-weight: 400;
         text-align: center;
     }
-    #banner-btn {
-        display: none;
-    }
+
     
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 947px) { 
+    .navbar-nav li a {
+        font-size: 12px;
+        font-weight: 400;
+        margin: auto;
+        padding-bottom: 0px;
+        letter-spacing: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 75% !important;
+    }
     .navbar-toggle {
         border-color: #1B1B1E;
     }
@@ -816,9 +851,13 @@ footer a {
         margin-left: 0px;
     }
     #media-space { 
-        display: inline-block
-    }
-    scoll, #myScrollspy {
+        display: inline-block;
+        color: white;
+    } 
+    #myScrollspy {
         display: none;
     }   
+    #banner-btn {
+        display: none;
+    }
 }
