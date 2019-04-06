@@ -6,7 +6,7 @@ Author:         Forrest Kim/Jill Mesirov
 html {
     overflow-x: hidden !important;
     /* background:	rgba(73, 88, 103, 0.7); */
-    /* background-image: url("/img/stretch-empty_2.png?x=1"); */
+    /* background-image: url("../img/stretch-empty_2.png?x=1"); */
 }
 body {
     background: rgba(73, 88, 103, 0.3);
@@ -44,7 +44,7 @@ borders and increase the bottom margin */
     border: none;
     background-color: white;
     opacity: 1;
-    /* background-image: url("/img/front-banner.jpg"); */
+    /* background-image: url("../img/front-banner.jpg"); */
     /* box-shadow: 0px 5px 10px lightgrey; */
     margin: auto;
     border-bottom: 1px solid black;
