@@ -97,6 +97,10 @@
         .navbar-fixed-top.scrolled li a:hover{
             color:#FE5F55 !important;
         }
+        .navbar-fixed-top.scrolled p {
+            color: #172A49 !important;
+            transition: background-color 200ms linear;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130775773-1"></script>
@@ -123,8 +127,8 @@
 
 <body id="top">
     <nav class="navbar navbar-fixed-top">
-        <a class="navbar-brand" href="/">
-            <img src="img/mes-lab-logo-2.png" width="190px" style="background: white;">
+        <a class="navbar-brand " href="/">
+            <p>Mesirov Lab</p>
         </a>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -134,15 +138,17 @@
             </button>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" id="navigation">
-                <span id="media-space" style="height: 65px"></span>
+            <ul class="nav navbar-nav" id="navigation">
+                <span id="media-space" style="height: 80px"></span>
                 <li><a href="members/">OUR TEAM</a></li>
-                <li><a href="projects/">RESEARCH</a></li>
                 <li><a href="pubs/">PUBLICATIONS</a></li>
                 <li><a href="software/">SOFTWARE</a></li>
                 <li><a href="teaching/">TEACHING</a></li>
                 <li><a href="about/">JOIN US</a></li>
             </ul>
+            <a class="navbar-brand navbar-right" href="/" style="background: white; margin: auto; padding-right: 50px;padding-left: 50px; padding-top: 35px; padding-bottom: 65px; margin-right: 10px; float:right" id="ucsd-logo">
+                <img src="img/UCSD_logo.png" width="150px" style="padding:0px; margin:auto;">
+            </a>
         </div>
     </nav>
 
@@ -214,9 +220,14 @@
                 <a class="btn button" href="members/" style="margin-top: 10px; color:white;">Learn More...</a>
             </div>
             <div class="col-12 col-sm-8" style="margin: auto; padding: 0px; color: black; margin-top: 30px; text-align: center; margin-left: 70px;">
-                <p style="text-align: left; margin-bottom: 35px;">Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets. Our lab is committed to the development of practical, accessible, open source software tools to bring these methods to the general biomedical research community. These tools support the research of hundreds of thousands of investigators worldwide. Thus, to achieve its goals, the lab includes both computational biologists and software engineers working together to further our understanding and treatment of disease.</p>
+                <p style="text-align: left; margin-bottom: 35px;">Research in the Mesirov Lab focuses on cancer genomics applying machine-learning methods to functional data derived from
+                patient tumors. The lab analyzes these molecular data to determine the underlying biological mechanisms of specific
+                tumor subtypes, to stratify patients according to their relative risks of relapse, and to identify candidate compounds
+                for new treatments. The overall goal is to treat patients as individuals specific to their tumors. Importantly, the lab
+                is committed to the development of practical, accessible software tools to bring these methods to the general biomedical
+                research community. The tools support almost 500,000 users worldwide.</p>
                 <div class="col-12 col-md-4" id="front-btn">
-                    <a class="front-icon" href="projects/" style="font-weight: 600; text-align: center; ">
+                    <a class="front-icon" href="pubs/" style="font-weight: 600; text-align: center; ">
                         <img src="img/research-3.png" width="150px">
                         <p>Computational Biology research</p>
                     </a>
@@ -333,10 +344,7 @@
                 <p>
                    Department of Medicine<br>
                    UC San Diego, School of Medicine<br>
-                   Biomedical Research Facility II<br>
-                   La Jolla, CA 92093<br><br>
-
-                   Biomedical Science Building<br>
+                   Floor 2A, Biomedical Research Facility II<br>
                    La Jolla, CA 92093<br><br>
 
                    Mail Code: 0602<br>
