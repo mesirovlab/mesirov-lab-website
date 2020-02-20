@@ -9,7 +9,7 @@ html {
     /* background-image: url("../img/stretch-empty_2.png?x=1"); */
 }
 body {
-    /* background: rgba(73, 88, 103, 0.3); */
+    background: rgba(73, 88, 103, 0.3);
     background-repeat: repeat;
     font-family: "Helvetica";
     font-weight: 100;
