@@ -14,60 +14,14 @@
     <link rel="icon" href="img/meslab.ico">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <style >
-        html {
-            overflow-x: hidden !important;
-            /*background-image: url("img/stretch-upright-half.png");*/
-        }
         body {
             padding-top: 0px;
         }
         #banner {
-            /*background: url("img/stretch-empty.png");*/
-            /*background: url("img/stretch-new-hires3.png" );*/
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            animation: fadein 5s forwards;
             margin:0 auto;
             padding: 0 auto;
         }
-
-        /*#banner:hover {
-            transition: background 1s ease-in-out !important;
-            ;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }*/
-        .lab-title {
-            animation: lab-title 4s forwards;
-            animation-delay: 1s;
-            opacity: 0;
-        }
-        @keyframes lab-title {
-            0%  { 
-                opacity: 0;
-            }
-            100% { 
-                opacity: 1;
-            }
-        }
-        @keyframes fadein {
-            0%  { 
-                background: url("img/stretch-empty.png");
-                background-repeat: no-repeat;
-                background-size: cover; 
-            }
-            100% { 
-                background: url("img/stretch-new-hires3.png" ); background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-        @media screen and (max-width: 1200px) {
-            body {
-                background: transparent;
-            }
-        }
+        
         .navbar {
             background: transparent;
             border: none;
@@ -79,7 +33,7 @@
             background: transparent !important;
         }
         .navbar-fixed-top.scrolled {
-            background: #fff !important;
+            background-color: white;
             border-bottom: 1px solid black;
             transition: background-color 200ms linear;
         }
@@ -99,6 +53,33 @@
             color: #172A49 !important;
             transition: background-color 200ms linear;
         }
+        .navbar-fixed-top.scrolled #logo-white {
+            display: none;
+        }
+        .navbar-fixed-top.scrolled #logo-blue {
+            display: block;
+        }
+        .lab-title {
+            animation: lab-title 4s forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        @keyframes lab-title {
+            0% {
+                opacity: 0;
+            }
+            100% { 
+                opacity: 1;
+            }
+        }
+        div.preload-images {
+            background: url("/img/stretch-empty.png") no-repeat -9999px -9999px;
+            background: url("/img/stretch-new-hires3.png" ) no-repeat -9999px -9999px;
+        }
+        @keyframes fadein {
+            0% {background: url("/img/stretch-new-hires3.png" ); background-size: cover; background-repeat: no-repeat;}
+            100% {background: url("/img/stretch-new-hires3.png"); background-size: cover; background-repeat: no-repeat;}
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130775773-1"></script>
@@ -115,14 +96,15 @@
     </script>
     <script>
     $(function () {
-            $(document).scroll(function () {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
+        $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
+    });
     </script>
 </head>
 
+<div class="preload-images"></div>
 <body id="top">
     <nav class="navbar navbar-fixed-top">
         <a class="navbar-brand " href="/">
@@ -144,40 +126,36 @@
                 <li><a href="teaching/">TEACHING</a></li>
                 <li><a href="about/">JOIN US</a></li>
             </ul>
-            <a class="navbar-brand navbar-right" href="/" style="background: white; margin: auto; padding-right: 50px;padding-left: 50px; padding-top: 35px; padding-bottom: 65px; margin-right: 10px; float:right" id="ucsd-logo">
-                <img src="img/UCSD_logo.png" width="150px" style="padding:0px; margin:auto;">
+            <a class="navbar-brand navbar-right" href="/" id="ucsd-logo">
+                <img id="logo-white"src="img/PNG/UCSanDiegoLogo-White.png" width="150px" style="padding:0px; margin:auto;">
+                <img id="logo-blue" src="img/PNG/UCSanDiegoLogo-BlueGold.png" width="150px" style="padding:0px; margin:auto;">
             </a>
         </div>
     </nav>
 
+
     <div style="text-align: center; " id="banner">
-        <!-- <img src="img/stretch-new-hires3.png" style="width:100%; margin: 0 auto;"> -->
         <div class="container-fluid" style="padding-bottom: 50px;">
             <div id="lab-title" class="lab-title">
-                <h3 style="font-family: 'Helvetica Neue';color: white; letter-spacing: 1.5px; font-weight: 200; font-size: 90px; padding: 100px; padding-top:250px; padding-bottom: 50px;">
+                <h3 style="">
                     Jill P. Mesirov Lab</h3>
                 <p style="color: white; font-weight: 100;font-size: 20px; opacity:0;" id="mission-statement">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="row" style="margin:auto; padding-bottom: 100px" id="banner-btn">
+                <div class="row" style="margin:auto; padding-bottom: 100px;" id="banner-btn">
                     <div class="col-sm-1"></div>
-
                     <div class="col-sm-2" style="text-align:center" >
                         <a class="btn button" href="#about-lab" >
                             <p style="margin-top: 150px; font-size: 18px;">Learn More</p>
                             <span class="glyphicon glyphicon-chevron-down" style="font-size: 20px;"></span>
                         </a>
                     </div>
-
                     <div class="col-sm-2"></div>
-
                     <div class="col-sm-2" style="text-align:center">
                         <a class="btn button" href="#newsfront">
                             <p style="margin-top: 150px; font-size: 18px;">Featured News</p>
                             <span class="glyphicon glyphicon-chevron-down" style="font-size: 20px"></span>
                         </a>
                     </div>
-
                     <div class="col-sm-2"></div>
-
                     <div class="col-sm-2" style="text-align:center">
                         <a class="btn button" href="#footer">
                             <p style="margin-top: 150px; font-size: 18px;">Contact Us</p>
@@ -188,17 +166,11 @@
                     <div class="col-sm-1"></div>
                 </div>
             </div>
-            
-            
-            <!-- <a href="#about-lab" class="glyphicon glyphicon-menu-down" style="font-size: 30px; margin-top: 50px; margin-bottom: 0px;"></a> -->
         </div>
     </div>
-    <!-- <div style="text-align: center;">
-        <img src="img/m-logo.png" width="50%" style="margin:auto; padding: 50px">
-    </div> -->
 
     <div style="background-color: white;" id="about-lab">
-        <div class= "row" style="width: 95%; margin: auto; padding: 50px; padding-top: 100px; padding-bottom: 50px;">
+        <div class= "row" style="width: 95%; margin: auto; padding: 50px;">
             <div class="col-12 col-sm-3" style="margin: auto; margin-top: 30px; padding:0px;">
                 <h1 style="margin:auto; padding: 0px; font-size: 25px; margin-bottom: 15px;">Jill P. Mesirov, Ph.D.</h1>
                 <img src="img/mesirov_portrait.jpg" width="200px" style="">
@@ -249,9 +221,7 @@
                     
                 </div>
             </div>
-            
         </div>
-        
     </div>
 
 <div style="background-color: lightgrey" id="newsfront">
@@ -260,13 +230,13 @@
                 <div class="panel panel-default" style="padding: 0px; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
                     <h3 class="panel-heading" style="padding: 15px;">Featured News</h3>
                     <ul class="panel-body" style="padding: 50px; text-align: justify; padding-top: 30px; padding-bottom: 30px;">
-                        <h4>December 2019</h4>
+                        <h4>January 2021</h4>
                         <ul>
-                            <li>Banerjee S, Wei T, Wang J, Lee JJ, Gutierrez HL, <b>Chapman O</b>, Wiley SE, Mayfield JE, Tandon V, Juarez EF, <b>Chavez L</b>, Liang R, Sah RL, Costello C, <b>Mesirov JP</b>, de la Vega L, Cooper KL, Dixon JE, Xiao J, Lei X. Inhibition of dual-specificity tyrosine phosphorylation-regulated kinase 2 perturbs 26S proteasome-addicted neoplastic progression. Proc Natl Acad Sci U S A. 2019 Dec 3;116(49):24881-24891. doi: 10.1073/pnas.1912033116. Epub 2019 Nov 21. PubMed PMID: 31754034; PubMed Central PMCID: PMC6900511.</li><br>
+                            <li>Benitez JA, Finlay D, <b>Castanza A</b>, Parisian AD, Ma J, Longobardi C, Campos A, Vadla R, Izurieta A, Scerra G, Koga T, Long T, <b>Chavez L</b>, <b>Mesirov JP</b>, Vuori K, Furnari F. Pten Deficiency Leads To Proteasome Addiction, A Novel Vulnerability In Glioblastoma. Neuro-oncology. 2021. Epub 2021/01/12. doi: 10.1093/neuonc/noab001. PubMed PMID: 33428749.</li>
                         </ul>
-                        <h4>October 2019</h4>
+                        <h4>December 2020</h4>
                         <ul>
-                            <li>Tokita MJ, Nahas S, Briggs B, Malicki DM, <b>Mesirov JP</b>, Reyes IAC, Farnaes L, Levy ML, Kingsmore SF, Dimmock D, Crawford JR, Wechsler-Reya RJ. Biallelic loss of GNAS in a patient with pediatric medulloblastoma. Cold Spring Harb Mol Case Stud. 2019 Oct;5(5). doi: 10.1101/mcs.a004572. Print 2019 Oct. PubMed PMID: 31624069; PubMed Central PMCID: PMC6824258.</li><br>
+                            <li>Rusert JM, <b>Juarez EF</b>, Brabetz S, <b>Jensen J</b>, Garancher A, Chau LQ, Tacheva-Grigorova SK, Wahab S, Udaka YT, Finlay D, Seker-Cin H, Reardon B, Grobner S, Serrano J, Ecker J, Qi L, Kogiso M, Du Y, Baxter PA, Henderson JJ, Berens ME, Vuori K, Milde T, Cho YJ, Li XN, Olson JM, Reyes I, Snuderl M, Wong TC, Dimmock DP, Nahas SA, Malicki D, Crawford JR, Levy ML, Van Allen EM, Pfister SM, Tamayo P, Kool M, <b>Mesirov JP</b>, Wechsler-Reya RJ. Functional Precision Medicine Identifies New Therapeutic Candidates for Medulloblastoma. Cancer research. 2020;80(23):5393-407. Epub 2020/10/14. doi: 10.1158/0008-5472.CAN-20-1655. PubMed PMID: 33046443; PMCID: PMC7718387.</li>
                         </ul>
                         <a class="btn button" href="pubs/" style="margin-top: 10px; color:white;">Publications</a>
                     </ul>
@@ -277,11 +247,6 @@
                 <div class="panel panel-default" style="padding: 0px; margin-top: 20px; box-shadow: 3px 3px 3px grey;">
                     <h3 class="panel-heading" style="padding: 15px;">Upcoming events</h3>
                     <ul class="panel-body" style="padding: 50px; text-align: justify; padding-top: 30px; padding-bottom: 30px;">
-                        <li><b>SD Jupyter Meetup, Fall 2019</b>
-                            <p>October 29, 2019</p>
-                        </li>
-                        <li><b>Delivering Cancer Cures, Moores Cancer Center, UCSD</b>
-                            <p>October 14, 2019</p>
                         </li>
                         <a class="btn button" href="teaching/" style="margin-top: 10px; color:white;">Courses & Workshops</a>
                     </ul>
