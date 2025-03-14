@@ -252,7 +252,7 @@ a:hover {
     color: #FE5F55;
 }
 
-#newsfront p, #newsfront a{
+#newsfront p {
     font-size: 14px;
     color: black;
     text-align: left;
